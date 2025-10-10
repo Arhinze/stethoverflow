@@ -90,21 +90,25 @@ HTML;
             echo <<<HTML
                 <!-- .main_body starts -->
                 <div class="main_body">
-                    <div style="display:flex;background-color:#fff">
-                        <div style="width:30px;height:30px;border:2px solid #d6e3fd;border-radius:100%">
-                            <a href="$site_url/static/images/profile.png"><img src="/static/images/profile.png" style="width:27px;height:27px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
+                    <!-- .main_page_topmost_div starts -->
+                    <div class="main_page_topmost_div" style="padding:12px">
+                        <div style="display:flex;background-color:#fff">
+                            <div style="width:30px;height:30px;border:2px solid #d6e3fd;border-radius:100%">
+                                <a href="$site_url/static/images/profile.png"><img src="/static/images/profile.png" style="width:27px;height:27px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
+                            </div>
+                            <div style="width:90%;margin-left:6px">
+                                <input type="text" placeholder="What do you want to ask or share?" style="width:100%" class="input"/>
+                            </div>
                         </div>
-                        <div style="width:90%;margin-left:6px">
-                            <input type="text" placeholder="What do you want to ask or share?" style="width:100%" class="input"/>
+    
+                        <div style="display:flex;justify-content:space-around;margin-top:9px;padding-bottom:12px">
+                            <div><i class="fa fa-question-circle-o"></i> Ask</div>
+                            <div><i class="fa fa-edit"></i> Answer</div>
+                            <div><i class="fa fa-pencil"></i> Post</div>
+                            <div></div>
                         </div>
                     </div>
-
-                    <div style="display:flex;justify-content:space-around;margin-top:9px;padding-bottom:12px">
-                        <div><i class="fa fa-question-circle-o"></i> Ask</div>
-                        <div><i class="fa fa-edit"></i> Answer</div>
-                        <div><i class="fa fa-pencil"></i> Post</div>
-                        <div></div>
-                    </div>
+                    <!-- .main_page_topmost_div ends -->
 
                     <div class="demarcation" style="width:100%;height:12px;background-color:#d6e3fd"></div> 
                 </div>
