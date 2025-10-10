@@ -37,7 +37,7 @@ a{
 
 .main_body{
     margin:120px 12px 0 12px;
-    background-color:#d6e3fd;
+    background-color:#000;/*#d6e3fd*/
     overflow: hidden;
 }
 
