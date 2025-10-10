@@ -2,7 +2,7 @@
     /*SITE COLOURS: #042---c06 #0bee---3ccc*/ 
     /*SITE COLOURS: #f8---f8f8 #3331---31*/ 
     --site_color_main:#ffffff;
-    --site_color_alt:#acc5f8;
+    --site_color_alt:#acc5f8; /*#d6e3fd*/
 }
 
 body{
@@ -37,6 +37,7 @@ a{
 
 .main_body{
     margin:120px 12px 0 12px;
+    background-color:#d6e3fd;
     overflow: hidden;
 }
 

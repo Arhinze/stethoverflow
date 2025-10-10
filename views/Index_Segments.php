@@ -90,12 +90,12 @@ HTML;
             echo <<<HTML
                 <!-- .main_body starts -->
                 <div class="main_body">
-                    <div style="display:flex">
+                    <div style="display:flex;background-color:#fff">
                         <div style="width:25%">
                             <img src="/static/images/profile.png"/>
                         </div>
-                        <div style="width:70%">
-                            <input type="text" placeholder="What do you want to ask or share?"/>
+                        <div style="width:70%;">
+                            <input type="text" placeholder="What do you want to ask or share?" style="width:100%" class="input"/>
                         </div>
                     </div>
                 </div>
