@@ -105,6 +105,7 @@ HTML;
                         <div><i class="fa fa-pencil"></i> Post</div>
                         <div></div>
                     </div>
+                    <div class="demarcation" style="width:120%;height:12px;background-color:#d6e3fd"></div> 
                 </div>
                 <!-- .main_body ends -->
 HTML;
