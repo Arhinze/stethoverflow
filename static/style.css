@@ -6,8 +6,7 @@
 }
 
 body{
-    /*background-color:var(--site_color_main);*/ /*test-colour: var(--site_color_main);var(--site_color_alt)*/
-    background-color:#d6e3fd;
+    background-color:var(--site_color_main); /*test-colour: var(--site_color_main);var(--site_color_alt)*/
     color:#000;   
     overflow-x:hidden; 
     animation:bugfix infinite 1s;
