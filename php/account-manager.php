@@ -70,7 +70,7 @@ if(isset($_COOKIE["google_user_email"])) {
 if((isset($_COOKIE["unique_id"]))){
     $user_unique_id = htmlentities($_COOKIE["unique_id"]);
 
-    $stmt = $pdo->prepare("SELECT * FROM stethoverflow_users WHERE unique_id = ? LIMIT ?, ?");
+    $stmt = $pdo->prepare("SELECT * FROM stethoverflow_users WHERE user_id = ? LIMIT ?, ?");
     $stmt->execute([$user_unique_id, 0, 1]);
   
     $data = $stmt->fetch(PDO::FETCH_OBJ);
