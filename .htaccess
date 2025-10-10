@@ -1,0 +1,17 @@
+Options +FollowSymLinks
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^sign-up/([a-z0-9-_]*)$  /sign-up.php?referer=$1 [NC,L]
+RewriteRule ^admin-products/([a-z0-9-_]*)$  /admin-products.php?product=$1 [NC,L]
+RewriteRule ^user-requests/([a-z0-9-_]*)$  /user-requests.php?user=$1 [NC,L]
+RewriteRule ^product/([a-z0-9-_]*)$  /product.php?url=$1 [NC,L]
+RewriteRule ^category/([a-z0-9-_]*)$  /category.php?title=$1 [NC,L]
+RewriteRule ^search/([a-z0-9-_]*)$  /search.php?search_query=$1 [NC,L]
+RewriteRule ^([^\.]+)$ ./$1.php [NC,L]
+RewriteRule ^([^/]+)/([^/]+)/$ /$1/$2.php
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !(\.[a-zA-Z0-9]{1,5}|/)$
+#RewriteRule(.*)$ /$1/ [R=301,L]
