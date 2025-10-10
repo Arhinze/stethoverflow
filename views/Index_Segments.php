@@ -101,7 +101,7 @@ HTML;
                             </div>
                         </div>
     
-                        <div style="display:flex;justify-content:space-around;margin-top:9px;padding-bottom:12px">
+                        <div style="display:flex;justify-content:space-around;margin-top:9px;padding-bottom:6px">
                             <div><i class="fa fa-question-circle-o"></i> Ask</div>
                             <div><i class="fa fa-edit"></i> Answer</div>
                             <div><i class="fa fa-pencil"></i> Post</div>
