@@ -91,7 +91,7 @@ HTML;
                 <!-- .main_body starts -->
                 <div class="main_body">
                     <div style="display:flex;justify-contents:space-between;background-color:#fff">
-                        <div style="width:100px;height:100px;border:1px solid #888;border-radius:100%">
+                        <div style="width:15px;height:15px;border:1px solid #888;border-radius:100%">
                             <img src="/static/images/profile.png"/>
                         </div>
                         <div style="width:70%;">
