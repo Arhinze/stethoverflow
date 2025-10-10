@@ -98,7 +98,7 @@ HTML;
                             <input type="text" placeholder="What do you want to ask or share?" style="width:100%" class="input"/>
                         </div>
                     </div>
-                    <div style="display:flex;justify-content:space-between">
+                    <div style="display:flex;justify-content:space-around">
                         <div><i class="fa fa-question-circle-o"></i> Ask</div>
                         <div><i class="fa fa-edit"></i> Answer</div>
                         <div><i class="fa fa-pencil"></i> Post</div>
