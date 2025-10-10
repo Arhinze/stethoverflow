@@ -90,7 +90,14 @@ HTML;
             echo <<<HTML
                 <!-- .main_body starts -->
                 <div class="main_body">
-                    <h2 style="text-align:center">$site_name</h2>
+                    <div style="display:flex">
+                        <div style="width:25%">
+                            <img src="/static/images/profile.png"/>
+                        </div>
+                        <div style="width:70%">
+                            <input type="text" placeholder="What do you want to ask or share?"/>
+                        </div>
+                    </div>
                 </div>
                 <!-- .main_body ends -->
 HTML;
