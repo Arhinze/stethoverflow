@@ -94,7 +94,7 @@ HTML;
                         <div style="width:30px;height:30px;border:2px solid #d6e3fd;border-radius:100%">
                             <img src="/static/images/profile.png" style="width:27px;height:27px;border-radius:100%;margin:1.35px 0 0 1.35px"/>
                         </div>
-                        <div style="width:80%;margin-left:6px">
+                        <div style="width:90%;margin-left:6px">
                             <input type="text" placeholder="What do you want to ask or share?" style="width:100%" class="input"/>
                         </div>
                     </div>
