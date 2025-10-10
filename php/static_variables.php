@@ -9,7 +9,7 @@ $site_color_light = "#ff9100";
 
 define("SITE_NAME", "Steth Overflow");
 define("SITE_NAME_SHORT", "Steth Overflow");
-define("SITE_URL", "https://stethoverflow");
+define("SITE_URL", "https://stethoverflow.com");
 define("SITE_URL_SHORT", "stethoverflow.com");
 
 ini_set("display_errors", '1');
