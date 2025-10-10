@@ -106,7 +106,7 @@ HTML;
                         <div></div>
                     </div>
 
-                    <div class="demarcation" style="width:120%;height:12px;background-color:#d6e3fd"></div> 
+                    <div class="demarcation" style="width:100%;height:12px;background-color:#d6e3fd"></div> 
                 </div>
                 <!-- .main_body ends -->
 HTML;
