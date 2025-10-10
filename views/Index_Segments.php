@@ -99,12 +99,13 @@ HTML;
                         </div>
                     </div>
 
-                    <div style="display:flex;justify-content:space-around;margin-top:9px">
+                    <div style="display:flex;justify-content:space-around;margin-top:9px;padding-bottom:12px">
                         <div><i class="fa fa-question-circle-o"></i> Ask</div>
                         <div><i class="fa fa-edit"></i> Answer</div>
                         <div><i class="fa fa-pencil"></i> Post</div>
                         <div></div>
                     </div>
+
                     <div class="demarcation" style="width:120%;height:12px;background-color:#d6e3fd"></div> 
                 </div>
                 <!-- .main_body ends -->
