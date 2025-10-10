@@ -110,7 +110,7 @@ HTML;
                     </div>
                     <!-- .main_page_topmost_div ends -->
 
-                    <div class="demarcation" style="width:100%;height:8px;background-color:#d6e3fd"></div> 
+                    <div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div> 
                 </div>
                 <!-- .main_body ends -->
 HTML;
