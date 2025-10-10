@@ -90,7 +90,7 @@ HTML;
             echo <<<HTML
                 <!-- .main_body starts -->
                 <div class="main_body">
-                    <div style="display:flex;justify-contents:space-between;background-color:#fff">
+                    <div style="display:flex;justify-content:space-between;background-color:#fff">
                         <div style="width:27px;height:27px;border:1px solid #888;border-radius:100%">
                             <img src="/static/images/profile.png" style="width:fit-content;height:auto"/>
                         </div>
