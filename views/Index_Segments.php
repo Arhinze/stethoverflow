@@ -31,11 +31,11 @@ class Index_Segments{
             <!-- end of .headers --> 
             <!-- start of 2nd .headers --> 
             <div class="headers" style="top:50px;background-color:#fff;color:#888;font-size:21px;padding:6px 18px">
-                <div class="" style="color:#acc5f8"><i class="fa fa-home"></i></div>
-                <div class=""><i class="fa fa-pencil-square-o"></i></div>
-                <div class=""><i class="fa fa-users"></i></div>
+                <div class="" style="color:#acc5f8;margin-top:12px"><i class="fa fa-home"></i></div>
+                <div class="" style="margin-top:6px"><i class="fa fa-pencil-square-o"></i></div>
+                <div class="" style="margin-top:6px"><i class="fa fa-users"></i></div>
                 <div class="" style="margin-top:6px"><i class="fa fa-bell-o"></i></div>
-                <div style="width:30px;height:30px;border:2px solid #d6e3fd;border-radius:100%">
+                <div style="width:30px;height:30px;border:2px solid #d6e3fd;border-radius:100%;margin-right:12px">
                     <a href="/static/images/profile.png"><img src="/static/images/profile.png" style="width:27px;height:27px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
                 </div>
             </div><!-- end of 2nd .headers --> 
