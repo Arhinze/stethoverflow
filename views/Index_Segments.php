@@ -35,7 +35,7 @@ class Index_Segments{
                 <div class="" style="margin-top:6px"><i class="fa fa-pencil-square-o"></i></div>
                 <div class="" style="margin-top:6px"><i class="fa fa-users"></i></div>
                 <div class="" style="margin-top:6px"><i class="fa fa-bell-o"></i></div>
-                <div style="width:30px;height:30px;border:2px solid #d6e3fd;border-radius:100%;margin-right:18px">
+                <div style="width:30px;height:30px;border:2px solid #d6e3fd;border-radius:100%;margin-right:23px">
                     <a href="/static/images/profile.png"><img src="/static/images/profile.png" style="width:27px;height:27px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
                 </div>
             </div><!-- end of 2nd .headers --> 
