@@ -22,7 +22,7 @@ class Index_Segments{
                     <span class="x_remove" onclick="clear_and_close('header_search')"><i class="fa fa-times"></i></span>
                 </div>
                 <h1 class="site_name">
-                    <a href="/">$site_name<!--site_name--></a>
+                    <a href="/" style="color:#fff">$site_name<!--site_name--></a>
                 </h1>
                 <div style="margin-right:12px">
                     <i class="fa fa-plus-circle"></i> Add
