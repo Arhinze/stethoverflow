@@ -126,7 +126,7 @@ h1, h2, h3, h4, h5, h6{
     left:0px;
     position:fixed;
     display:flex;
-    justify-content: space-between;
+    justify-content:space-around;
     width:100%;
     padding:6px 3px;
     background-color:var(--site_color_alt);

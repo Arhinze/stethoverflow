@@ -30,7 +30,7 @@ class Index_Segments{
             </div> <a name="#top"></a> 
             <!-- end of .headers --> 
             <!-- start of 2nd .headers --> 
-            <div class="headers" style="top:50px;background-color:#fff;color:#888;font-size:21px;padding:12px 18px">
+            <div class="headers" style="top:50px;background-color:#fff;color:#888;font-size:21px;padding:6px 18px">
                 <div class="" style="color:#acc5f8"><i class="fa fa-home"></i></div>
                 <div class=""><i class="fa fa-pencil-square-o"></i></div>
                 <div class=""><i class="fa fa-users"></i></div>
