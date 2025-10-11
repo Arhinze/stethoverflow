@@ -117,7 +117,7 @@ HTML;
                             <a href="$site_url/static/images/profile.png"><img src="/static/images/profile.png" style="width:27px;height:27px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
                         </div>
                         <div style="margin-left:6px">
-                            <div><b>Francis Arinze</b> <i class="fa fa-circle"></i> <span style="color:#acc5f8">Follow</span></div>
+                            <div><b>Francis Arinze</b> <i class="fa fa-circle"></i> <span style="color:#2b8eeb">Follow</span></div>
                             <div style="color:#888">Orthopaedic Doctor (2007 - present) <i class="fa fa-circle"></i> 21h</div>
                         </div>
                     </div>
