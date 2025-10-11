@@ -266,6 +266,47 @@ HTML;
 
                     <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation -->
 
+                    <!-- .posts_and_questions_div starts -->
+                    <div class="posts_and_questions" style="margin:12px 6px">
+                        <div style="display:flex">
+                            <div style="width:39px;height:39px;border:2px solid #d6e3fd;border-radius:100%">
+                                <a href="$site_url/static/images/profile.png"><img src="/static/images/profile.png" style="width:36px;height:36px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
+                            </div>
+                            <div style="margin-left:6px;margin-top:2px">
+                                <div style="font-size:15px"><b>Francis Arinze</b> <i class="fa fa-circle" style="font-size:6px"></i> <b style="color:#2b8eeb">Follow</b></div>
+                                <div style="color:#888;font-size:12px">Orthopaedic Surgeon (2007 - present) <i class="fa fa-circle" style="font-size:6px"></i> 21h</div>
+                            </div>
+                        </div>
+
+                        <!-- .answers start -->
+                        <div class="answers" style="padding:6px">
+                            <p>Robert Liston, popularly known as the fastest knife in the west was famous for his method of surgery.</p>
+
+                            <p>The Scottish surgeon was popular in the 18th century for his speed and precision in carrying out surgical operations.</p>
+
+                            <p>This was before the invention of anaesthesia, thus speed was implored to prevent mortality. A skilled surgeon could perform amputation in 3 minutes.</p>
+
+                            <p>Patients however often died from post-operative infection and blood loss. Liston however had a strong sense of cleanliness and advocated for handwashing and sterile surgical procedures long before the formulation of the theory of germs and antiseptics.
+                            </p>
+
+                            <p>Liston would usually turn to his students and audience shortly before surgery and say: "Time me, gentlemen, time me". His above-the-knee amputationsmwere completed in less than 30 seconds (from incision to final suture).</p>
+
+                            <p>This speed is however not without some costs.</p>
+
+                            <p>Liston reportedly accidentally removed a patient's testicles along with the leg being amputated due to the swiftness of his work on one occasion.</p>
+
+                            <p>On a different occasion, during an amputation, Liston accidentally cut off his assistant's fingers and slashed a spectator's coat. His patient and assistant both died from sepsis while the spectator died from shock.</p>
+
+                            <p>Thus this surgery had a mortality rate of 300%.</p>
+                            
+                            <p>He is famously known and remembered historically as the surgeon with the highest mortality rate from a single surgery and he performed Europe's first operation using anaesthesia in the 19th century.</p>
+                        
+                            <img src="/static/images/post7.png" style="width:100%;height:auto"/>
+                        </div><!-- .answers stop -->
+                    </div><!-- .posts_and_questions_div ends -->
+
+                    <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation -->
+
                 </div><!-- .main_body ends -->
 HTML;
 
