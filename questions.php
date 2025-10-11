@@ -10,6 +10,8 @@ Index_Segments::header();
         <!-- <div>AI Questions</div> -->
     </div>
 
+    <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation -->
+
     <!-- Question 1 -->
     <!-- .posts_and_questions_div starts -->
     <div class="posts_and_questions" style="margin:12px 6px">
