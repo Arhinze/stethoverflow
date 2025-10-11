@@ -135,6 +135,32 @@ HTML;
                         <img src="/static/images/post1.png" style="width:100%;height:auto"/>
                         </div>
                     </div><!-- .posts_and_questions_div ends -->
+
+                    <!-- .posts_and_questions_div starts -->
+                    <div class="posts_and_questions" style="margin:12px 6px">
+                        <div style="display:flex;padding-bottom:6px">
+                            <div style="width:39px;height:39px;border:2px solid #d6e3fd;border-radius:100%">
+                                <a href="$site_url/static/images/profile.png"><img src="/static/images/profile.png" style="width:36px;height:36px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
+                            </div>
+                            <div style="margin-left:6px;margin-top:2px">
+                                <div style="font-size:15px"><b>Francis Arinze</b> <i class="fa fa-circle" style="font-size:6px"></i> <b style="color:#2b8eeb">Follow</b></div>
+                                <div style="color:#888;font-size:12px">Orthopaedic Surgeon (2007 - present) <i class="fa fa-circle" style="font-size:6px"></i> 21h</div>
+                            </div>
+                        </div>
+
+                        <div class="questions" style="margin-bottom:3px"><h4>Why don't elderly men have surgery to remove their prostrate as standard, since so many prostrates end up causing death?</h4></div>
+
+                        <!-- .answers start -->
+                        <div class="answers" style="padding:6px">
+                            <p>I recently had a discussion about this with my urologist, after my primary care doctor had referred me because of an elevated PSA (test for prostate-specific antigen).</p>
+
+                            <p>He said that the PSA should be discontinued after age 70 (I'm 80 as I write this). The reasoning is that prostate cancer is so slow acting that one will likely die of something else before it becomes fatal. It is not worth the pain and discomfort of cancer treatment or prostate surgery.</p>
+
+                            <p>It is middle-aged men who are a risk of death from prostate cancer.</p>
+                        
+                            <img src="/static/images/post2.png" style="width:100%;height:auto"/>
+                        </div><!-- .answers stop -->
+                    </div><!-- .posts_and_questions_div ends -->
                 </div><!-- .main_body ends -->
 HTML;
 
