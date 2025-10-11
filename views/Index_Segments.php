@@ -345,7 +345,7 @@ HTML;
 
                         <div style="display:flex">
                             <div style="border:1px solid #888;padding:6px;border-radius:15px"><i class="fa fa-edit"></i>&nbsp; Answer </div>
-                            <div style="margin-left:12px"><i class="fa fa-feed"></i>&nbsp; Follow <i class="fa fa-circle"></i> 3</div>
+                            <div style="margin-left:12px;margin-top:6px"><i class="fa fa-feed"></i>&nbsp; Follow <i class="fa fa-circle"></i> 3</div>
                         </div>
                     </div><!-- .posts_and_questions_div ends -->
 
