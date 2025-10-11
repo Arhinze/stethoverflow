@@ -137,7 +137,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .headers a{
-    color:var(--site_color_main);
+    color:#888;
 }
 
 .site_name{
