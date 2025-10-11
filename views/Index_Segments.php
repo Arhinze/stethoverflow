@@ -110,7 +110,7 @@ HTML;
                     </div>
                     <!-- .main_page_topmost_div ends -->
 
-                    <div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div> 
+                    <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation --> 
 
                     <!-- .posts_and_questions_div starts -->
                     <div class="posts_and_questions" style="margin:12px 6px">
@@ -163,6 +163,9 @@ HTML;
                             <img src="/static/images/post2.png" style="width:100%;height:auto"/>
                         </div><!-- .answers stop -->
                     </div><!-- .posts_and_questions_div ends -->
+
+                    <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation -->
+                     
                 </div><!-- .main_body ends -->
 HTML;
 
