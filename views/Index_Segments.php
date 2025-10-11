@@ -203,6 +203,69 @@ HTML;
                     </div><!-- .posts_and_questions_div ends -->
 
                     <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation -->
+
+                    <!-- .posts_and_questions_div starts -->
+                    <div class="posts_and_questions" style="margin:12px 6px">
+                        <div style="display:flex">
+                            <div style="width:39px;height:39px;border:2px solid #d6e3fd;border-radius:100%">
+                                <a href="$site_url/static/images/profile.png"><img src="/static/images/profile.png" style="width:36px;height:36px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
+                            </div>
+                            <div style="margin-left:6px;margin-top:2px">
+                                <div style="font-size:15px"><b>Francis Arinze</b> <i class="fa fa-circle" style="font-size:6px"></i> <b style="color:#2b8eeb">Follow</b></div>
+                                <div style="color:#888;font-size:12px">Orthopaedic Surgeon (2007 - present) <i class="fa fa-circle" style="font-size:6px"></i> 21h</div>
+                            </div>
+                        </div>
+
+                        <div class="questions" style="margin-bottom:3px"><h4>How do brain surgeons close the brain after surgery?</h4></div>
+
+                        <!-- .answers start -->
+                        <div class="answers" style="padding:6px">
+                            <p>Depends on the age of the patient. Plus the affordability/ availablity of resources.</p>
+                            
+                            <p>For children, especially infants, toddlers and pre-adolescent patients, the skull flap is secured with sutures. Tiny holes are made in the bone flap and the corresponding area of the skull and sutures (mostly silk sutures) are passed through these holes and tied. This is done to prevent any hindrance to the bone growth by metallic implants.</p>
+                            
+                            <p>For adults miniplates and screws are fixed to secure the bone flap in place.</p>
+
+                            <p>The miniplates and screws are relatively expensive, and in a country like Nigeria, where a majority of the population belongs to the lower socio-economic group, sutures are used instead of implants, for patients who cannot afford them.</p>
+
+                            <p>The results with both are comparable.</p>
+
+                            <img src="/static/images/post4.png" style="width:100%;height:auto"/>
+                        </div><!-- .answers stop -->
+                    </div><!-- .posts_and_questions_div ends -->
+
+                    <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation -->
+
+                    <!-- .posts_and_questions_div starts -->
+                    <div class="posts_and_questions" style="margin:12px 6px">
+                        <div style="display:flex">
+                            <div style="width:39px;height:39px;border:2px solid #d6e3fd;border-radius:100%">
+                                <a href="$site_url/static/images/profile.png"><img src="/static/images/profile.png" style="width:36px;height:36px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
+                            </div>
+                            <div style="margin-left:6px;margin-top:2px">
+                                <div style="font-size:15px"><b>Francis Arinze</b> <i class="fa fa-circle" style="font-size:6px"></i> <b style="color:#2b8eeb">Follow</b></div>
+                                <div style="color:#888;font-size:12px">Orthopaedic Surgeon (2007 - present) <i class="fa fa-circle" style="font-size:6px"></i> 21h</div>
+                            </div>
+                        </div>
+
+                        <div class="questions" style="margin-bottom:3px"><h4>Has anyone been born without a brain?</h4></div>
+
+                        <!-- .answers start -->
+                        <div class="answers" style="padding:6px">
+                            <p>Yes, it's called hydranencephaly.</p>
+
+                            <p>The creepiest part is that you can shine a light through the babies skull because there's no brain tissue present.</p>
+
+                            <p>This condition happens in about 1 in 5,000 pregnancies and typically results in death within minutes of the child being born (many of these pregnancies are terminated or miscarried). The brain does far more than thinking. It runs the whole ship. And if nothing is there, everything breaks down.</p>
+
+                            <p>As horrible as this is, I am actually glad that the child passes almost immediately. This wouldn't be a way to live anyways.</p>
+                        
+                            <img src="/static/images/post5.png" style="width:100%;height:auto"/>
+                        </div><!-- .answers stop -->
+                    </div><!-- .posts_and_questions_div ends -->
+
+                    <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation -->
+
                 </div><!-- .main_body ends -->
 HTML;
 
