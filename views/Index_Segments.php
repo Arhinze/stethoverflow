@@ -114,7 +114,7 @@ HTML;
 
                     <!-- .posts_and_questions_div starts -->
                     <div class="posts_and_questions" style="margin:12px 6px">
-                        <div style="display:flex;padding-bottom:12px">
+                        <div style="display:flex;padding-bottom:6px">
                             <div style="width:39px;height:39px;border:2px solid #d6e3fd;border-radius:100%">
                                 <a href="$site_url/static/images/profile.png"><img src="/static/images/profile.png" style="width:36px;height:36px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
                             </div>
