@@ -123,6 +123,16 @@ HTML;
                                 <div style="color:#888;font-size:12px">Orthopaedic Surgeon (2007 - present) <i class="fa fa-circle" style="font-size:6px"></i> 21h</div>
                             </div>
                         </div>
+
+                        <div class="questions">What are some life saving surgical procedures you've witnessed?</div>
+                        <div class="answers">In 2014, 17-year-old Grace from the Democratic Republic of Congo underwent life-saving surgery to remove a very aggressive tumor. 
+                            
+                        <p>The huge disfigurement was sprouting from the centre of her lower jaw bone and was formed by cells that usually make the enamel of teeth.</p>
+
+                        <p>If she didn’t have it removed, it would have eventually suffocated her to death.</p>
+                        
+                        <img src="/static/images/post1.png" style="width:80%;height:auto"/>
+                        </div>
                     </div><!-- .posts_and_questions_div ends -->
                 </div><!-- .main_body ends -->
 HTML;
