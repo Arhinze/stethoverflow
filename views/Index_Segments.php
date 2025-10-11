@@ -113,8 +113,8 @@ HTML;
                     <div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div> 
 
                     <div style="display:flex;margin:12px 6px;padding-bottom:12px">
-                        <div style="width:30px;height:30px;border:2px solid #d6e3fd;border-radius:100%">
-                            <a href="$site_url/static/images/profile.png"><img src="/static/images/profile.png" style="width:27px;height:27px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
+                        <div style="width:39px;height:39px;border:2px solid #d6e3fd;border-radius:100%">
+                            <a href="$site_url/static/images/profile.png"><img src="/static/images/profile.png" style="width:36px;height:36px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
                         </div>
                         <div style="margin-left:6px">
                             <div style="font-size:15px"><b>Francis Arinze</b> <i class="fa fa-circle" style="font-size:6px"></i> <b style="color:#2b8eeb">Follow</b></div>
