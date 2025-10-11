@@ -131,7 +131,7 @@ h1, h2, h3, h4, h5, h6{
     padding:6px 3px;
     background-color:var(--site_color_alt);
     color:var(--site_color_main);
-    overflow: hidden;
+    /*overflow: hidden;*/
     box-shadow: 0 3px 3px 0 #d6e3fb;
     z-index:3;
 }
