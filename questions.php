@@ -27,6 +27,13 @@ Index_Segments::header();
         </div><!-- .below_only_questions end -->
     </div><!-- .posts_and_questions_div ends -->
 
+    <div style="width:100%;height:100%;border-radius:6px 6px 0 0;background-color:#fff;position:fixed">
+        <div style="position:relative">
+            <div style="position:absolute;float:left"><i class="fa fa-times"></i></div>
+            <div class="button" style="position:absolute;float:right">Post</div>
+        </div>
+    </div>
+
     <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation -->
 
     <!-- Question 2 -->
