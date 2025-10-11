@@ -111,6 +111,16 @@ HTML;
                     <!-- .main_page_topmost_div ends -->
 
                     <div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div> 
+
+                    <div style="display:flex">
+                        <div style="width:30px;height:30px;border:2px solid #d6e3fd;border-radius:100%">
+                            <a href="$site_url/static/images/profile.png"><img src="/static/images/profile.png" style="width:27px;height:27px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
+                        </div>
+                        <div style="margin-left:6px">
+                            <div><b>Francis Arinze</b> <i class="fa fa-circle"></i> <span style="color:#acc5f8">Follow</span></div>
+                            <div style="color:#888">Orthopaedic Doctor (2007 - present) <i class="fa fa-circle"></i> 21h</div>
+                        </div>
+                    </div>
                 </div>
                 <!-- .main_body ends -->
 HTML;
