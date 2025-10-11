@@ -343,10 +343,11 @@ HTML;
                     <div class="posts_and_questions" style="margin:12px 6px">
                         <div class="questions" style="margin-bottom:3px"><h4>What is the most bizarre and rare syndrome you've personally encountered or read about?</h4></div>
 
-                        <div style="display:flex">
+                        <!-- .below_only_questions start -->
+                        <div class="below_only_questions" style="display:flex">
                             <div style="border:1px solid #888;padding:6px;border-radius:15px"><i class="fa fa-edit"></i>&nbsp; Answer </div>
                             <div style="margin-left:12px;margin-top:6px"><i class="fa fa-feed"></i>&nbsp; Follow <i class="fa fa-circle"></i> 3</div>
-                        </div>
+                        </div><!-- .below_only_questions end -->
                     </div><!-- .posts_and_questions_div ends -->
 
                     <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation -->
@@ -354,6 +355,12 @@ HTML;
                     <!-- .posts_and_questions_div starts -->
                     <div class="posts_and_questions" style="margin:12px 6px">
                         <div class="questions" style="margin-bottom:3px"><h4>Doctors: What's the worst piece of health advice you hear non-professionals give all the time?</h4></div>
+
+                        <!-- .below_only_questions start -->
+                        <div class="below_only_questions" style="display:flex">
+                            <div style="border:1px solid #888;padding:6px;border-radius:15px"><i class="fa fa-edit"></i>&nbsp; Answer </div>
+                            <div style="margin-left:12px;margin-top:6px"><i class="fa fa-feed"></i>&nbsp; Follow <i class="fa fa-circle"></i> 3</div>
+                        </div><!-- .below_only_questions end -->
                     </div><!-- .posts_and_questions_div ends -->
 
                     <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation -->
