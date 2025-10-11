@@ -126,7 +126,7 @@ HTML;
 
                         <div class="questions" style="margin-bottom:15px"><h4>What are some life saving surgical procedures you've witnessed?</h4></div>
 
-                        <div class="answers">In 2014, 17-year-old Grace from the Democratic Republic of Congo underwent life-saving surgery to remove a very aggressive tumor. 
+                        <div class="answers" style="padding:6px">In 2014, 17-year-old Grace from the Democratic Republic of Congo underwent life-saving surgery to remove a very aggressive tumor. 
                             
                         <p>The huge disfigurement was sprouting from the centre of her lower jaw bone and was formed by cells that usually make the enamel of teeth.</p>
 
