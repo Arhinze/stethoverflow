@@ -343,7 +343,7 @@ HTML;
                     <div class="posts_and_questions" style="margin:12px 6px">
                         <div class="questions" style="margin-bottom:3px;display:flex">
                             <h4 style="width:90%">What is the most bizarre and rare syndrome you've personally encountered or read about?</h4>
-                            <div style="width:6%"><i class="fa fa-times"></i></div>
+                            <div style="width:6%;margin:15px 6px"><i class="fa fa-times"></i></div>
                         </div>
 
                         <!-- .below_only_questions start -->
@@ -359,7 +359,7 @@ HTML;
                     <div class="posts_and_questions" style="margin:12px 6px">
                         <div class="questions" style="margin-bottom:3px;display:flex">
                             <h4 style="width:90%">Doctors: What's the worst piece of health advice you hear non-professionals give all the time?</h4>
-                            <div style="width:6%"><i class="fa fa-times"></i></div>
+                            <div style="width:6%;margin:15px 6px"><i class="fa fa-times"></i></div>
                         </div>
 
                         <!-- .below_only_questions start -->
