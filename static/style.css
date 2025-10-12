@@ -496,7 +496,8 @@ h1, h2, h3, h4, h5, h6{
 .discover_spaces_pp_img {
     width:100%;
     height:auto;
-    border-radius:9px
+    border-radius:9px;
+    overflow:hidden;
 }
 /* -- spaces page starts -- */
 
