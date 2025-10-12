@@ -77,10 +77,10 @@ h1, h2, h3, h4, h5, h6{
 .button{
     background-color:var(--site_color_alt);
     color:var(--site_color_main);
-    font-size:18px;
+    font-size:15px;
     border:0px;
     padding:8px 17px;
-    border-radius:9px;
+    border-radius:15px;
 }
 
 .menu_list {
