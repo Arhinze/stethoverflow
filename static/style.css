@@ -320,19 +320,6 @@ h1, h2, h3, h4, h5, h6{
     border-radius:9px;
 }
 
-.index_textarea{
-    width:93%;
-    height:150px;
-    border:2px solid #ccc;
-    box-sizing:border-box;
-    background-color:var(--site_color_main);
-    border-radius:6px;
-    font-size:15px;
-    font-family:arial;
-    padding:12px 16px;
-    margin:15px;
-}
-
 .get_started{
     background-color: var(--site_color_alt);
     color:var(--site_color_main);
@@ -752,13 +739,18 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .textarea{
-    margin:6px 0px 3px 0px;
-    width:90%;
-    height:100px;
-    background-color:#03010f;
-    color:var(--site_color_alt);
-    border:1px solid #fff;
-    border-radius: 6px;
+    width:93%;
+    height:150px;
+    border:0;
+    border-top:1px solid #888;
+    border-bottom:1px solid #888;
+    box-sizing:border-box;
+    background-color:var(--site_color_main);
+    border-radius:6px;
+    font-size:15px;
+    font-family:arial;
+    padding:12px 16px;
+    margin:15px;
 }
 
 /*other pages*//**/
