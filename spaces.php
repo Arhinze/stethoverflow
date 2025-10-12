@@ -62,7 +62,7 @@ Index_Segments::header();
             <div class="discover_spaces_div" style="position:relative;border-radius:9px;border:1px solid #888;width:41%;margin-right:15px">
                 <div style="height:18%;width:auto;overflow:hidden"><img src="/static/images/spaces_cover_photo1.png" style="height:fit-content;width:auto;border-radius:9px 9px 0 0"/></div>
 
-                <div style="height:fit-content;width:100%;margin:52px 0 30px 0;background-color:#fff">
+                <div style="height:fit-content;width:100%;margin:52px 0 21px 0;background-color:#fff">
                     <div style="text-align:center;padding:15px 12px"><b>Radiography</b></div>
                     <div style="text-align:center;padding:0 12px 15px 12px">The Eyes of Medicine. <br />Can you make a diagnosis from these x-ray images?</div>
                 </div>
