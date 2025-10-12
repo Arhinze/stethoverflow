@@ -106,7 +106,7 @@ HTML;
     
                         <div style="display:flex;justify-content:space-around;margin-top:9px;">
                             <div><i class="fa fa-question-circle-o"></i> Ask</div>
-                            <div><i class="fa fa-edit"></i> Answer</div>
+                            <div><a href="/questions" style="color:#000"><i class="fa fa-edit"></i> Answer</a></div>
                             <div><i class="fa fa-pencil"></i> Post</div>
                             <div></div>
                         </div>
