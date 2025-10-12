@@ -28,7 +28,7 @@ Index_Segments::header();
     </div><!-- .posts_and_questions_div ends -->
 
     <!-- .write_answer starts -->
-    <div class="write_answer" id="write_answer_div1" style="display:block">
+    <div class="write_answer" id="write_answer_div1" style="display:none">
         <!-- .write_answer_top starts -->
         <div class="write_answer_top">
             <div style="font-size:18px;color:#888" onclick="show_div('write_answer_div1')"><b> X </b></div>
