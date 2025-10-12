@@ -35,18 +35,19 @@ Index_Segments::header();
             <div class="button" style="font-size:12px">Post</div>
         </div><!-- .write_answer_top ends -->
         <div style="display:flex">
-            <div style="width:30px;height:30px;border:2px solid #d6e3fd;border-radius:100%;margin-right:23px">
-                <a href="/static/images/profile.png"><img src="/static/images/profile.png" style="width:27px;height:27px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
+            <div class="profile_image_div">
+                <a href="/static/images/profile.png"><img src="/static/images/profile.png" class="profile_image"/></a>
             </div>
             <div>
                 <div><b>Francis Arinze</b></b></div>
                 <div class="input">Orthopaedic Surgeon (2007 - present) &nbsp; <i class="fa fa-angle-down"></i></div>
             </div>
-            <h4 style="width:90%">What's one medical myth patients still strongly believe in your country?</h4>
-            <div style="color:#888">Add Image + </div>
-            <div class="">
-                <textarea class="textarea" placeholder="Write your answer on this"></textarea>
-            </div>
+        </div>
+        
+        <h4 style="width:90%">What's one medical myth patients still strongly believe in your country?</h4>
+        <div style="color:#888">Add Image + </div>
+        <div class="">
+            <textarea class="textarea" placeholder="Write your answer on this"></textarea>
         </div>
     </div><!-- .write_answer ends -->
 
