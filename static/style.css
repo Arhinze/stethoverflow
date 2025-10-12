@@ -240,24 +240,16 @@ h1, h2, h3, h4, h5, h6{
     font-size:18px;
 }
 
-
-
-
-
 .fa-circle {
     font-size:6px;
     color:#888;
 }
-
-
 
 .rotate_360 {
     animation: rotate_360 6s infinite .0s normal;
 }
 
 .rotate_360_once {
-    /*width:60px;
-    height:60px;*/
     animation: rotate_360_once 6s 1 .0s normal;
 }
 
@@ -318,41 +310,6 @@ h1, h2, h3, h4, h5, h6{
     width:75%; 
     height:auto;
     border-radius:9px;
-}
-
-.get_started{
-    background-color: var(--site_color_alt);
-    color:var(--site_color_main);
-    border-radius: 9px;
-    border:1px solid #ff9100;
-    padding:12px;
-    font-weight:bold;
-    font-size:18px;
-    margin:24px 6px;
-    display: flex;
-    justify-content: center;
-}
-
-.get_started i{
-    margin-left: 6px;
-}
-
-.get_started_img_div{
-    margin-right:9px;
-}
-
-.get_started_img{
-    width:30px;
-    height:30px;
-    border-radius: 100%;
-    border: 1px solid var(--site_color_main);
-}
-
-.bt_input_div{
-    padding:6px 9px; 
-    border:2px solid #888;
-    border-radius:6px;
-    margin:9px 3px
 }
 
 .faq .header_text{
@@ -424,19 +381,6 @@ h1, h2, h3, h4, h5, h6{
     margin:8px 6px;
 }
 
-
-
-
-
-.close_bt_input_div{
-    position:relative;
-    float: right;
-}
-
-.close_where_to_get_wa .fa-x-icon, .close_bt_input_div .fa-x-icon{
-    margin-top:-5px;
-}
-
 .pop_up{
     text-align:center;
     position:fixed;
@@ -452,45 +396,6 @@ h1, h2, h3, h4, h5, h6{
     padding:24px;
     animation:pop_up .2s 1 2s reverse;
     z-index:5;
-}
-
-.dashboard_top_section {
-    margin:0;
-}
-
-.dashboard_top_div {
-    color:#ff9100;
-    background-color:#ffdaa9;
-    border-radius:9px;
-    margin:18px;
-    width:75px;
-    height:60px;
-    padding-top:15px;
-    font-size:42px;
-    text-align:center;
-}
-
-.dashboard_top_text{
-    font-size:15px;
-    text-align:center;
-}
-
-.dashboard_form{
-    background-color:#fff;
-    padding:12px;
-    border-radius:9px;
-    border:1px solid #ff9100;
-}
-
-.dashboard_input {
-    border:1px solid #888;
-    margin:9px 3px;
-    height:42px;
-    width:96%;
-    padding:6px;
-    border-radius:9px;
-    box-shadow:0 0 3px 0 #ff9100 inset;
-    font-size:16px;
 }
 
 @keyframes pop_up{
@@ -512,6 +417,28 @@ h1, h2, h3, h4, h5, h6{
         display:none;
     }
 }
+
+
+/* -- questions page starts -- */
+.write_answer{
+    width:100%;
+    padding:15px;
+    height:100%;
+    border-radius:6px 6px 0 0;
+    background-color:#fff;
+    position:fixed;
+    top:0;
+    z-index:30;
+    overflow:hidden
+}
+
+.write_answer_top{
+    display:flex;
+    justify-content:space-between;
+    margin:15px;
+}
+/* -- questions page starts -- */
+
 
 .admin_user_details{
     margin-bottom:12px;

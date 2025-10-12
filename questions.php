@@ -27,26 +27,28 @@ Index_Segments::header();
         </div><!-- .below_only_questions end -->
     </div><!-- .posts_and_questions_div ends -->
 
-    <div style="width:100%;padding:15px;height:100%;border-radius:6px 6px 0 0;background-color:#fff;position:fixed;top:0;z-index:30;overflow:hidden">
-        <div style="display:flex;justify-content:space-between;margin:15px">
+    <!-- .write_answer starts -->
+    <div class="write_answer">
+        <!-- .write_answer_top starts -->
+        <div class="write_answer_top">
             <div style="font-size:18px;color:#888"> X </div>
             <div class="button" style="font-size:12px">Post</div>
-            <div style="display:flex">
-                <div style="width:30px;height:30px;border:2px solid #d6e3fd;border-radius:100%;margin-right:23px">
-                    <a href="/static/images/profile.png"><img src="/static/images/profile.png" style="width:27px;height:27px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
-                </div>
-                <div>
-                    <div><b>Francis Arinze</b></b></div>
-                    <div class="input">Orthopaedic Surgeon (2007 - present) &nbsp; <i class="fa fa-angle-down"></i></div>
-                </div>
-                <h4 style="width:90%">What's one medical myth patients still strongly believe in your country?</h4>
-                <div style="color:#888">Add Image + </div>
-                <div class="">
-                    <textarea class="textarea" placeholder="Write your answer on this"></textarea>
-                </div>
+        </div><!-- .write_answer_top ends -->
+        <div style="display:flex">
+            <div style="width:30px;height:30px;border:2px solid #d6e3fd;border-radius:100%;margin-right:23px">
+                <a href="/static/images/profile.png"><img src="/static/images/profile.png" style="width:27px;height:27px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
+            </div>
+            <div>
+                <div><b>Francis Arinze</b></b></div>
+                <div class="input">Orthopaedic Surgeon (2007 - present) &nbsp; <i class="fa fa-angle-down"></i></div>
+            </div>
+            <h4 style="width:90%">What's one medical myth patients still strongly believe in your country?</h4>
+            <div style="color:#888">Add Image + </div>
+            <div class="">
+                <textarea class="textarea" placeholder="Write your answer on this"></textarea>
             </div>
         </div>
-    </div>
+    </div><!-- .write_answer ends -->
 
     <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation -->
 
