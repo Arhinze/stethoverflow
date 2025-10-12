@@ -39,8 +39,8 @@ Index_Segments::header();
                 <a href="/static/images/profile.png"><img src="/static/images/profile.png" class="profile_image"/></a>
             </div>
             <div>
-                <div><b>Francis Arinze</b></b></div>
-                <div class="input">Orthopaedic Surgeon (2007 - present) &nbsp; <i class="fa fa-angle-down"></i></div>
+                <div style="font-size:12px"><b>Francis Arinze</b></b></div>
+                <div class="input" style="width:100%;font-size:12px">Orthopaedic Surgeon (2007 - present) &nbsp; <i class="fa fa-angle-down"></i></div>
             </div>
         </div>
         
