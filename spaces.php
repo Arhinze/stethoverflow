@@ -56,7 +56,7 @@ Index_Segments::header();
 
         <div class="discover_spaces_div_container">
             <div class="discover_spaces_div" style="position:relative;border-radius:9px;border:1px solid #888;width:41%">
-                <div style="height:9%;width:auto;overflow:hidden"><img src="/static/images/spaces_cover_photo1.png" style="height:fit-content;width:auto;overflow:hidden;border-radius:9px 9px 0 0"/></div>
+                <div style="height:9%;width:auto;overflow:hidden"><img src="/static/images/spaces_cover_photo1.png" style="height:fit-content;width:auto;border-radius:9px 9px 0 0"/></div>
 
                 <div style="height:fit-content;width:100%;margin-top:30px;background-color:#fff">
                     <div style="text-align:center;padding:15px 12px"><b>Radiography</b></div>
