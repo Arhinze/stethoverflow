@@ -17,7 +17,7 @@ Index_Segments::header();
     <div class="posts_and_questions" style="margin:12px 6px">
         <div class="questions" style="margin-bottom:3px;display:flex">
             <h4 style="width:90%">What's one medical myth patients still strongly believe in your country?</h4>
-            <div style="width:6%;margin-top:24px;margin-left:6px"><i class="fa fa-times"></i></div>
+            <div style="width:6%;margin-top:24px;margin-left:6px;color:#888"><i class="fa fa-times"></i></div>
         </div>
 
         <!-- .below_only_questions start -->
