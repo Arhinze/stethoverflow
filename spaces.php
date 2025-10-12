@@ -58,12 +58,12 @@ Index_Segments::header();
             <div class="discover_spaces_div" style="position:relative;border-radius:9px;border:1px solid #888;width:41%">
                 <div style="height:9%;width:auto;overflow:hidden"><img src="/static/images/spaces_cover_photo1.png" style="height:fit-content;width:auto;border-radius:9px 9px 0 0"/></div>
 
-                <div style="height:fit-content;width:100%;margin-top:30px;background-color:#fff">
+                <div style="height:fit-content;width:100%;margin:30px 0 36px 0;background-color:#fff">
                     <div style="text-align:center;padding:15px 12px"><b>Radiography</b></div>
-                    <div style="text-align:center;padding:0 12px 15px 12px">The Eyes of Medicine. Can you make a diagnosis from these x-ray images?</div>
+                    <div style="text-align:center;padding:0 12px 15px 12px">The Eyes of Medicine. <br />Can you make a diagnosis from these x-ray images?</div>
                 </div>
 
-                <div style="position:absolute;height:36%;width:36%;border-radius:9px;border:3px solid #2b8eeb;top:15%;left:25%"><img src="/static/images/spaces_profile_photo1.png" style="width:100%;height:auto;border-radius:9px"/></div>
+                <div style="position:absolute;height:25%;width:25%;border-radius:9px;border:3px solid #2b8eeb;top:15%;left:25%"><img src="/static/images/spaces_profile_photo1.png" style="width:100%;height:auto;border-radius:9px"/></div>
             </div>
         </div>
 
