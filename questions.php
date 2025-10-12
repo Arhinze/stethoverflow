@@ -28,10 +28,10 @@ Index_Segments::header();
     </div><!-- .posts_and_questions_div ends -->
 
     <!-- .write_answer starts -->
-    <div class="write_answer">
+    <div class="write_answer" id="write_answer_div1">
         <!-- .write_answer_top starts -->
         <div class="write_answer_top">
-            <div style="font-size:18px;color:#888"><b> X </b></div>
+            <div style="font-size:18px;color:#888" onclick="show_div('write_answer_div1')"><b> X </b></div>
             <div class="button" style="font-size:12px">Post</div>
         </div><!-- .write_answer_top ends -->
         <div style="display:flex">
