@@ -35,10 +35,10 @@ Index_Segments::header();
             <div class="button" style="font-size:12px">Post</div>
         </div><!-- .write_answer_top ends -->
         <div style="display:flex">
-            <div class="profile_image_div">
+            <div class="profile_image_div" style="margin-top:9px">
                 <a href="/static/images/profile.png"><img src="/static/images/profile.png" class="profile_image"/></a>
             </div>
-            <div>
+            <div style="margin-left:-13px">
                 <div style="font-size:12px"><b>Francis Arinze</b></b></div>
                 <div class="input" style="width:100%;font-size:12px">Orthopaedic Surgeon (2007 - present) &nbsp; <i class="fa fa-angle-down"></i></div>
             </div>
