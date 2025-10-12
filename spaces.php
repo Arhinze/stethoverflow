@@ -93,6 +93,41 @@ Index_Segments::header();
                 <div style="position:absolute;height:70px;width:70px;border-radius:9px;border:1px solid #888;top:15%;left:28%;"><img src="/static/images/spaces_profile_photo3.png" style="width:100%;height:auto;border-radius:9px"/></div>
             </div><!-- .discover_spaces_div3 ends -->
 
+            <!-- .discover_spaces_div4 starts -->
+            <div class="discover_spaces_div" style="position:relative;border-radius:9px;border:1px solid #888;width:41%">
+                <div style="height:9%;width:auto;overflow:hidden"><img src="/static/images/spaces_cover_photo4.png" style="height:fit-content;width:auto;border-radius:9px 9px 0 0"/></div>
+
+                <div style="height:fit-content;width:100%;margin:42px 0;background-color:#fff">
+                    <div style="text-align:center;padding:15px 12px"><b>Neuro Surgery</b></div>
+                    <div style="text-align:center;padding:0 12px 15px 12px">It's pretty interesting that the brain is the only organ that can educate itself about itself.</div>
+                </div>
+
+                <div style="position:absolute;height:70px;width:70px;border-radius:9px;border:1px solid #888;top:15%;left:28%;"><img src="/static/images/spaces_profile_photo4.png" style="width:100%;height:auto;border-radius:9px"/></div>
+            </div><!-- .discover_spaces_div4 ends -->
+
+            <!-- .discover_spaces_div5 starts -->
+            <div class="discover_spaces_div" style="position:relative;border-radius:9px;border:1px solid #888;width:41%">
+                <div style="height:9%;width:auto;overflow:hidden"><img src="/static/images/spaces_cover_photo5.png" style="height:fit-content;width:auto;border-radius:9px 9px 0 0"/></div>
+
+                <div style="height:fit-content;width:100%;margin:42px 0;background-color:#fff">
+                    <div style="text-align:center;padding:15px 12px"><b>Dermatology</b></div>
+                    <div style="text-align:center;padding:0 12px 15px 12px">Do you want to know why your skin is the way it is? and how you can achieve and maintain a fresh well nourished skin?</div>
+                </div>
+
+                <div style="position:absolute;height:70px;width:70px;border-radius:9px;border:1px solid #888;top:15%;left:28%;"><img src="/static/images/spaces_profile_photo4.png" style="width:100%;height:auto;border-radius:9px"/></div>
+            </div><!-- .discover_spaces_div4 ends -->
+
+            <!-- .discover_spaces_div6 starts -->
+            <div class="discover_spaces_div" style="position:relative;border-radius:9px;border:1px solid #888;width:41%">
+                <div style="height:9%;width:auto;overflow:hidden"><img src="/static/images/spaces_cover_photo6.png" style="height:fit-content;width:auto;border-radius:9px 9px 0 0"/></div>
+
+                <div style="height:fit-content;width:100%;margin:42px 0;background-color:#fff">
+                    <div style="text-align:center;padding:15px 12px"><b>Medical Movies and Series</b></div>
+                    <div style="text-align:center;padding:0 12px 15px 12px">We discuss about the best medical series and movies that provide the blend of factual and futuristic medical practices as well as have great entertainment value.</div>
+                </div>
+
+                <div style="position:absolute;height:70px;width:70px;border-radius:9px;border:1px solid #888;top:15%;left:28%;"><img src="/static/images/spaces_profile_photo6.png" style="width:100%;height:auto;border-radius:9px"/></div>
+            </div><!-- .discover_spaces_div6 ends -->
 
         </div><!-- .discover_spaces_div_conainer starts -->
     </div><!-- .discover_spaces ends -->
