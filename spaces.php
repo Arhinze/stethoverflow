@@ -71,7 +71,7 @@ Index_Segments::header();
             </div><!-- .discover_spaces_div1 ends -->
 
             <!-- .discover_spaces_div2 starts -->
-            <div class="discover_spaces_div" style="position:relative;border-radius:9px;border:1px solid #888;width:41%">
+            <div class="discover_spaces_div" style="position:relative;border-radius:9px;border:1px solid #888;width:41%;margin-right:15px">
                 <div style="height:9%;width:auto;overflow:hidden"><img src="/static/images/spaces_cover_photo2.png" style="height:fit-content;width:auto;border-radius:9px 9px 0 0"/></div>
 
                 <div style="height:fit-content;width:100%;margin:42px 0;background-color:#fff">
@@ -83,7 +83,7 @@ Index_Segments::header();
             </div><!-- .discover_spaces_div2 ends -->
 
             <!-- .discover_spaces_div3 starts -->
-            <div class="discover_spaces_div" style="position:relative;border-radius:9px;border:1px solid #888;width:41%">
+            <div class="discover_spaces_div" style="position:relative;border-radius:9px;border:1px solid #888;width:41%;margin-right:15px">
                 <div style="height:9%;width:auto;overflow:hidden"><img src="/static/images/spaces_cover_photo3.png" style="height:fit-content;width:auto;border-radius:9px 9px 0 0"/></div>
 
                 <div style="height:fit-content;width:100%;margin:42px 0;background-color:#fff">
@@ -95,7 +95,7 @@ Index_Segments::header();
             </div><!-- .discover_spaces_div3 ends -->
 
             <!-- .discover_spaces_div4 starts -->
-            <div class="discover_spaces_div" style="position:relative;border-radius:9px;border:1px solid #888;width:41%">
+            <div class="discover_spaces_div" style="position:relative;border-radius:9px;border:1px solid #888;width:41%;margin-right:15px">
                 <div style="height:9%;width:auto;overflow:hidden"><img src="/static/images/spaces_cover_photo4.png" style="height:fit-content;width:auto;border-radius:9px 9px 0 0"/></div>
 
                 <div style="height:fit-content;width:100%;margin:42px 0;background-color:#fff">
@@ -107,7 +107,7 @@ Index_Segments::header();
             </div><!-- .discover_spaces_div4 ends -->
 
             <!-- .discover_spaces_div5 starts -->
-            <div class="discover_spaces_div" style="position:relative;border-radius:9px;border:1px solid #888;width:41%">
+            <div class="discover_spaces_div" style="position:relative;border-radius:9px;border:1px solid #888;width:41%;margin-right:15px">
                 <div style="height:9%;width:auto;overflow:hidden"><img src="/static/images/spaces_cover_photo5.png" style="height:fit-content;width:auto;border-radius:9px 9px 0 0"/></div>
 
                 <div style="height:fit-content;width:100%;margin:42px 0;background-color:#fff">
@@ -119,7 +119,7 @@ Index_Segments::header();
             </div><!-- .discover_spaces_div4 ends -->
 
             <!-- .discover_spaces_div6 starts -->
-            <div class="discover_spaces_div" style="position:relative;border-radius:9px;border:1px solid #888;width:41%">
+            <div class="discover_spaces_div" style="position:relative;border-radius:9px;border:1px solid #888;width:41%;margin-right:15px">
                 <div style="height:9%;width:auto;overflow:hidden"><img src="/static/images/spaces_cover_photo6.png" style="height:fit-content;width:auto;border-radius:9px 9px 0 0"/></div>
 
                 <div style="height:fit-content;width:100%;margin:42px 0;background-color:#fff">
