@@ -160,7 +160,7 @@ h1, h2, h3, h4, h5, h6{
     padding:9px;
     padding-bottom:21px;
     height:24px;
-    background-color: #888;
+    background-color: var(--site_color_alt);
     z-index:15;
 }
 
