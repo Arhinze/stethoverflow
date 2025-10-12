@@ -29,7 +29,7 @@ Index_Segments::header();
 
     <div style="width:100%;height:100%;border-radius:6px 6px 0 0;background-color:#fff;position:fixed;top:0;z-index:30">
         <div style="display:flex;justify-content:space-between;margin:15px">
-            <div style="font-size:27px;color:#888"> X </div>
+            <div style="font-size:21px;color:#888"> X </div>
             <div class="button" style="font-size:12px">Post</div>
         </div>
     </div>
