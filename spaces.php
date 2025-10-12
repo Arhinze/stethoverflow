@@ -115,7 +115,7 @@ Index_Segments::header();
                     <div style="text-align:center;padding:0 12px 15px 12px">Do you want to know why your skin is the way it is? and how you can achieve and maintain a fresh well nourished skin?</div>
                 </div>
 
-                <div style="position:absolute;height:70px;width:70px;border-radius:9px;border:1px solid #888;top:15%;left:28%;"><img src="/static/images/spaces_profile_photo4.png" style="width:100%;height:auto;border-radius:9px"/></div>
+                <div style="position:absolute;height:70px;width:70px;border-radius:9px;border:1px solid #888;top:15%;left:28%;"><img src="/static/images/spaces_profile_photo5.png" style="width:100%;height:auto;border-radius:9px"/></div>
             </div><!-- .discover_spaces_div4 ends -->
 
             <!-- .discover_spaces_div6 starts -->
