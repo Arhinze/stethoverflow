@@ -56,7 +56,7 @@ Index_Segments::header();
 
         <div class="discover_spaces_div_container">
             <div class="discover_spaces_div" style="position:relative;border-radius:9px;border:1px solid #888;width:41%;height:fit-content">
-                <div style="height:15%;width:auto;overflow:hidden"><!--<img src="/static/images/spaces_cover_photo1.png" style="height:15%;border-radius:9px 9px 0 0"/>--></div>
+                <div style="height:15%;width:auto;overflow:hidden">Hello !!<!--<img src="/static/images/spaces_cover_photo1.png" style="height:15%;border-radius:9px 9px 0 0"/>--></div>
 
                 <!--<div style="position:absolute;height:18%;width:18%;border-radius:9px;border:1px solid #fff;top:8%;left:32%"><img src="/static/images/spaces_profile_photo1.png" style="width:100%;height:auto;border-radius:9px"/></div>-->
 
