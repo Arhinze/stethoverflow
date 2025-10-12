@@ -55,7 +55,7 @@ Index_Segments::header();
     <div class="discover_spaces" style="padding:12px">
         <h3>Spaces You May Like</h3>
         
-        <div style="overflow:auto;width:fit-content">
+        <div style="width:fit-content;overflow-x:auto">
         <!-- .discover_spaces_div_container starts -->
         <div class="discover_spaces_div_container" style="display:flex;overflow:visible">
             <!-- .discover_spaces_div1 starts -->
