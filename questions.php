@@ -31,7 +31,7 @@ Index_Segments::header();
     <div class="write_answer">
         <!-- .write_answer_top starts -->
         <div class="write_answer_top">
-            <div style="font-size:18px;color:#888"> X </div>
+            <div style="font-size:18px;color:#888"><b> X </b></div>
             <div class="button" style="font-size:12px">Post</div>
         </div><!-- .write_answer_top ends -->
         <div style="display:flex">
