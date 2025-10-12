@@ -63,7 +63,7 @@ Index_Segments::header();
                     <div style="text-align:center;padding:0 12px 15px 12px">The Eyes of Medicine. <br />Can you make a diagnosis from these x-ray images?</div>
                 </div>
 
-                <div style="position:absolute;height:70px;width:70px;border-radius:9px;border:3px solid #2b8eeb;top:15%;left:25%"><img src="/static/images/spaces_profile_photo1.png" style="width:100%;height:auto;border-radius:9px"/></div>
+                <div style="position:absolute;height:70px;width:70px;border-radius:9px;border:1px solid #888;top:15%;left:25%"><img src="/static/images/spaces_profile_photo1.png" style="width:100%;height:auto;border-radius:9px"/></div>
             </div>
         </div>
 
