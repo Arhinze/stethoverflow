@@ -54,11 +54,12 @@ Index_Segments::header();
     <!-- .discover_spaces starts -->
     <div class="discover_spaces" style="padding:12px">
         <h3>Spaces You May Like</h3>
-
+        
+        <div style="overflow:hidden;width:fit-content">
         <!-- .discover_spaces_div_container starts -->
-        <div class="discover_spaces_div_container">
+        <div class="discover_spaces_div_container" style="display:flex;overflow:scroll">
             <!-- .discover_spaces_div1 starts -->
-            <div class="discover_spaces_div" style="position:relative;border-radius:9px;border:1px solid #888;width:41%">
+            <div class="discover_spaces_div" style="position:relative;border-radius:9px;border:1px solid #888;width:41%;margin-right:15px">
                 <div style="height:9%;width:auto;overflow:hidden"><img src="/static/images/spaces_cover_photo1.png" style="height:fit-content;width:auto;border-radius:9px 9px 0 0"/></div>
 
                 <div style="height:fit-content;width:100%;margin:42px 0;background-color:#fff">
@@ -130,6 +131,7 @@ Index_Segments::header();
             </div><!-- .discover_spaces_div6 ends -->
 
         </div><!-- .discover_spaces_div_conainer starts -->
+        </div>
     </div><!-- .discover_spaces ends -->
 </div><!-- .main_body ends -->
 
