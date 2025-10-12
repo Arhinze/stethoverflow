@@ -51,8 +51,8 @@ Index_Segments::header();
 
     <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation -->
 
-    <div class="discover_spaces">
-        <h3 style="padding:12px 9px">Discover Spaces</h3>
+    <div class="discover_spaces" style="padding:12px">
+        <h3>Discover Spaces</h3>
 
         <div class="discover_spaces_div_container">
             <div class="discover_spaces_div" style="position:relative;border-radius:9px;border:1px solid #888">
