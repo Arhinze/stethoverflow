@@ -28,9 +28,9 @@ Index_Segments::header();
     </div><!-- .posts_and_questions_div ends -->
 
     <div style="width:100%;height:100%;border-radius:6px 6px 0 0;background-color:#fff;position:fixed;top:0;z-index:30">
-        <div style="position:relative">
-            <div style="position:absolute;float:left"><i class="fa fa-times"></i></div>
-            <div class="button" style="position:absolute;float:right">Post</div>
+        <div style="display:flex;justify-content:space-between">
+            <div><i class="fa fa-times"></i></div>
+            <div class="button">Post</div>
         </div>
     </div>
 
