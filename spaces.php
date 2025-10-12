@@ -52,12 +52,14 @@ Index_Segments::header();
     <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation -->
 
     <div class="discover_spaces" style="padding:12px">
-        <h3>Discover Spaces</h3>
+        <h3>Spaces You May Like</h3>
 
         <div class="discover_spaces_div_container">
             <div class="discover_spaces_div" style="position:relative;border-radius:9px;border:1px solid #888;width:41%;height:fit-content">
                 <div style="height:15%;width:100%;overflow:hidden"><img src="/static/images/spaces_cover_photo1.png" style="height:15%;border-radius:9px 9px 0 0"/></div>
-                <div style="position:absolute;height:18%;width:18%;border-radius:9px;border:1px solid #fff;top:8%;left:32%"><img src="/static/images/spaces_profile_photo1.png" style="width:100%;height:auto;border-radius:9px"/></div>
+
+                <!--<div style="position:absolute;height:18%;width:18%;border-radius:9px;border:1px solid #fff;top:8%;left:32%"><img src="/static/images/spaces_profile_photo1.png" style="width:100%;height:auto;border-radius:9px"/></div>-->
+
                 <div style="height:85%;width:100%;background-color:#fff">
                     <div style="text-align:center;padding:15px 12px"><b>Radiography</b></div>
                     <div style="text-align:center;padding:0 12px 15px 12px">The Eyes of Medicine. Can yoy make a diagnosis from these x-ray images?</div>
