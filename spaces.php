@@ -6,7 +6,7 @@ Index_Segments::header();
 <div class="main_body">
     <!-- .spaces start -->
     <div class="your_spaces">
-        <div style="border-bottom:2px solid #2b8eeb;padding:15px 9px"><h3>Your Spaces</h3></div>
+        <div style="border-bottom:2px solid #2b8eeb;padding:12px 9px"><h3>Your Spaces</h3></div>
         
         <div style="display:flex;justify-content:space-between;padding:12px;border-bottom:1px solid #888">
             <div><img src="/static/images/space1.png"/> &nbsp; <b>Medical Robotics</b></div>
@@ -52,7 +52,7 @@ Index_Segments::header();
     <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation -->
 
     <div class="discover_spaces">
-        <h3>Discover Spaces</h3>
+        <h3 style="padding:12px 9px">Discover Spaces</h3>
 
 
     </div>
