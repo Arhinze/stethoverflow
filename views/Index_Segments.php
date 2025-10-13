@@ -129,25 +129,24 @@ HTML;
 
                         <div class="questions" style="margin-bottom:3px"><h4>What are some life saving surgical procedures you've witnessed?</h4></div>
 
-                        <div class="answers" style="padding:6px">In 2014, 17-year-old Grace from the Democratic Republic of Congo underwent life-saving surgery to remove a very aggressive tumor. 
+                        <div class="answers" style="padding:6px">In 2014, 17-year-old Grace from the Democratic Republic of Congo underwent life-saving surgery to remove a very aggressive tumor.                            
+                            <p>The huge disfigurement was sprouting from the centre of her lower jaw bone and was formed by cells that usually make the enamel of teeth.</p>
+    
+                            <p>If she didn't have it removed, it would have eventually suffocated her to death.</p>
                             
-                        <p>The huge disfigurement was sprouting from the centre of her lower jaw bone and was formed by cells that usually make the enamel of teeth.</p>
-
-                        <p>If she didn't have it removed, it would have eventually suffocated her to death.</p>
-                        
-                        <div><img src="/static/images/post1.png" style="width:100%;height:auto"/></div>
-
-                    <div style="display:flex;justify-content:space-between;margin:12px 0 -2px 0;color:#888">
-                        <div class="" style="display:flex">
-                            <div><i class="fa fa-heart-o"></i> 10</div>
-                            <div style="margin-left:10px"><i class="fa fa-comment-o"></i> 9</div>
-                            <div style="margin-left:10px"><i class="fa fa-retweet"></i> 3</div>
-                            <div style="margin-left:10px"><i class="fa fa-share-alt"></i> 5</div>
+                            <div><img src="/static/images/post1.png" style="width:100%;height:auto"/></div>
                         </div>
-                        <div>
-                            ...
-                        </div>
-                    </div>
+
+                        <div style="display:flex;justify-content:space-between;margin:12px 0 -2px 0;color:#888">
+                            <div class="" style="display:flex">
+                                <div><i class="fa fa-heart-o"></i> 10</div>
+                                <div style="margin-left:10px"><i class="fa fa-comment-o"></i> 9</div>
+                                <div style="margin-left:10px"><i class="fa fa-retweet"></i> 3</div>
+                                <div style="margin-left:10px"><i class="fa fa-share-alt"></i> 5</div>
+                            </div>
+                            <div>
+                                ...
+                            </div>
                         </div>
                     </div><!-- .posts_and_questions_div ends -->
 
