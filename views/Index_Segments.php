@@ -159,7 +159,7 @@ HTML;
                                 <div style="margin-left:15px;color:#888">Replying to @arhinze</div>
                             </div>
                             <div>
-                                <textarea class="textarea"></textarea>
+                                <textarea class="textarea" style="height:300px"></textarea>
                             </div>
                             <div><button class="button">Reply</button></div>
                         </div>
