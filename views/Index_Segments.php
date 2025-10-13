@@ -152,12 +152,15 @@ HTML;
 
                         <!-- .comment starts -->
                         <div>
-                            <div style="display:flex">
-                                <div class="profile_image_div">
-                                    <a href="/static/images/profile.png"><img src="/static/images/profile.png" class="profile_image"/></a>
+                            <div style="display:flex;justify-content:space-between">
+                                <div style="display:flex">
+                                    <div class="profile_image_div">
+                                        <a href="/static/images/profile.png"><img src="/static/images/profile.png" class="profile_image"/></a>
+                                    </div>
+                                    <div style="margin-left:-17px;margin-top:7px;color:#888">Replying to <a href="/">@arhinze</a></div>
                                 </div>
-                                <div style="margin-left:-17px;margin-top:7px;color:#888">Replying to <a href="/">@arhinze</a></div>
                             </div>
+                            <div><i class="fa fa-times"></i></div>
                             <div>
                                 <textarea class="textarea" style="height:150px"></textarea>
                             </div>
