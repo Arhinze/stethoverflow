@@ -152,11 +152,11 @@ HTML;
 
                         <!-- .comment starts -->
                         <div>
-                            <div class="display:flex">
+                            <div style="display:flex">
                                 <div class="profile_image_div">
                                     <a href="/static/images/profile.png"><img src="/static/images/profile.png" class="profile_image"/></a>
                                 </div>
-                                <div style="margin-left:6px;color:#888">Replying to @arhinze</div>
+                                <div style="margin-left:12px;color:#888">Replying to @arhinze</div>
                             </div>
                             <div>
                                 <textarea class="textarea" style="height:150px"></textarea>
