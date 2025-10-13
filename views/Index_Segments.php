@@ -137,6 +137,7 @@ HTML;
                             <div><img src="/static/images/post1.png" style="width:100%;height:auto"/></div>
                         </div>
 
+                        <!-- .like,comment and share icons start -->
                         <div style="display:flex;justify-content:space-between;margin:12px 9px -2px 9px;color:#888">
                             <div class="" style="display:flex">
                                 <div><i class="fa fa-heart-o"></i> 10</div>
@@ -147,7 +148,22 @@ HTML;
                             <div>
                                 ...
                             </div>
+                        </div><!-- .like,comment and share icons end -->
+
+                        <!-- .comment starts -->
+                        <div>
+                            <div class="display:flex">
+                                <div class="profile_image_div">
+                                    <a href="/static/images/profile.png"><img src="/static/images/profile.png" class="profile_image"/></a>
+                                </div>
+                                <div style="margin-left:15px;color:#888">Replying to @arhinze</div>
+                                <div>
+                                    <textarea class="textarea"></textarea>
+                                </div>
+                                <div><button class="button">Reply</button></div>
+                            </div>
                         </div>
+                        <!-- .comment ends -->
                     </div><!-- .posts_and_questions_div ends -->
 
                     <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation -->
