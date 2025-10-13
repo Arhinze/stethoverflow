@@ -159,7 +159,7 @@ HTML;
                                     </div>
                                     <div style="margin-left:-17px;margin-top:7px;color:#888">Replying to <a href="/">@arhinze</a></div>
                                 </div>
-                                <div><i class="fa fa-times"></i></div>
+                                <div style="margin-top:10px"><i class="fa fa-times"></i></div>
                             </div>
                             <div>
                                 <textarea class="textarea" style="height:150px"></textarea>
