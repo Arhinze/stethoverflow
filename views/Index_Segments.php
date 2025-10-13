@@ -141,8 +141,8 @@ HTML;
                         <div class="" style="display:flex">
                             <div><i class="fa fa-heart-o"></i> 10</div>
                             <div style="margin-left:6px"><i class="fa fa-comment-o"></i> 9</div>
-                            <div style="margin-left:6px"><i class="fa fa-retweet"></i></div>
-                            <div style="margin-left:6px"><i class="fa fa-share-alt"></i></div>
+                            <div style="margin-left:6px"><i class="fa fa-retweet"></i> 3</div>
+                            <div style="margin-left:6px"><i class="fa fa-share-alt"></i> 5</div>
                         </div>
                         <div>
                             ...
