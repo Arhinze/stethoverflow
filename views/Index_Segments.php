@@ -156,10 +156,10 @@ HTML;
                                 <div class="profile_image_div">
                                     <a href="/static/images/profile.png"><img src="/static/images/profile.png" class="profile_image"/></a>
                                 </div>
-                                <div style="margin-left:15px;color:#888">Replying to @arhinze</div>
+                                <div style="margin-left:6px;color:#888">Replying to @arhinze</div>
                             </div>
                             <div>
-                                <textarea class="textarea" style="height:300px"></textarea>
+                                <textarea class="textarea" style="height:150px"></textarea>
                             </div>
                             <div><button class="button">Reply</button></div>
                         </div>
