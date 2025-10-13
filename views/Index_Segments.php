@@ -135,7 +135,19 @@ HTML;
 
                         <p>If she didn’t have it removed, it would have eventually suffocated her to death.</p>
                         
-                        <img src="/static/images/post1.png" style="width:100%;height:auto"/>
+                        <div><img src="/static/images/post1.png" style="width:100%;height:auto"/></div>
+
+                    <div style="display:flex;justify-content:space-between">
+                        <div class="" style="display:flex">
+                            <div><i class="fa fa-clap"></i> 10</div>
+                            <div><i class="fa fa-comment-o"></i> 9</div>
+                            <div><i class="fa fa-retweet"></i></div>
+                            <div><i class="fa fa-share-o"></i></div>
+                        </div>
+                        <div>
+                            ...
+                        </div>
+                    </div>
                         </div>
                     </div><!-- .posts_and_questions_div ends -->
 
