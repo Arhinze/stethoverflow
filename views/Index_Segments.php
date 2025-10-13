@@ -137,12 +137,12 @@ HTML;
                         
                         <div><img src="/static/images/post1.png" style="width:100%;height:auto"/></div>
 
-                    <div style="display:flex;justify-content:space-between">
+                    <div style="display:flex;justify-content:space-between;margin:12px 0">
                         <div class="" style="display:flex">
                             <div><i class="fa fa-heart-o"></i> 10</div>
                             <div style="margin-left:6px"><i class="fa fa-comment-o"></i> 9</div>
                             <div style="margin-left:6px"><i class="fa fa-retweet"></i></div>
-                            <div style="margin-left:6px"><i class="fa fa-share-o"></i></div>
+                            <div style="margin-left:6px"><i class="fa fa-share-alt"></i></div>
                         </div>
                         <div>
                             ...
