@@ -157,11 +157,11 @@ HTML;
                                     <a href="/static/images/profile.png"><img src="/static/images/profile.png" class="profile_image"/></a>
                                 </div>
                                 <div style="margin-left:15px;color:#888">Replying to @arhinze</div>
-                                <div>
-                                    <textarea class="textarea"></textarea>
-                                </div>
-                                <div><button class="button">Reply</button></div>
                             </div>
+                            <div>
+                                <textarea class="textarea"></textarea>
+                            </div>
+                            <div><button class="button">Reply</button></div>
                         </div>
                         <!-- .comment ends -->
                     </div><!-- .posts_and_questions_div ends -->
