@@ -137,7 +137,7 @@ HTML;
                             <div><img src="/static/images/post1.png" style="width:100%;height:auto"/></div>
                         </div>
 
-                        <div style="display:flex;justify-content:space-between;margin:12px 0 -2px 0;color:#888">
+                        <div style="display:flex;justify-content:space-between;margin:12px 9px -2px 9px;color:#888">
                             <div class="" style="display:flex">
                                 <div><i class="fa fa-heart-o"></i> 10</div>
                                 <div style="margin-left:10px"><i class="fa fa-comment-o"></i> 9</div>
