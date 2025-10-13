@@ -156,7 +156,7 @@ HTML;
                                 <div class="profile_image_div">
                                     <a href="/static/images/profile.png"><img src="/static/images/profile.png" class="profile_image"/></a>
                                 </div>
-                                <div style="margin-left:-17px;margin-bottom:-11px;color:#888">Replying to <a href="/">@arhinze</a></div>
+                                <div style="margin-left:-17px;margin-bottom:-20px;color:#888">Replying to <a href="/">@arhinze</a></div>
                             </div>
                             <div>
                                 <textarea class="textarea" style="height:150px"></textarea>
