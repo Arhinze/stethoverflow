@@ -99,7 +99,7 @@ HTML;
                             <div style="width:30px;height:30px;border:2px solid #d6e3fd;border-radius:100%">
                                 <a href="$site_url/static/images/profile.png"><img src="/static/images/profile.png" style="width:27px;height:27px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
                             </div>
-                            <div class="input" style="background-color:#fff;color:#888;margin-left:-2px">What do you want to ask or post?</div>
+                            <div class="input" style="background-color:#fff;color:#888;">What do you want to ask or post?</div>
                         </div>
     
                         <div style="display:flex;justify-content:space-around;margin-top:9px;">
