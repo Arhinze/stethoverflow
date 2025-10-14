@@ -154,10 +154,10 @@ HTML;
                     <!-- .add_comment starts -->
                     <div style="display:block" class="add_comment" id="add_comment" onclick="alternate_comment_div()">
                         <div style="display:flex">
-                            <div class="profile_image_div" style="border:1px solid #fff">
+                            <div class="profile_image_div" style="border:2px solid #fff">
                                 <a href="/static/images/profile.png"><img src="/static/images/profile.png" class="profile_image"/></a>
                             </div>
-                            <div class="input" style="background-color:#fff;color:#888;margin-left:3px">Add a comment...</div>
+                            <div class="input" style="background-color:#fff;color:#888;margin-left:-11px">Add a comment...</div>
                         </div>
                     </div>
                     <!-- .add_comment ends -->
