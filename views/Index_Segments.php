@@ -124,8 +124,8 @@ HTML;
                         </div><!-- .write_answer_top ends -->
 
                         <div style="display:flex;justify-content:space-around;margin:15px 0;font-size:15px">
-                            <div onclick="alternate_add_question_and_create_post()" id="aq_text" class="aq_cp_text" style = "border-bottom:2px solid #2b8eeb"><b>Add Question</b></div>
-                            <div onclick="alternate_add_question_and_create_post()" id="cp_text" class="aq_cp_text"><b>Create Post</b></div>
+                            <div onclick="alternate_add_question_and_create_post('aq_text','add_question')" id="aq_text" class="aq_cp_text" style = "border-bottom:2px solid #2b8eeb"><b>Add Question</b></div>
+                            <div onclick="alternate_add_question_and_create_post('cp_text','create_post')" id="cp_text" class="aq_cp_text"><b>Create Post</b></div>
                         </div>
 
                         <div style="display:flex">
@@ -532,15 +532,14 @@ HTML;
                 }
             }
 
-            function alternate_add_question_and_create_post(){
-                if(document.getElementById('add_question').style.display == "block") {
-                    document.getElementById('create_post').style.display = "none";
-                    //document.getElementById('aq_text').style = "border-bottom:2px solid #2b8eeb";
-                    //document.getElementById('cp_text').style = "border:0";
-                } else if (document.getElementById('add_question').style.display == "block") {
-                    document.getElementById('create_post').style.display = "none";
-                    //document.getElementById('cp_text').style = "border-bottom:2px solid #2b8eeb";
-                    //document.getElementById('aq_text').style = "border:0";
+            function alternate_add_question_and_create_post(vari_text,vari_div){
+                show_div(vari_div);
+                if(vari_text = "aq_text"){
+                    document.getElementById('aq_text').style = "border-bottom:2px solid #2b8eeb";
+                    document.getElementById('cp_text').style = "border:0";
+                } else {
+                    document.getElementById('cp_text').style = "border-bottom:2px solid #2b8eeb";
+                    document.getElementById('aq_text').style = "border:0";
                 }
             }                                                                            
             const collection = document.getElementsByClassName("invalid");
