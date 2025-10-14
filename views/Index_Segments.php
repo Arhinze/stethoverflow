@@ -533,7 +533,7 @@ HTML;
             }
 
             function alternate_add_question_and_create_post(vari_text,vari_div){
-                if (vari_text = "aq_text"){
+                if (vari_text == "aq_text"){
                     document.getElementById('aq_text').style = "border-bottom:2px solid #2b8eeb";
                     document.getElementById('add_question').style.display = "block";
                     document.getElementById('create_post').style.display = "none";
