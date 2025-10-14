@@ -143,7 +143,6 @@ HTML;
                             <div class="question_tips">
                                 <div><b>Keep Questions Simple:</b></div>
                                 <ul>
-                                    <li>Use short sharp sentences.</li>
                                     <li>Double check your grammar.</li>
                                     <li>Start question with "why", "what", "how"</li>
                                     <li>Ensure the question has not already been asked</li>
