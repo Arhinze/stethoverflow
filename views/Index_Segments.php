@@ -44,7 +44,7 @@ class Index_Segments{
                 <div style="position:relative">
                     <div style="position:absolute;float:right;right:12px;top:12px" onclick="show_div('join_us')"><i class="fa fa-times"></i></div>
                 </div>
-                <div style="font-weight:bold;margin-top:18px">
+                <div style="font-weight:bold;margin-top:21px">
                     Join $site_name
                 </div>
                 <div>
