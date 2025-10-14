@@ -18,7 +18,7 @@ if(isset($_POST["full_name"])) {
 
 <!--HTML:-->
 <div class="main_body" style="padding:12px;margin-left:15px"><!-- .main_body starts -->
-    <div style="text-align:center;font-size:18px;margin-top:15px"><i>Welcome to</i></div>
+    <div style="text-align:center;font-size:18px;margin-top:30px;font-family:Dancing Script">Welcome to</div>
     <h1 style="font-size:30px;text-align:center">Steth<span style="color: #2b8eeb">Overflow</span></h1>
     <div style="color:#2b8eeb;font-size:15px;text-align:center;margin-top:-19px"><i class="fa fa-key"></i>&nbsp; All data is encrypted</div>
 
