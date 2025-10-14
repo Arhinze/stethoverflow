@@ -157,7 +157,7 @@ HTML;
                             <div class="profile_image_div" style="border:1px solid #fff">
                                 <a href="/static/images/profile.png"><img src="/static/images/profile.png" class="profile_image"/></a>
                             </div>
-                            <div class="input" style="background-color:#fff;color:#888;width:70%;margin-left:12px">Add a comment...</div>
+                            <div class="input" style="background-color:#fff;color:#888;margin-left:3px">Add a comment...</div>
                         </div>
                     </div>
                     <!-- .add_comment ends -->
