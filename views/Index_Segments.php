@@ -116,7 +116,7 @@ HTML;
                     <!-- .ask_or_post_div starts ~ only shown onclick -->
                     <div class="ask_or_post_div" id="ask_or_post_div" style="display:block">
                     <!-- .write_answer starts -->
-                    <div class="write_answer" id="write_answer_div1" style="display:none">
+                    <div class="write_answer">
                         <!-- .write_answer_top starts -->
                         <div class="write_answer_top">
                             <div style="font-size:18px;color:#888" onclick="show_div('ask_or_post_div')"><b> X </b></div>
