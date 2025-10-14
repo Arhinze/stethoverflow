@@ -142,7 +142,7 @@ HTML;
                             <div class="" style="display:flex">
                                 <div><i class="fa fa-heart-o"></i> 10</div>
                                 <div style="margin-left:10px"><i class="fa fa-comment-o" onclick="show_div('add_comment')"></i> 9</div>
-                                <div style="margin-left:10px"><i class="fa fa-retweet"></i> 3</div>
+                                <div style="margin-left:10px"><i class="fa fa-retweet" onclick="show_div('quote_comment_div1')"></i> 3</div>
                                 <div style="margin-left:10px"><i class="fa fa-share-alt"></i> 5</div>
                             </div>
                             <div>
@@ -182,10 +182,10 @@ HTML;
 
                     <!-- .quote_comment starts -->
                     <!-- .write_answer starts -->
-                    <div class="write_answer" id="write_answer_div1" style="display:none">
+                    <div class="write_answer" id="quote_comment_div1" style="display:none">
                         <!-- .write_answer_top starts -->
                         <div class="write_answer_top">
-                            <div style="font-size:18px;color:#888" onclick="show_div('write_answer_div1')"><b> X </b></div>
+                            <div style="font-size:18px;color:#888" onclick="show_div('quote_comment_div1')"><b> X </b></div>
                             <div class="button" style="font-size:12px">Post</div>
                         </div><!-- .write_answer_top ends -->
                         <div style="display:flex">
