@@ -450,7 +450,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .reply_comment{
-    margin-bottom:12px;
+    margin: 3px 9px 12px 9px;
 }
 /* -- comment section ends -- */
 
