@@ -141,7 +141,7 @@ HTML;
                         <div style="display:flex;justify-content:space-between;margin:12px 9px -2px 9px;color:#888">
                             <div class="" style="display:flex">
                                 <div><i class="fa fa-heart-o"></i> 10</div>
-                                <div style="margin-left:10px"><i class="fa fa-comment-o"></i> 9</div>
+                                <div style="margin-left:10px"><i class="fa fa-comment-o" onclick="show_div('add_comment')"></i> 9</div>
                                 <div style="margin-left:10px"><i class="fa fa-retweet"></i> 3</div>
                                 <div style="margin-left:10px"><i class="fa fa-share-alt"></i> 5</div>
                             </div>
@@ -150,8 +150,17 @@ HTML;
                             </div>
                         </div><!-- .like,comment and share icons end -->
 
-                        <!-- .comment starts -->
-                        <div>
+                        <!-- .add_comment starts -->
+                        <div id="add_comment" style="display:none" class="add_comment" style="display:flex;background-color: #d6e2fb;padding:3px 5px" onclick="alternate_comment_div()">
+                            <div class="profile_image_div">
+                                <a href="/static/images/profile.png"><img src="/static/images/profile.png" class="profile_image"/></a>
+                            </div>
+                            <div class="input" style="background-color:#fff;color:#888">Add a comment...</div>
+                        </div>
+                        <!-- .add_comment ends -->
+
+                        <!-- .reply_comment starts -->
+                        <div class="reply_comment" style="margin-top:9px">
                             <div style="display:flex;justify-content:space-between">
                                 <div style="display:flex">
                                     <div class="profile_image_div">
@@ -159,14 +168,14 @@ HTML;
                                     </div>
                                     <div style="margin-left:-17px;margin-top:7px;color:#888">Replying to <a href="/">@arhinze</a></div>
                                 </div>
-                                <div style="margin-top:10px;margin-right:12px;color:#888"><i class="fa fa-times"></i></div>
+                                <div style="margin-top:10px;margin-right:12px;color:#888"><i class="fa fa-times" onclick="alternate_comment_div()"></i></div>
                             </div>
                             <div>
                                 <textarea class="textarea" style="height:150px"></textarea>
                             </div>
                             <div><button class="button">Reply</button></div>
                         </div>
-                        <!-- .comment ends -->
+                        <!-- .reply_comment ends -->
                     </div><!-- .posts_and_questions_div ends -->
 
                     <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation -->
@@ -418,6 +427,16 @@ HTML;
                     document.getElementById(vari).style.display = "block";
                 } else if (document.getElementById(vari).style.display == "block") {
                     document.getElementById(vari).style.display = "none";
+                }
+            }
+
+            function alternate_comment_div(){
+                if (document.getElementById('add_comment').style.display == "block") {
+                    document.getElementById('add_comment').style.display = "none";
+                    document.getElementById('reply_comment').style.display = "block";
+                } else if (document.getElementById('add_comment').style.display == "none") {
+                    document.getElementById('add_comment').style.display = "block";
+                    document.getElementById('reply_comment').style.display = "none";
                 }
             }
                                                                                          
