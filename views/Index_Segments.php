@@ -24,7 +24,7 @@ class Index_Segments{
                 <h1 class="site_name">
                     <a href="/" style="color:#fff">$site_name<!--site_name--></a>
                 </h1>
-                <div style="margin-right:12px">
+                <div style="margin-right:12px" onclick="show_div('ask_or_post_div')">
                     <i class="fa fa-plus-circle"></i> Add
                 </div>
             </div> <a name="#top"></a> 
@@ -103,9 +103,9 @@ HTML;
                         </div>
     
                         <div style="display:flex;justify-content:space-around;margin-top:9px;">
-                            <div><i class="fa fa-question-circle-o"></i> Ask</div>
+                            <div onclick="show_div('ask_or_post_div')"><i class="fa fa-question-circle-o"></i> Ask</div>
                             <div><a href="/questions" style="color:#000"><i class="fa fa-edit"></i> Answer</a></div>
-                            <div><i class="fa fa-pencil"></i> Post</div>
+                            <div onclick="show_div('ask_or_post_div')"><i class="fa fa-pencil"></i> Post</div>
                             <div></div>
                         </div>
                     </div>
