@@ -151,32 +151,32 @@ HTML;
                         </div><!-- .like,comment and share icons end -->
                     </div><!-- .posts_and_questions_div ends -->
 
-                        <!-- .add_comment starts -->
-                        <div id="add_comment" style="display:none" class="add_comment" onclick="alternate_comment_div()">
-                            <div class="profile_image_div">
-                                <a href="/static/images/profile.png"><img src="/static/images/profile.png" class="profile_image"/></a>
-                            </div>
-                            <div class="input" style="background-color:#fff;color:#888">Add a comment...</div>
+                    <!-- .add_comment starts -->
+                    <div id="add_comment" style="display:none" class="add_comment" onclick="alternate_comment_div()">
+                        <div class="profile_image_div" style="border:1px solid #fff">
+                            <a href="/static/images/profile.png"><img src="/static/images/profile.png" class="profile_image"/></a>
                         </div>
-                        <!-- .add_comment ends -->
+                        <div class="input" style="background-color:#fff;color:#888;width:70%;margin-left:12px">Add a comment...</div>
+                    </div>
+                    <!-- .add_comment ends -->
 
-                        <!-- .reply_comment starts -->
-                        <div class="reply_comment" id="reply_comment" style="display:none">
-                            <div style="display:flex;justify-content:space-between;margin-top:9px">
-                                <div style="display:flex">
-                                    <div class="profile_image_div">
-                                        <a href="/static/images/profile.png"><img src="/static/images/profile.png" class="profile_image"/></a>
-                                    </div>
-                                    <div style="margin-left:-17px;margin-top:7px;color:#888">Replying to <a href="/">@arhinze</a></div>
+                    <!-- .reply_comment starts -->
+                    <div class="reply_comment" id="reply_comment" style="display:none">
+                        <div style="display:flex;justify-content:space-between;margin-top:9px">
+                            <div style="display:flex">
+                                <div class="profile_image_div">
+                                    <a href="/static/images/profile.png"><img src="/static/images/profile.png" class="profile_image"/></a>
                                 </div>
-                                <div style="margin-top:10px;margin-right:12px;color:#888"><i class="fa fa-times" onclick="alternate_comment_div()"></i></div>
+                                <div style="margin-left:-17px;margin-top:7px;color:#888">Replying to <a href="/">@arhinze</a></div>
                             </div>
-                            <div>
-                                <textarea class="textarea" style="height:150px"></textarea>
-                            </div>
-                            <div><button class="button">Reply</button></div>
+                            <div style="margin-top:10px;margin-right:12px;color:#888"><i class="fa fa-times" onclick="alternate_comment_div()"></i></div>
                         </div>
-                        <!-- .reply_comment ends -->
+                        <div>
+                            <textarea class="textarea" style="height:150px"></textarea>
+                        </div>
+                        <div><button class="button">Reply</button></div>
+                    </div>
+                    <!-- .reply_comment ends -->
 
                     <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation -->
 
