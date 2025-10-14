@@ -75,7 +75,7 @@ Index_Segments::header();
     <?php
         if ($error_button == "") {//if there are no errors:
     ?>
-            <div style="margin:21px 9px;border:1px solid #fff;text-align:center"><a class="input" style="color:#fff;border:1px solid #fff;background-color:#ff9100;font-weight:bold;padding:6px 9px" href="/my-account">Continue to my Account &nbsp; <i class="fa fa-arrow-right"></i></a></div>
+            <div style="margin:21px 9px;border:1px solid #fff;text-align:center"><a class="input" style="color:#fff;border:1px solid #fff;background-color:#ff9100;font-weight:bold;padding:6px 9px" href="/">Continue to my Account &nbsp; <i class="fa fa-arrow-right"></i></a></div>
     <?php 
         } else {
             echo $error_button;
