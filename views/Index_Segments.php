@@ -151,7 +151,7 @@ HTML;
                         </div><!-- .like,comment and share icons end -->
 
                         <!-- .add_comment starts -->
-                        <div id="add_comment" style="display:none" class="add_comment" style="display:flex;background-color: #d6e2fb;padding:3px 5px" onclick="alternate_comment_div()">
+                        <div id="add_comment" style="display:none" class="add_comment" onclick="alternate_comment_div()">
                             <div class="profile_image_div">
                                 <a href="/static/images/profile.png"><img src="/static/images/profile.png" class="profile_image"/></a>
                             </div>
