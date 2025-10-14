@@ -76,7 +76,7 @@ if(isset($_POST["user_code"]) && (!empty($_POST["user_code"])) && (htmlentities(
 <?php
 } else {//if captcha is wrong or empty:
 ?>
-    <div class="invalid">Invalid Captcha Code</div>
+    <div class="invalid">Feature coming soon</div>
     <div style="margin:60px 12px;text-align:center">
         <form method = "POST" action="/login">
             <input type="hidden" name="email" value="<?=$remember_email?>"/>
