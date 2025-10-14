@@ -48,8 +48,11 @@ if(isset($_POST["user_code"]) && (!empty($_POST["user_code"])) && (htmlentities(
 
     <!--HTML:-->
     <div class="main_body" style="padding:12px;margin-left:15px"><!-- .main_body starts -->
-        <h1 style="font-size:30px;text-align:center">Bilo<span style="color:#ff9100">Online</span></h1>
-        <div style="color:green;font-size:15px;text-align:center;margin-top:-19px"><i class="fa fa-key"></i>&nbsp; All data is encrypted</div>
+        <div>    
+            <div style="text-align:center;font-size:27px;margin-top:30px;margin-bottom:-16px;font-family:Dancing Script">Welcome to</div>
+            <h1 style="font-size:30px;text-align:center">Steth<span style="color: #2b8eeb">Overflow</span></h1>
+            <div style="color:#2b8eeb;font-size:15px;text-align:center;margin-top:-19px"><i class="fa fa-key"></i>&nbsp; All data is encrypted</div>
+        </div>
     
         <div style="border:1px solid #000;border-radius:15px;width:96%;margin-top:21px">
             <h2 style="text-align:center"><?=$heading?></h2>
