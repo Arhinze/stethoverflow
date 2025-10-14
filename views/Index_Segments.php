@@ -160,8 +160,8 @@ HTML;
                         <!-- .add_comment ends -->
 
                         <!-- .reply_comment starts -->
-                        <div class="reply_comment" style="margin-top:9px">
-                            <div style="display:flex;justify-content:space-between">
+                        <div class="reply_comment" id="reply_comment" style="display:none">
+                            <div style="display:flex;justify-content:space-between;margin-top:9px">
                                 <div style="display:flex">
                                     <div class="profile_image_div">
                                         <a href="/static/images/profile.png"><img src="/static/images/profile.png" class="profile_image"/></a>
