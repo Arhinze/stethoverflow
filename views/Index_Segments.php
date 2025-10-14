@@ -36,7 +36,7 @@ class Index_Segments{
                 <div class="" style="margin-top:6px"><a href="/spaces"><i class="fa fa-users"></i></a></div>
                 <div class="" style="margin-top:6px"><a href="/notifications"><i class="fa fa-bell-o"></i></a></div>
                 <div class="profile_image_div">
-                    <a href="/static/images/profile.png"><img src="/static/images/profile.png" class="profile_image"/></a>
+                    <a href="/static/images/profile_new.png"><img src="/static/images/profile_new.png" class="profile_image"/></a>
                 </div>
             </div><!-- end of 2nd .headers --> 
 HTML;
@@ -97,7 +97,7 @@ HTML;
                     <div class="main_page_topmost_div" style="padding:12px">
                         <div style="display:flex;background-color:#fff" onclick="show_div('ask_or_post_div')">
                             <div style="width:30px;height:30px;border:2px solid #d6e3fd;border-radius:100%">
-                                <a href="$site_url/static/images/profile.png"><img src="/static/images/profile.png" style="width:27px;height:27px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
+                                <a href="$site_url/static/images/profile_new.png"><img src="/static/images/profile_new.png" style="width:27px;height:27px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
                             </div>
                             <div class="input" style="background-color:#fff;color:#888;margin-left:5px">What do you want to ask or post?</div>
                         </div>
@@ -117,7 +117,7 @@ HTML;
                     <div class="posts_and_questions" style="margin:12px 6px">
                         <div style="display:flex">
                             <div style="width:39px;height:39px;border:2px solid #d6e3fd;border-radius:100%">
-                                <a href="$site_url/static/images/profile.png"><img src="/static/images/profile.png" style="width:36px;height:36px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
+                                <a href="$site_url/static/images/profile_new.png"><img src="/static/images/profile_new.png" style="width:36px;height:36px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
                             </div>
                             <div style="margin-left:6px;margin-top:2px">
                                 <div style="font-size:15px"><b>Francis Arinze</b> <i class="fa fa-circle" style="font-size:6px"></i> <b style="color:#2b8eeb">Follow</b></div>
@@ -153,7 +153,7 @@ HTML;
                     <div style="display:none" class="add_comment" id="add_comment" onclick="alternate_comment_div()">
                         <div style="display:flex">
                             <div class="profile_image_div" style="border:2px solid #fff">
-                                <a href="/static/images/profile.png"><img src="/static/images/profile.png" class="profile_image"/></a>
+                                <a href="/static/images/profile_new.png"><img src="/static/images/profile_new.png" class="profile_image"/></a>
                             </div>
                             <div class="input" style="background-color:#fff;color:#888;margin-left:-13px">Add a comment...</div>
                         </div>
@@ -165,7 +165,7 @@ HTML;
                         <div style="display:flex;justify-content:space-between;margin-top:9px">
                             <div style="display:flex">
                                 <div class="profile_image_div">
-                                    <a href="/static/images/profile.png"><img src="/static/images/profile.png" class="profile_image"/></a>
+                                    <a href="/static/images/profile_new.png"><img src="/static/images/profile_new.png" class="profile_image"/></a>
                                 </div>
                                 <div style="margin-left:-17px;margin-top:7px;color:#888">Replying to <a href="/">@arhinze</a></div>
                             </div>
@@ -188,7 +188,7 @@ HTML;
                         </div><!-- .write_answer_top ends -->
                         <div style="display:flex">
                             <div class="profile_image_div" style="margin-top:5px">
-                                <a href="/static/images/profile.png"><img src="/static/images/profile.png" class="profile_image"/></a>
+                                <a href="/static/images/profile_new.png"><img src="/static/images/profile_new.png" class="profile_image"/></a>
                             </div>
                             <div style="margin-left:-13px">
                                 <div style="font-size:12px"><b>Francis Arinze</b></b></div>
@@ -206,7 +206,7 @@ HTML;
                         <div style="border-left:2px solid #888;padding-left:9px">
                             <div style="display:flex">
                                 <div class="profile_image_div">
-                                    <a href="/static/images/profile.png"><img src="/static/images/profile.png" class="profile_image"/></a>
+                                    <a href="/static/images/profile_new.png"><img src="/static/images/profile_new.png" class="profile_image"/></a>
                                 </div>
                                 <div style="color:#888;margin-left:-17px;margin-top:7px">Francis Arinze - <a href="/">@arhinze</a></div>
                             </div>
@@ -228,7 +228,7 @@ HTML;
                     <div class="posts_and_questions" style="margin:12px 6px">
                         <div style="display:flex">
                             <div style="width:39px;height:39px;border:2px solid #d6e3fd;border-radius:100%">
-                                <a href="$site_url/static/images/profile.png"><img src="/static/images/profile.png" style="width:36px;height:36px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
+                                <a href="$site_url/static/images/profile_new.png"><img src="/static/images/profile_new.png" style="width:36px;height:36px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
                             </div>
                             <div style="margin-left:6px;margin-top:2px">
                                 <div style="font-size:15px"><b>Francis Arinze</b> <i class="fa fa-circle" style="font-size:6px"></i> <b style="color:#2b8eeb">Follow</b></div>
@@ -256,7 +256,7 @@ HTML;
                     <div class="posts_and_questions" style="margin:12px 6px">
                         <div style="display:flex">
                             <div style="width:39px;height:39px;border:2px solid #d6e3fd;border-radius:100%">
-                                <a href="$site_url/static/images/profile.png"><img src="/static/images/profile.png" style="width:36px;height:36px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
+                                <a href="$site_url/static/images/profile_new.png"><img src="/static/images/profile_new.png" style="width:36px;height:36px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
                             </div>
                             <div style="margin-left:6px;margin-top:2px">
                                 <div style="font-size:15px"><b>Francis Arinze</b> <i class="fa fa-circle" style="font-size:6px"></i> <b style="color:#2b8eeb">Follow</b></div>
@@ -294,7 +294,7 @@ HTML;
                     <div class="posts_and_questions" style="margin:12px 6px">
                         <div style="display:flex">
                             <div style="width:39px;height:39px;border:2px solid #d6e3fd;border-radius:100%">
-                                <a href="$site_url/static/images/profile.png"><img src="/static/images/profile.png" style="width:36px;height:36px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
+                                <a href="$site_url/static/images/profile_new.png"><img src="/static/images/profile_new.png" style="width:36px;height:36px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
                             </div>
                             <div style="margin-left:6px;margin-top:2px">
                                 <div style="font-size:15px"><b>Francis Arinze</b> <i class="fa fa-circle" style="font-size:6px"></i> <b style="color:#2b8eeb">Follow</b></div>
@@ -326,7 +326,7 @@ HTML;
                     <div class="posts_and_questions" style="margin:12px 6px">
                         <div style="display:flex">
                             <div style="width:39px;height:39px;border:2px solid #d6e3fd;border-radius:100%">
-                                <a href="$site_url/static/images/profile.png"><img src="/static/images/profile.png" style="width:36px;height:36px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
+                                <a href="$site_url/static/images/profile_new.png"><img src="/static/images/profile_new.png" style="width:36px;height:36px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
                             </div>
                             <div style="margin-left:6px;margin-top:2px">
                                 <div style="font-size:15px"><b>Francis Arinze</b> <i class="fa fa-circle" style="font-size:6px"></i> <b style="color:#2b8eeb">Follow</b></div>
@@ -356,7 +356,7 @@ HTML;
                     <div class="posts_and_questions" style="margin:12px 6px">
                         <div style="display:flex">
                             <div style="width:39px;height:39px;border:2px solid #d6e3fd;border-radius:100%">
-                                <a href="$site_url/static/images/profile.png"><img src="/static/images/profile.png" style="width:36px;height:36px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
+                                <a href="$site_url/static/images/profile_new.png"><img src="/static/images/profile_new.png" style="width:36px;height:36px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
                             </div>
                             <div style="margin-left:6px;margin-top:2px">
                                 <div style="font-size:15px"><b>Francis Arinze</b> <i class="fa fa-circle" style="font-size:6px"></i> <b style="color:#2b8eeb">Follow</b></div>
@@ -397,7 +397,7 @@ HTML;
                     <div class="posts_and_questions" style="margin:12px 6px">
                         <div style="display:flex">
                             <div style="width:39px;height:39px;border:2px solid #d6e3fd;border-radius:100%">
-                                <a href="$site_url/static/images/profile.png"><img src="/static/images/profile.png" style="width:36px;height:36px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
+                                <a href="$site_url/static/images/profile_new.png"><img src="/static/images/profile_new.png" style="width:36px;height:36px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
                             </div>
                             <div style="margin-left:6px;margin-top:2px">
                                 <div style="font-size:15px"><b>Francis Arinze</b> <i class="fa fa-circle" style="font-size:6px"></i> <b style="color:#2b8eeb">Follow</b></div>
@@ -632,7 +632,7 @@ HTML;
 
                         <div style="display:flex">
                             <div class="profile_image_div" style="margin-top:5px">
-                                <a href="/static/images/profile.png"><img src="/static/images/profile.png" class="profile_image"/></a>
+                                <a href="/static/images/profile_new.png"><img src="/static/images/profile_new.png" class="profile_image"/></a>
                             </div>
                             <div style="margin-left:-13px">
                                 <div style="font-size:12px"><b>Francis Arinze</b></b></div>

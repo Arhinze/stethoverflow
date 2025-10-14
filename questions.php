@@ -36,7 +36,7 @@ Index_Segments::header();
         </div><!-- .write_answer_top ends -->
         <div style="display:flex">
             <div class="profile_image_div" style="margin-top:5px">
-                <a href="/static/images/profile.png"><img src="/static/images/profile.png" class="profile_image"/></a>
+                <a href="/static/images/profile_new.png"><img src="/static/images/profile_new.png" class="profile_image"/></a>
             </div>
             <div style="margin-left:-13px">
                 <div style="font-size:12px"><b>Francis Arinze</b></b></div>
