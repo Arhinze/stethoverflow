@@ -61,6 +61,7 @@ if(isset($_POST["user_code"]) && (!empty($_POST["user_code"])) && (htmlentities(
                     <div><input name="email" type="email" class="input" id="email" placeholder="Enter Email Address:abc@example.com" value="<?=$remember_email?>"/><div id="email_status"></div></div>
 
                     <?=$full_name_tag?>
+                    <?=$username_tag?>
     
                     <?php
                     if ($google_or_email_log_in == "") { //that means user has not logged in with google account before or has added a password to his account
