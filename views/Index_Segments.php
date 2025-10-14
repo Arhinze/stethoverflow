@@ -203,6 +203,8 @@ HTML;
                         <div class="">
                             <textarea class="textarea" style="border-radius:0;border-bottom:0;height:50px" placeholder="Make a post about this"></textarea>
                         </div>
+
+                        <!-- .quoted_post starts -->
                         <div style="border-left:2px solid #888;padding-left:9px">
                             <div style="display:flex">
                                 <div class="profile_image_div">
@@ -210,13 +212,15 @@ HTML;
                                 </div>
                                 <div style="color:#888;margin-right:-13px">Arinze</div>
                             </div>
-                            
+
                             <div class="questions" style="margin-bottom:3px"><h4>What are some life saving surgical procedures you've witnessed?</h4></div>
     
                             <div class="answers" style="padding:6px">
                                 In 2014, 17-year-old Grace from the Democratic Republic of Congo underwent life-saving surgery to remove a very aggressive tumor.  
                             </div>
-                        </div>
+
+                            <div><img src="/static/images/post1.png" style="width:100%;height:auto"/></div>
+                        </div><!-- .quoted_post ends -->
                     </div><!-- .write_answer ends -->
                     <!-- .quote_comment ends -->
 
