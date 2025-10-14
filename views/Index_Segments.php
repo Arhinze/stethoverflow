@@ -138,7 +138,7 @@ HTML;
                         </div>
 
                         <!-- .like,comment and share icons start -->
-                        <div style="display:flex;justify-content:space-between;margin:12px 9px -2px 9px;color:#888">
+                        <div class="like_comment_and_share_icons">
                             <div class="" style="display:flex">
                                 <div><span id="post1" style="color:grey" onclick="like_post()"><i class="fa fa-heart-o"></i></span> 10</div>
                                 <div style="margin-left:10px"><i class="fa fa-comment-o" onclick="show_div('add_comment')"></i> 9</div>

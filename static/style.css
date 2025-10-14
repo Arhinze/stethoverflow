@@ -435,6 +435,13 @@ h1, h2, h3, h4, h5, h6{
 }
 
 /* -- comment section starts -- */
+.like_comment_and_share_icons{
+    display:flex;
+    justify-content:space-between;
+    margin:12px 9px -2px 9px;
+    color:#888
+}
+
 .add_comment{
     background-color: #d6e2fb;
     padding:8px 5px 5px 5px;
