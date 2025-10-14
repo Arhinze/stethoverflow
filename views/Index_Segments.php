@@ -532,8 +532,8 @@ HTML;
                 }
             }
 
-            function alternat0e_add_question_and_create_post(){
-                if (document.getElementById('add_question').style.display == "block") {
+            function alternate_add_question_and_create_post(){
+                if(document.getElementById('add_question').style.display == "block") {
                     document.getElementById('create_post').style.display = "none";
                     //document.getElementById('aq_text').style = "border-bottom:2px solid #2b8eeb";
                     //document.getElementById('cp_text').style = "border:0";
@@ -542,8 +542,7 @@ HTML;
                     //document.getElementById('cp_text').style = "border-bottom:2px solid #2b8eeb";
                     //document.getElementById('aq_text').style = "border:0";
                 }
-            }
-                                                                                         
+            }                                                                            
             const collection = document.getElementsByClassName("invalid");
                                                                                                  
             for (let i=0; i < collection.length; i++){
