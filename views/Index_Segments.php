@@ -113,6 +113,33 @@ HTML;
 
                     <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation --> 
 
+                    <!-- .ask_or_post_div starts ~ only shown onclick -->
+                    <div class="ask_or_post_div" id="ask_or_post_div">
+                    <!-- .write_answer starts -->
+                    <div class="write_answer" id="write_answer_div1" style="display:none">
+                        <!-- .write_answer_top starts -->
+                        <div class="write_answer_top">
+                            <div style="font-size:18px;color:#888" onclick="show_div('write_answer_div1')"><b> X </b></div>
+                            <div class="button" style="font-size:12px">Post</div>
+                        </div><!-- .write_answer_top ends -->
+                        <div style="display:flex">
+                            <div class="profile_image_div" style="margin-top:5px">
+                                <a href="/static/images/profile.png"><img src="/static/images/profile.png" class="profile_image"/></a>
+                            </div>
+                            <div style="margin-left:-13px">
+                                <div style="font-size:12px"><b>Francis Arinze</b></b></div>
+                                <div class="input" style="width:100%;font-size:12px">Orthopaedic Surgeon (2007 - present) &nbsp; <i class="fa fa-angle-down"></i></div>
+                            </div>
+                        </div>
+                        
+                        <h4 style="width:90%">What's one medical myth patients still strongly believe in your country?</h4>
+                        <div style="color:#888">Add Image + </div>
+                        <div class="">
+                            <textarea class="textarea" placeholder="Write your answer on this"></textarea>
+                        </div>
+                    </div><!-- .write_answer ends -->
+                    </div><!-- .ask_or_post_div ends ~ only shown onclick -->
+
                     <!-- .posts_and_questions_div starts -->
                     <div class="posts_and_questions" style="margin:12px 6px">
                         <div style="display:flex">
