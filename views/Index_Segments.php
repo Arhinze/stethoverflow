@@ -479,7 +479,7 @@ HTML;
             function like_post(){
                 if (document.getElementById("post1").style.color == "grey") {
                     document.getElementById("post1").style.color = "red";
-                    document.getElementById("post1").innerHtml = "<i class='fa fa-heart'></i>";             
+                    document.getElementById("post1").innerHtml = "<i class='fa fa-heartbeat'></i>";             
                 } else if (document.getElementById("post1").style.color == "red") {
                     document.getElementById("post1").style.color = "grey";
                     document.getElementById("post1").innerHtml = "<i class='fa fa-heart-o'></i>";             
