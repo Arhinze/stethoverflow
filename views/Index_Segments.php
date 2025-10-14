@@ -477,12 +477,12 @@ HTML;
             }
 
             function like_post(){
-                if (document.getElementById("post1").style.color == "#000") {
+                //if (document.getElementById("post1").style.color == "#000") {
                     document.getElementById("post1").style.color = "red";
                     //document.getElementById("post1").innerHtml = "<i class='fa fa-heart'></i>";             
-                } else if (document.getElementById("post1").style.color == "red") {
-                    document.getElementById("post1").style.color = "#000";
-                }
+                //} else if (document.getElementById("post1").style.color == "red") {
+                //    document.getElementById("post1").style.color = "#000";
+                //}
             }
 
             function alternate_comment_div(){
