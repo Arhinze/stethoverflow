@@ -40,7 +40,7 @@ class Index_Segments{
                 </div>
             </div><!-- end of 2nd .headers --> 
             <!-- .join_us starts -->
-            <div class="join_us" style="line-height:18px">
+            <div class="join_us" style="line-height:18px;background-color:#fff;border-radius:6px;box-shadow:0 0 3px 0 #d6e2fb">
                 <div style="position:relative">
                     <div style="position:absolute;float:right;right:12px;top:12px"><i class="fa fa-times"></i></div>
                 </div>
