@@ -41,7 +41,7 @@ if(isset($_POST["full_name"])) {
                 <?php include($_SERVER["DOCUMENT_ROOT"]."/views/captcha.php"); ?>
                 <!-- code(captcha) ends -->
                 <input name="full_name" type="hidden" value="<?=$remember_full_name?>"/>
-                <div style="margin:9px 0 24px 0;width:100%"><button class="input" style="padding:9px 36%;border-radius:30px;color:#fff;font-weight:bold;background-color: #d6e3fd">Continute</button></div>
+                <div style="margin:9px 0 24px 0;width:100%"><button class="input" style="padding:9px 36%;border-radius:30px;color:#fff;font-weight:bold;background-color: #acc5f8">Continute</button></div>
             </form>
         </div><!-- .email and continue button ends -->
     </div>
