@@ -113,52 +113,6 @@ HTML;
 
                     <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation --> 
 
-                    <!-- .ask_or_post_div starts ~ only shown onclick -->
-                    <div class="ask_or_post_div" id="ask_or_post_div" style="display:none">
-                    <!-- .write_answer starts -->
-                    <div class="write_answer">
-                        <!-- .write_answer_top starts -->
-                        <div class="write_answer_top">
-                            <div style="font-size:18px;color:#888" onclick="show_div('ask_or_post_div')"><b> X </b></div>
-                            <div class="button" style="font-size:12px">Post</div>
-                        </div><!-- .write_answer_top ends -->
-
-                        <div style="display:flex;justify-content:space-around;margin:15px 0;font-size:15px">
-                            <div onclick="alternate_add_question_and_create_post('aq_text','add_question')" id="aq_text" class="aq_cp_text" style = "border-bottom:2px solid #2b8eeb"><b>Ask Question</b></div>
-                            <div onclick="alternate_add_question_and_create_post('cp_text','create_post')" id="cp_text" class="aq_cp_text"><b>Create Post</b></div>
-                        </div>
-
-                        <div style="display:flex">
-                            <div class="profile_image_div" style="margin-top:5px">
-                                <a href="/static/images/profile.png"><img src="/static/images/profile.png" class="profile_image"/></a>
-                            </div>
-                            <div style="margin-left:-13px">
-                                <div style="font-size:12px"><b>Francis Arinze</b></b></div>
-                                <div class="input" style="width:100%;font-size:12px">Orthopaedic Surgeon (2007 - present) &nbsp; <i class="fa fa-angle-down"></i></div>
-                            </div>
-                        </div>
-
-                        <!-- add_question starts -->
-                        <div id="add_question" style="display:block">
-                            <div class="question_tips">
-                                <div><b>Keep Questions Simple:</b></div>
-                                <ul>
-                                    <li>Double check your grammar.</li>
-                                    <li>Start question with "why", "what", "how"</li>
-                                    <li>Ensure the question has not already been asked</li>
-                                </ul>
-                            </div>
-                            <textarea class="textarea" style="border-bottom:0;border-radius:0" placeholder="Ask your question"></textarea>
-                        </div><!-- ask_question ends -->
-
-                        <!-- create_post starts -->
-                        <div id="create_post" style="display:none">
-                            <div style="color:#888;margin:12px 0">+ Add Image</div>
-                            <textarea class="textarea" style="border-bottom:0;border-radius:0" placeholder="Create a post about something"></textarea>
-                        </div><!-- create_post ends -->
-                    </div><!-- .write_answer ends -->
-                    </div><!-- .ask_or_post_div ends ~ only shown onclick -->
-
                     <!-- .posts_and_questions_div starts -->
                     <div class="posts_and_questions" style="margin:12px 6px">
                         <div style="display:flex">
@@ -661,6 +615,52 @@ HTML;
 
             if ($whatsapp_chat == "on") {
                 echo <<<HTML
+                    <!-- .ask_or_post_div starts ~ only shown onclick and placed on footer area so that users can access it from any page and not just the home page -->
+                    <div class="ask_or_post_div" id="ask_or_post_div" style="display:none">
+                    <!-- .write_answer starts -->
+                    <div class="write_answer">
+                        <!-- .write_answer_top starts -->
+                        <div class="write_answer_top">
+                            <div style="font-size:18px;color:#888" onclick="show_div('ask_or_post_div')"><b> X </b></div>
+                            <div class="button" style="font-size:12px">Post</div>
+                        </div><!-- .write_answer_top ends -->
+
+                        <div style="display:flex;justify-content:space-around;margin:15px 0;font-size:15px">
+                            <div onclick="alternate_add_question_and_create_post('aq_text','add_question')" id="aq_text" class="aq_cp_text" style = "border-bottom:2px solid #2b8eeb"><b>Ask Question</b></div>
+                            <div onclick="alternate_add_question_and_create_post('cp_text','create_post')" id="cp_text" class="aq_cp_text"><b>Create Post</b></div>
+                        </div>
+
+                        <div style="display:flex">
+                            <div class="profile_image_div" style="margin-top:5px">
+                                <a href="/static/images/profile.png"><img src="/static/images/profile.png" class="profile_image"/></a>
+                            </div>
+                            <div style="margin-left:-13px">
+                                <div style="font-size:12px"><b>Francis Arinze</b></b></div>
+                                <div class="input" style="width:100%;font-size:12px">Orthopaedic Surgeon (2007 - present) &nbsp; <i class="fa fa-angle-down"></i></div>
+                            </div>
+                        </div>
+
+                        <!-- add_question starts -->
+                        <div id="add_question" style="display:block">
+                            <div class="question_tips">
+                                <div><b>Keep Questions Simple:</b></div>
+                                <ul>
+                                    <li>Double check your grammar.</li>
+                                    <li>Start question with "why", "what", "how"</li>
+                                    <li>Ensure the question has not already been asked</li>
+                                </ul>
+                            </div>
+                            <textarea class="textarea" style="border-bottom:0;border-radius:0" placeholder="Ask your question"></textarea>
+                        </div><!-- ask_question ends -->
+
+                        <!-- create_post starts -->
+                        <div id="create_post" style="display:none">
+                            <div style="color:#888;margin:12px 0">+ Add Image</div>
+                            <textarea class="textarea" style="border-bottom:0;border-radius:0" placeholder="Create a post about something"></textarea>
+                        </div><!-- create_post ends -->
+                    </div><!-- .write_answer ends -->
+                    </div><!-- .ask_or_post_div ends ~ only shown onclick -->
+
                     <!-- .whatsapp_box starts -->
                     <div class="whatsapp_box" id="whatsapp_box" style="display:none;position:fixed;bottom:129px;right:18px;background-color:#fff;border-radius:9px;width:75%;box-shadow:0 0 3px 0 #888">
                         <div class="whatsapp_box_top" style="display:flex;justify-content:space-around;height:30%;padding:12px;background-color:green;color:#fff;border-radius:9px 9px 0 0">
@@ -686,7 +686,7 @@ HTML;
                     <!-- .whatsapp_box ends -->
     
                     <!-- fixed whatsapp sticker(bottom-right) starts -->
-                    <div style="color:#fff;font-size:33px;padding:9px 12px;border-radius:100%;background-color:green;position:fixed;bottom:72px;right:18px"><i class="fa fa-whatsapp" onclick="show_div('whatsapp_box')"></i></div>
+                    <div style="color:#fff;font-size:33px;padding:9px 12px;border-radius:100%;background-color:green;position:fixed;bottom:54px;right:18px"><i class="fa fa-whatsapp" onclick="show_div('whatsapp_box')"></i></div>
                     <!-- fixed whatsapp sticker(bottom-right) ends -->
 HTML;
             }
