@@ -203,7 +203,14 @@ HTML;
                         <div class="">
                             <textarea class="textarea" style="border-radius:0;border-bottom:0;height:50px" placeholder="Make a post about this"></textarea>
                         </div>
-                        <div style="border-left:2px solid #888;padding-left:3px">
+                        <div style="border-left:2px solid #888;padding-left:9px">
+                            <div style="display:flex">
+                                <div class="profile_image_div">
+                                    <a href="/static/images/profile.png"><img src="/static/images/profile.png" class="profile_image"/></a>
+                                </div>
+                                <div style="color:#888;margin-right:-13px">Arinze</div>
+                            </div>
+                            
                             <div class="questions" style="margin-bottom:3px"><h4>What are some life saving surgical procedures you've witnessed?</h4></div>
     
                             <div class="answers" style="padding:6px">
