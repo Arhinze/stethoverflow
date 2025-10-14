@@ -21,7 +21,7 @@ if(isset($_POST["full_name"])) {
 
 if(isset($_POST["user_code"]) && (!empty($_POST["user_code"])) && (htmlentities($_POST["user_code"]) == $_POST["xsrf_code"])){
     $user_email = htmlentities($_POST["email"]);
-    $stmt = $pdo->prepare("SELECT * FROM customers WHERE customer_email = ? LIMIT ?, ?");
+    $stmt = $pdo->prepare("SELECT * FROM stethoverflow_users WHERE user_email = ? LIMIT ?, ?");
     $stmt->execute([$user_email, 0, 1]);
   
     $data = $stmt->fetch(PDO::FETCH_OBJ);
