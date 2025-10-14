@@ -356,11 +356,11 @@ HTML;
                     <div class="posts_and_questions" style="margin:12px 6px">
                         <div style="display:flex">
                             <div style="width:39px;height:39px;border:2px solid #d6e3fd;border-radius:100%">
-                                <a href="$site_url/static/images/profile_new.png"><img src="/static/images/profile_new.png" style="width:36px;height:36px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
+                                <a href="$site_url/static/images/profile_new.png"><img src="/static/images/profile.png" style="width:36px;height:36px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
                             </div>
                             <div style="margin-left:6px;margin-top:2px">
-                                <div style="font-size:15px"><b>Cassy Maya</b> <i class="fa fa-circle" style="font-size:6px"></i> <b style="color:#2b8eeb">Follow</b></div>
-                                <div style="color:#888;font-size:12px">Orthopaedic Surgeon (2007 - present) <i class="fa fa-circle" style="font-size:6px"></i> 21h</div>
+                                <div style="font-size:15px"><b>Francis Arinze</b> <i class="fa fa-circle" style="font-size:6px"></i> <b style="color:#2b8eeb">Follow</b></div>
+                                <div style="color:#888;font-size:12px">Medical Student, Unical (2019 - present) <i class="fa fa-circle" style="font-size:6px"></i> 21h</div>
                             </div>
                         </div>
 
@@ -385,7 +385,7 @@ HTML;
 
                             <p>Thus this surgery had a mortality rate of 300%.</p>
                             
-                            <p>He is famously known and remembered historically as the surgeon with the highest mortality rate from a single surgery and he performed Europe's first operation using anaesthesia in the 19th century.</p>
+                            <p>He is famously known and remembered historically as the surgeon with the highest mortality rate from a single surgery and he performed Europe's first surgical operation using anaesthesia in the 19th century.</p>
                         
                             <img src="/static/images/post7.png" style="width:100%;height:auto"/>
                         </div><!-- .answers stop -->
