@@ -473,6 +473,7 @@ h1, h2, h3, h4, h5, h6{
     width:98%;
     padding:2%;
     height:100%;
+    overflow-y:scroll;
     border-radius:6px 6px 0 0;
     background-color:#fff;
     position:fixed;
