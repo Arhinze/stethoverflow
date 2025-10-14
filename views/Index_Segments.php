@@ -124,7 +124,7 @@ HTML;
                         </div><!-- .write_answer_top ends -->
 
                         <div style="display:flex;justify-content:space-around;margin:15px 0;font-size:15px">
-                            <div onclick="alternate_add_question_and_create_post()" id="aq_text" class="aq_cp_text"><b>Add Question</b></div>
+                            <div onclick="alternate_add_question_and_create_post()" id="aq_text" class="aq_cp_text" style = "border-bottom:2px solid #2b8eeb"><b>Add Question</b></div>
                             <div onclick="alternate_add_question_and_create_post()" id="cp_text" class="aq_cp_text"><b>Create Post</b></div>
                         </div>
 
