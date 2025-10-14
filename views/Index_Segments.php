@@ -51,7 +51,7 @@ class Index_Segments{
                     <a href="/create-or-login"><span class="button">Sign up</span></a>
                 </div>
                 <div>
-                    <a href="/create-or-login"><span class="button">Sign in</span></a>
+                    <a href="/create-or-login"><span class="button" style="border:1px solid #888;background-color:#fff;color:#888">Sign in</span></a>
                 </div>
                 <div style="text-align:center;border-top:1px solid #888;padding:18px;font-size:12px">
                     About Blog Privacy Terms
