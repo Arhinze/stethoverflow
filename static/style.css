@@ -436,7 +436,6 @@ h1, h2, h3, h4, h5, h6{
 
 /* -- comment section starts -- */
 .add_comment{
-    display:flex;
     background-color: #d6e2fb;
     padding:3px 5px;
     margin-top:10px;
