@@ -153,7 +153,7 @@ HTML;
 
                         <!-- create_post starts -->
                         <div id="create_post" style="display:none">
-                            <div style="color:#888">+ Add Image</div>
+                            <div style="color:#888;margin:12px 0">+ Add Image</div>
                             <textarea class="textarea" style="border-bottom:0;border-radius:0" placeholder="Create a post about something"></textarea>
                         </div><!-- create_post ends -->
                     </div><!-- .write_answer ends -->
