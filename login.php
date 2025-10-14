@@ -28,7 +28,7 @@ if(isset($_POST["full_name"])) {
     <!--<div class="input" style="border-radius:36px;text-align:center;margin-top:9px;font-weight:bold">
         <a href="/auth/facebook-login.php"><i class="fa fa-facebook" style="color:blue"></i>&nbsp; Continue with Facebook -- </a>
     </div>-->
-    <div class="input" style="border-radius:36px;text-align:center;margin-top:9px;font-weight:bold;display:block" onclick="open_email_form()" id="email_button"><i class="fa fa-envelope"></i>&nbsp; Continue with Email</div>    
+    <div class="input" style="border-radius:36px;text-align:center;margin-top:9px;font-weight:bold;color:#000;display:block" onclick="open_email_form()" id="email_button"><i class="fa fa-envelope"></i>&nbsp; Continue with Email</div>    
 
     <div style="border:1px solid #000;border-radius:15px;width:90%;margin-top:21px;display:none" id="email_form">
         <div style="position:relative;width:100%;height:30px"><!-- .fa times starts -->
