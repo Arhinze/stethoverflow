@@ -67,7 +67,7 @@ if(isset($_POST["user_code"]) && (!empty($_POST["user_code"])) && (htmlentities(
 
                         <?=$repeat_password_tag?>
 
-                        <div style="margin:9px 0 24px 0;width:100%" id="continue_button"><button class="input" style="padding:9px 36%;border-radius:30px;color:#fff;font-weight:bold;background-color:#ff9100">Continute</button></div>
+                        <div style="margin:9px 0 24px 0;width:100%" id="continue_button"><button class="input" style="padding:9px 36%;border-radius:30px;color:#fff;font-weight:bold;background-color:#acc5f8">Continute</button></div>
                     <?php
                     } else {//user has previously logged in with google, suggest him to do same again or add(reset) password
                         echo $google_or_email_log_in;
@@ -106,7 +106,7 @@ if(isset($_POST["user_code"]) && (!empty($_POST["user_code"])) && (htmlentities(
     }
 
     function check_username_availability(){
-        
+
     }
 </script>
     
