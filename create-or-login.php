@@ -19,6 +19,10 @@ if(isset($_POST["full_name"])) {
     $remember_full_name = htmlentities($_POST["full_name"]);
 }
 
+if(isset($_POST["username"])) {
+    $remember_username = htmlentities($_POST["username"]);
+}
+
 if(isset($_POST["user_code"]) && (!empty($_POST["user_code"])) && (htmlentities($_POST["user_code"]) == $_POST["xsrf_code"])){
     $user_email = htmlentities($_POST["email"]);
     $stmt = $pdo->prepare("SELECT * FROM stethoverflow_users WHERE user_email = ? LIMIT ?, ?");
@@ -36,6 +40,7 @@ if(isset($_POST["user_code"]) && (!empty($_POST["user_code"])) && (htmlentities(
     } else {//user has no account ~ display create account form:
         $heading = "Create Account";
         $full_name_tag = '<div style="margin-top:9px"><input name = "full_name" type="text" class="input" placeholder="Enter Full Name:" value="'.$remember_full_name.'" required/></div>';
+        $username_tag = '<div style="margin-top:9px"><input name = "username" type="text" class="input" placeholder="Enter a username:" value="'.$remember_username.'" onkeyup="check_username_availability()" required/></div>';
         $repeat_password_tag = '<div><input type="text" name="repeat_password" class="input" id="password2"  '.'onkeyup='."check_password('password1','password2') ".'placeholder="Repeat Password: ******" required/></div><div id="status"></div>';      
     }
 
@@ -98,6 +103,10 @@ if(isset($_POST["user_code"]) && (!empty($_POST["user_code"])) && (htmlentities(
 
             document.getElementById("continue_button").innerHTML = '<span class="input" style="padding:9px 36%;border-radius:30px;color:#fff;font-weight:bold;background-color:#888">Continute</span>';
         }
+    }
+
+    function check_username_availability(){
+        
     }
 </script>
     
