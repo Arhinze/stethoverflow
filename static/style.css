@@ -419,7 +419,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 
-
+/* -- Header section starts -- */
 .profile_image_div{
     width:30px;height:30px;
     border:2px solid #d6e3fd;
@@ -433,6 +433,19 @@ h1, h2, h3, h4, h5, h6{
     border-radius:100%;
     margin:1.35px 0 0 1.35px
 }
+
+.join_us{
+    position:fixed;
+    top:90px;
+    right:15px;
+    z-index:10;
+    line-height:50px;
+    background-color:#fff;
+    border-radius:6px;
+    box-shadow:0 0 3px 0 #d6e2fb;
+    text-align:center;
+}
+/* -- Header section ends -- */
 
 /* -- Ask Question or Create Post section starts -- */
 .aq_cp_text {
