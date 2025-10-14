@@ -140,7 +140,7 @@ HTML;
                         <!-- .like,comment and share icons start -->
                         <div style="display:flex;justify-content:space-between;margin:12px 9px -2px 9px;color:#888">
                             <div class="" style="display:flex">
-                                <div id="post1" style="color:#000" onclick="like_post()"><i class="fa fa-heart-o"></i> 10</div>
+                                <div><span id="post1" style="color:#000" onclick="like_post()"><i class="fa fa-heart-o"></i></span> 10</div>
                                 <div style="margin-left:10px"><i class="fa fa-comment-o" onclick="show_div('add_comment')"></i> 9</div>
                                 <div style="margin-left:10px"><i class="fa fa-retweet" onclick="show_div('quote_comment_div1')"></i> 3</div>
                                 <div style="margin-left:10px"><i class="fa fa-share-alt"></i> 5</div>
