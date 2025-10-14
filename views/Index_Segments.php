@@ -532,7 +532,7 @@ HTML;
                 }
             }
 
-            function alternate_add_question_and_create_post(){
+            function alternat0e_add_question_and_create_post(){
                 if (document.getElementById('add_question').style.display == "block") {
                     document.getElementById('create_post').style.display = "none";
                     //document.getElementById('aq_text').style = "border-bottom:2px solid #2b8eeb";
