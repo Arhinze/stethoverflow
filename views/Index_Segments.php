@@ -120,7 +120,7 @@ HTML;
                                 <a href="$site_url/static/images/profile_new.png"><img src="/static/images/profile_new.png" style="width:36px;height:36px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
                             </div>
                             <div style="margin-left:6px;margin-top:2px">
-                                <div style="font-size:15px"><b>Francis Arinze</b> <i class="fa fa-circle" style="font-size:6px"></i> <b style="color:#2b8eeb">Follow</b></div>
+                                <div style="font-size:15px"><b>Cassy Maya</b> <i class="fa fa-circle" style="font-size:6px"></i> <b style="color:#2b8eeb">Follow</b></div>
                                 <div style="color:#888;font-size:12px">Orthopaedic Surgeon (2007 - present) <i class="fa fa-circle" style="font-size:6px"></i> 21h</div>
                             </div>
                         </div>
@@ -167,7 +167,7 @@ HTML;
                                 <div class="profile_image_div">
                                     <a href="/static/images/profile_new.png"><img src="/static/images/profile_new.png" class="profile_image"/></a>
                                 </div>
-                                <div style="margin-left:-17px;margin-top:7px;color:#888">Replying to <a href="/">@arhinze</a></div>
+                                <div style="margin-left:-17px;margin-top:7px;color:#888">Replying to <a href="/">@cassy_maya</a></div>
                             </div>
                             <div style="margin-top:10px;margin-right:12px;color:#888"><i class="fa fa-times" onclick="alternate_comment_div()"></i></div>
                         </div>
@@ -191,7 +191,7 @@ HTML;
                                 <a href="/static/images/profile_new.png"><img src="/static/images/profile_new.png" class="profile_image"/></a>
                             </div>
                             <div style="margin-left:-13px">
-                                <div style="font-size:12px"><b>Francis Arinze</b></b></div>
+                                <div style="font-size:12px"><b>Cassy Maya</b></b></div>
                                 <div class="input" style="width:100%;font-size:12px">Orthopaedic Surgeon (2007 - present) &nbsp; <i class="fa fa-angle-down"></i></div>
                             </div>
                         </div>
@@ -208,7 +208,7 @@ HTML;
                                 <div class="profile_image_div">
                                     <a href="/static/images/profile_new.png"><img src="/static/images/profile_new.png" class="profile_image"/></a>
                                 </div>
-                                <div style="color:#888;margin-left:-17px;margin-top:7px">Francis Arinze - <a href="/">@arhinze</a></div>
+                                <div style="color:#888;margin-left:-17px;margin-top:7px">Cassy Maya - <a href="/">@cassy_maya</a></div>
                             </div>
 
                             <div class="questions" style="margin-bottom:3px"><h4>What are some life saving surgical procedures you've witnessed?</h4></div>
@@ -231,7 +231,7 @@ HTML;
                                 <a href="$site_url/static/images/profile_new.png"><img src="/static/images/profile_new.png" style="width:36px;height:36px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
                             </div>
                             <div style="margin-left:6px;margin-top:2px">
-                                <div style="font-size:15px"><b>Francis Arinze</b> <i class="fa fa-circle" style="font-size:6px"></i> <b style="color:#2b8eeb">Follow</b></div>
+                                <div style="font-size:15px"><b>Cassy Maya</b> <i class="fa fa-circle" style="font-size:6px"></i> <b style="color:#2b8eeb">Follow</b></div>
                                 <div style="color:#888;font-size:12px">Orthopaedic Surgeon (2007 - present) <i class="fa fa-circle" style="font-size:6px"></i> 21h</div>
                             </div>
                         </div>
@@ -259,7 +259,7 @@ HTML;
                                 <a href="$site_url/static/images/profile_new.png"><img src="/static/images/profile_new.png" style="width:36px;height:36px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
                             </div>
                             <div style="margin-left:6px;margin-top:2px">
-                                <div style="font-size:15px"><b>Francis Arinze</b> <i class="fa fa-circle" style="font-size:6px"></i> <b style="color:#2b8eeb">Follow</b></div>
+                                <div style="font-size:15px"><b>Cassy Maya</b> <i class="fa fa-circle" style="font-size:6px"></i> <b style="color:#2b8eeb">Follow</b></div>
                                 <div style="color:#888;font-size:12px">Orthopaedic Surgeon (2007 - present) <i class="fa fa-circle" style="font-size:6px"></i> 21h</div>
                             </div>
                         </div>
@@ -297,7 +297,7 @@ HTML;
                                 <a href="$site_url/static/images/profile_new.png"><img src="/static/images/profile_new.png" style="width:36px;height:36px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
                             </div>
                             <div style="margin-left:6px;margin-top:2px">
-                                <div style="font-size:15px"><b>Francis Arinze</b> <i class="fa fa-circle" style="font-size:6px"></i> <b style="color:#2b8eeb">Follow</b></div>
+                                <div style="font-size:15px"><b>Cassy Maya</b> <i class="fa fa-circle" style="font-size:6px"></i> <b style="color:#2b8eeb">Follow</b></div>
                                 <div style="color:#888;font-size:12px">Orthopaedic Surgeon (2007 - present) <i class="fa fa-circle" style="font-size:6px"></i> 21h</div>
                             </div>
                         </div>
@@ -329,7 +329,7 @@ HTML;
                                 <a href="$site_url/static/images/profile_new.png"><img src="/static/images/profile_new.png" style="width:36px;height:36px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
                             </div>
                             <div style="margin-left:6px;margin-top:2px">
-                                <div style="font-size:15px"><b>Francis Arinze</b> <i class="fa fa-circle" style="font-size:6px"></i> <b style="color:#2b8eeb">Follow</b></div>
+                                <div style="font-size:15px"><b>Cassy Maya</b> <i class="fa fa-circle" style="font-size:6px"></i> <b style="color:#2b8eeb">Follow</b></div>
                                 <div style="color:#888;font-size:12px">Orthopaedic Surgeon (2007 - present) <i class="fa fa-circle" style="font-size:6px"></i> 21h</div>
                             </div>
                         </div>
@@ -359,7 +359,7 @@ HTML;
                                 <a href="$site_url/static/images/profile_new.png"><img src="/static/images/profile_new.png" style="width:36px;height:36px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
                             </div>
                             <div style="margin-left:6px;margin-top:2px">
-                                <div style="font-size:15px"><b>Francis Arinze</b> <i class="fa fa-circle" style="font-size:6px"></i> <b style="color:#2b8eeb">Follow</b></div>
+                                <div style="font-size:15px"><b>Cassy Maya</b> <i class="fa fa-circle" style="font-size:6px"></i> <b style="color:#2b8eeb">Follow</b></div>
                                 <div style="color:#888;font-size:12px">Orthopaedic Surgeon (2007 - present) <i class="fa fa-circle" style="font-size:6px"></i> 21h</div>
                             </div>
                         </div>
@@ -400,7 +400,7 @@ HTML;
                                 <a href="$site_url/static/images/profile_new.png"><img src="/static/images/profile_new.png" style="width:36px;height:36px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
                             </div>
                             <div style="margin-left:6px;margin-top:2px">
-                                <div style="font-size:15px"><b>Francis Arinze</b> <i class="fa fa-circle" style="font-size:6px"></i> <b style="color:#2b8eeb">Follow</b></div>
+                                <div style="font-size:15px"><b>Cassy Maya</b> <i class="fa fa-circle" style="font-size:6px"></i> <b style="color:#2b8eeb">Follow</b></div>
                                 <div style="color:#888;font-size:12px">Orthopaedic Surgeon (2007 - present) <i class="fa fa-circle" style="font-size:6px"></i> 21h</div>
                             </div>
                         </div>
@@ -635,7 +635,7 @@ HTML;
                                 <a href="/static/images/profile_new.png"><img src="/static/images/profile_new.png" class="profile_image"/></a>
                             </div>
                             <div style="margin-left:-13px">
-                                <div style="font-size:12px"><b>Francis Arinze</b></b></div>
+                                <div style="font-size:12px"><b>Cassy Maya</b></b></div>
                                 <div class="input" style="width:100%;font-size:12px">Orthopaedic Surgeon (2007 - present) &nbsp; <i class="fa fa-angle-down"></i></div>
                             </div>
                         </div>
