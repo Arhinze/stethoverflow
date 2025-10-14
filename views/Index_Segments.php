@@ -114,7 +114,7 @@ HTML;
                     <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation --> 
 
                     <!-- .ask_or_post_div starts ~ only shown onclick -->
-                    <div class="ask_or_post_div" id="ask_or_post_div" style="display:block">
+                    <div class="ask_or_post_div" id="ask_or_post_div" style="display:none">
                     <!-- .write_answer starts -->
                     <div class="write_answer">
                         <!-- .write_answer_top starts -->
