@@ -140,6 +140,15 @@ HTML;
 
                         <!-- add_question starts -->
                         <div id="add_question" style="display:block">
+                            <div class="question_tip" style="background-color: #d6e2fd;color:#2b8eeb;padding:15px">
+                                <div><b>Keep Questions Simple:</b></div>
+                                <ul>
+                                    <li>Use short sharp sentences.</li>
+                                    <li>Double check your grammar.</li>
+                                    <li>Start question with "why", "what", "how"</li>
+                                    <li>Ensure the question has not already been asked</li>
+                                </ul>
+                            </div>
                             <textarea class="textarea" style="border-bottom:0;border-radius:0" placeholder="Ask your question"></textarea>
                         </div><!-- ask_question ends -->
 
