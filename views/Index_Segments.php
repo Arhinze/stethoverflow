@@ -123,9 +123,9 @@ HTML;
                             <div class="button" style="font-size:12px">Post</div>
                         </div><!-- .write_answer_top ends -->
 
-                        <div style="display:flex;justify-content:space-around;margin-top:15px;font-size:15px">
-                            <div style="border-bottom:2px solid #2b8eeb"><b>Add Question</b></div>
-                            <div><b>Create Post</b></div>
+                        <div style="display:flex;justify-content:space-around;margin-top:15px;margin-bottom:18px;font-size:15px">
+                            <div style="border-bottom:2px solid #2b8eeb;padding:12px 6px"><b>Add Question</b></div>
+                            <div style="padding:12px 6px"><b>Create Post</b></div>
                         </div>
 
                         <div style="display:flex">
