@@ -477,10 +477,10 @@ HTML;
             }
 
             function like_post(){
-                if (document.getElementById("post1").style.color == "#fff") {
+                if (document.getElementById("post1").style.color == "#000") {
                     document.getElementById("post1").style.color = "red";
                 } else if (document.getElementById("post1").style.color == "red") {
-                    document.getElementById("post1").style.color = "#fff";
+                    document.getElementById("post1").style.color = "#000";
                 }
             }
 
