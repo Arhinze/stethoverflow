@@ -541,7 +541,7 @@ HTML;
                 } else {
                     document.getElementById('cp_text').style = "border-bottom:2px solid #2b8eeb";
                     document.getElementById('create_post').style.display = "block";
-                    document.getElementById('ask_question').style.display = "none";
+                    document.getElementById('add_question').style.display = "none";
                     document.getElementById('aq_text').style = "border:0";
                 }
             }                                                                            
