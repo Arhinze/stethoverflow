@@ -40,11 +40,11 @@ class Index_Segments{
                 </div>
             </div><!-- end of 2nd .headers --> 
             <!-- .join_us starts -->
-            <div class="join_us" style="position:fixed;top:60px;right:15px;z-index:10;line-height:60px;background-color:#fff;border-radius:6px;box-shadow:0 0 3px 0 #d6e2fb">
+            <div class="join_us" style="position:fixed;top:60px;right:15px;z-index:10;line-height:60px;background-color:#fff;border-radius:6px;box-shadow:0 0 3px 0 #d6e2fb;text-align:center;">
                 <div style="position:relative">
                     <div style="position:absolute;float:right;right:12px;top:12px"><i class="fa fa-times"></i></div>
                 </div>
-                <div style="text-align:center;font-weight:bold">
+                <div style="font-weight:bold">
                     Join $site_name
                 </div>
                 <div>
