@@ -131,9 +131,13 @@ HTML;
                                 <div class="input" style="width:100%;font-size:12px">Orthopaedic Surgeon (2007 - present) &nbsp; <i class="fa fa-angle-down"></i></div>
                             </div>
                         </div>
+
+                        <div style="display:flex;justify-content:space-around;">
+                            <div><b>Add Question</b></div>
+                            <div><b>Create Post</b></div>
+                        </div>
                         
-                        <h4 style="width:90%">What's one medical myth patients still strongly believe in your country?</h4>
-                        <div style="color:#888">Add Image + </div>
+                        
                         <div class="">
                             <textarea class="textarea" placeholder="Write your answer on this"></textarea>
                         </div>
