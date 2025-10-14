@@ -36,7 +36,7 @@ class Index_Segments{
                 <div class="" style="margin-top:6px"><a href="/spaces"><i class="fa fa-users"></i></a></div>
                 <div class="" style="margin-top:6px"><a href="/notifications"><i class="fa fa-bell-o"></i></a></div>
                 <div class="profile_image_div">
-                    <a href="/static/images/profile_new.png"><img src="/static/images/profile_new.png" class="profile_image"/></a>
+                    <span onclick="show_div('')"><img src="/static/images/user_icon.png" class="profile_image"/></span>
                 </div>
             </div><!-- end of 2nd .headers --> 
 HTML;
