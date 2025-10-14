@@ -124,8 +124,8 @@ HTML;
                         </div><!-- .write_answer_top ends -->
 
                         <div style="display:flex;justify-content:space-around;margin:15px 0;font-size:15px">
-                            <div onclick="alternate_add_question_and_create_post()" style="padding:12px 6px"><b>Add Question</b></div>
-                            <div onclick="alternate_add_question_and_create_post()" style="padding:12px 6px"><b>Create Post</b></div>
+                            <div onclick="alternate_add_question_and_create_post()" id="aq_text" class="aq_cp_text"><b>Add Question</b></div>
+                            <div onclick="alternate_add_question_and_create_post()" id="cp_text" class="aq_cp_text"><b>Create Post</b></div>
                         </div>
 
                         <div style="display:flex">
@@ -535,12 +535,12 @@ HTML;
             function alternate_add_question_and_create_post(){
                 if (document.getElementById('add_question').style.display == "block") {
                     document.getElementById('create_post').style.display = "none";
-                    document.getElementById('add_question').style.borderBottom = "2px solid #2b8eeb";
-                    document.getElementById('create_question').style.borderBottom = "2px solid #2b8eeb";
+                    document.getElementById('aq_text').style = "border-bottom:2px solid #2b8eeb";
+                    document.getElementById('aq_text').style = "border:0";
                 } else if (document.getElementById('add_question').style.display == "none") {
                     document.getElementById('create_post').style.display = "block";
-                    document.getElementById('create_post').style.borderBottom = "2px solid #2b8eeb";
-                    document.getElementById('add_question').style.borderBottom = "0";
+                    document.getElementById('cp_text').style = "border-bottom:2px solid #2b8eeb";
+                    document.getElementById('aq_text').style = "border:0";
                 }
             }
                                                                                          

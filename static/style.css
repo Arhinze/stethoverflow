@@ -434,6 +434,12 @@ h1, h2, h3, h4, h5, h6{
     margin:1.35px 0 0 1.35px
 }
 
+/* -- Ask Question or Create Post section starts -- */
+.aq_cp_text {
+    padding:12px 6px
+}
+/* -- Ask Question or Create Post section ends -- */
+
 /* -- comment section starts -- */
 .like_comment_and_share_icons{
     display:flex;
