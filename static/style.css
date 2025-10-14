@@ -438,6 +438,12 @@ h1, h2, h3, h4, h5, h6{
 .aq_cp_text {
     padding:12px 6px
 }
+
+.question_tips{
+    background-color: #d6e2fd;
+    color:#2b8eeb;
+    padding:15px
+}
 /* -- Ask Question or Create Post section ends -- */
 
 /* -- comment section starts -- */
