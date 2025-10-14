@@ -101,7 +101,7 @@ if(isset($_POST["user_code"]) && (!empty($_POST["user_code"])) && (htmlentities(
         if(document.getElementById(smtn1).value == document.getElementById(smtn2).value){
             document.getElementById("status").innerHTML = "<b style='color:green'>Nice. Passwords Match <i class='fa fa-check'></i></b>";
 
-            document.getElementById("continue_button").innerHTML = '<button class="input" style="padding:9px 36%;border-radius:30px;color:#fff;font-weight:bold;background-color:#ff9100">Continute</button>';
+            document.getElementById("continue_button").innerHTML = '<button class="input" style="padding:9px 36%;border-radius:30px;color:#fff;font-weight:bold;background-color:#acc5f8">Continute</button>';
         } else {//if passwords don't match ~ client-side validation:
             document.getElementById("status").innerHTML = "<p style='color:red'><b>Passwords Do Not Match</b>.</p> <small><i class='fa fa-warning' style='color:red'></i> Make sure both password fields match to avoid starting the entire process afresh.<br /></small>";
 
