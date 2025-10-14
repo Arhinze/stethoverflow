@@ -440,6 +440,10 @@ h1, h2, h3, h4, h5, h6{
     padding:8px 5px 5px 5px;
     margin-top:10px;
 }
+
+.reply_comment{
+    margin-bottom:12px;
+}
 /* -- comment section ends -- */
 
 /* -- questions page starts -- */
