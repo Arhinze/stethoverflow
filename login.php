@@ -17,9 +17,10 @@ if(isset($_POST["full_name"])) {
 ?>
 
 <!--HTML:-->
-<div class="main_body"><!-- .main_body starts -->
+<div class="main_body" style="padding:12px;margin-left:9px"><!-- .main_body starts -->
+    <div style="text-align:center;font-size:18px"><i>Welcome to</i></div>
     <h1 style="font-size:30px;text-align:center">Steth<span style="color: #2b8eeb">Overflow</span></h1>
-    <div style="color:green;font-size:15px;text-align:center;margin-top:-19px"><i class="fa fa-key"></i>&nbsp; All data is encrypted</div>
+    <div style="color:#2b8eeb;font-size:15px;text-align:center;margin-top:-19px"><i class="fa fa-key"></i>&nbsp; All data is encrypted</div>
 
     <div class="input" style="border-radius:36px;text-align:center;background-color:blue;border:1px solid blue;font-weight:bold;color:#fff;margin-top:30px">
         <a href="/auth/google-login.php" style="color:#fff;padding:12px 21%"><i class="fa fa-google" id="signinButton"></i>&nbsp; Continue with Google</a>
