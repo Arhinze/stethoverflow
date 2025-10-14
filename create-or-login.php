@@ -42,7 +42,7 @@ if(isset($_POST["user_code"]) && (!empty($_POST["user_code"])) && (htmlentities(
 ?>
 
     <!--HTML:-->
-    <div class="main_body"><!-- .main_body starts -->
+    <div class="main_body" style="padding:12px;margin-left:15px"><!-- .main_body starts -->
         <h1 style="font-size:30px;text-align:center">Bilo<span style="color:#ff9100">Online</span></h1>
         <div style="color:green;font-size:15px;text-align:center;margin-top:-19px"><i class="fa fa-key"></i>&nbsp; All data is encrypted</div>
     
