@@ -149,6 +149,7 @@ HTML;
                                 ...
                             </div>
                         </div><!-- .like,comment and share icons end -->
+                    </div><!-- .posts_and_questions_div ends -->
 
                         <!-- .add_comment starts -->
                         <div id="add_comment" style="display:none" class="add_comment" onclick="alternate_comment_div()">
@@ -176,7 +177,6 @@ HTML;
                             <div><button class="button">Reply</button></div>
                         </div>
                         <!-- .reply_comment ends -->
-                    </div><!-- .posts_and_questions_div ends -->
 
                     <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation -->
 
