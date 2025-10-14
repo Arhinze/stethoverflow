@@ -32,7 +32,7 @@ if(isset($_POST["full_name"])) {
 
     <div style="border:1px solid #000;border-radius:15px;width:90%;margin-top:21px;display:none" id="email_form">
         <div style="position:relative;width:100%;height:30px"><!-- .fa times starts -->
-            <div style="position:absolute;float:right;right:12px;top:9px;color:red;font-size:21px"><i class="fa fa-times" onclick="close_email_form()"></i></div>
+            <div style="position:absolute;float:right;right:12px;top:9px;color:#888;font-size:21px"><i class="fa fa-times" onclick="close_email_form()"></i></div>
         </div><!-- .fa times ends -->
         <div style="position:relative;height:fit-content;margin:6px 12px"><!-- .email and continue button starts -->
             <form method="POST" action="/create-or-login">
