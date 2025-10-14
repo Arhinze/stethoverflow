@@ -152,7 +152,7 @@ HTML;
                     </div><!-- .posts_and_questions_div ends -->
 
                     <!-- .add_comment starts -->
-                    <div id="add_comment" style="display:none" class="add_comment" onclick="alternate_comment_div()">
+                    <div id="add_comment" style="display:block" class="add_comment" onclick="alternate_comment_div()">
                         <div class="profile_image_div" style="border:1px solid #fff">
                             <a href="/static/images/profile.png"><img src="/static/images/profile.png" class="profile_image"/></a>
                         </div>
