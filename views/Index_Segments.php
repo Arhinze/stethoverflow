@@ -95,7 +95,7 @@ HTML;
                 <div class="main_body">
                     <!-- .main_page_topmost_div starts -->
                     <div class="main_page_topmost_div" style="padding:12px">
-                        <div style="display:flex;background-color:#fff">
+                        <div style="display:flex;background-color:#fff" onclick="show_div('ask_or_post_div')">
                             <div style="width:30px;height:30px;border:2px solid #d6e3fd;border-radius:100%">
                                 <a href="$site_url/static/images/profile.png"><img src="/static/images/profile.png" style="width:27px;height:27px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
                             </div>
