@@ -48,10 +48,10 @@ class Index_Segments{
                     Join $site_name
                 </div>
                 <div>
-                    <a href="/create-or-login"><span class="button" style="padding:18px 12px">Sign up</span></a>
+                    <a href="/create-or-login"><span class="button" style="padding:9px 18px">Sign up</span></a>
                 </div>
                 <div>
-                    <a href="/create-or-login"><span class="button" style="padding:18px 12px;border:1px solid #888;background-color:#fff;color:#888">Sign in</span></a>
+                    <a href="/create-or-login"><span class="button" style="padding:9px 18px;border:1px solid #888;background-color:#fff;color:#888">Sign in</span></a>
                 </div>
                 <div style="text-align:center;border-top:1px solid #888;padding:18px;font-size:12px">
                     About Blog Privacy Terms
