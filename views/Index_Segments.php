@@ -140,7 +140,7 @@ HTML;
                         <!-- .like,comment and share icons start -->
                         <div style="display:flex;justify-content:space-between;margin:12px 9px -2px 9px;color:#888">
                             <div class="" style="display:flex">
-                                <div><i class="fa fa-heart-o"></i> 10</div>
+                                <div><i class="fa fa-heart-o" onclick="like_comment()" style="color:#fff"></i> 10</div>
                                 <div style="margin-left:10px"><i class="fa fa-comment-o" onclick="show_div('add_comment')"></i> 9</div>
                                 <div style="margin-left:10px"><i class="fa fa-retweet" onclick="show_div('quote_comment_div1')"></i> 3</div>
                                 <div style="margin-left:10px"><i class="fa fa-share-alt"></i> 5</div>
@@ -473,6 +473,14 @@ HTML;
                     document.getElementById(vari).style.display = "block";
                 } else if (document.getElementById(vari).style.display == "block") {
                     document.getElementById(vari).style.display = "none";
+                }
+            }
+
+            function like_post(){
+                if (document.getElementById("post1").style.color == "#fff") {
+                    document.getElementById("post1").style.color = "red";
+                } else if (document.getElementById("post1").style.color == "red") {
+                    document.getElementById("post1").style.color = "#fff";
                 }
             }
 
