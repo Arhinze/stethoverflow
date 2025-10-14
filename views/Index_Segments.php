@@ -201,10 +201,15 @@ HTML;
                         <div style="color:#888">Add Image + </div>
 
                         <div class="">
-                            <textarea class="textarea" style="border-radius:0;border-bottom:0;height:50px" placeholder="Write your answer on this"></textarea>
+                            <textarea class="textarea" style="border-radius:0;border-bottom:0;height:50px" placeholder="Make a post about this"></textarea>
                         </div>
-                        
-                        <h4 style="width:90%">What's one medical myth patients still strongly believe in your country?</h4>
+                        <div style="border-left:2px solid #888;padding-left:3px">
+                            <div class="questions" style="margin-bottom:3px"><h4>What are some life saving surgical procedures you've witnessed?</h4></div>
+    
+                            <div class="answers" style="padding:6px">
+                                In 2014, 17-year-old Grace from the Democratic Republic of Congo underwent life-saving surgery to remove a very aggressive tumor.  
+                            </div>
+                        </div>
                     </div><!-- .write_answer ends -->
                     <!-- .quote_comment ends -->
 
