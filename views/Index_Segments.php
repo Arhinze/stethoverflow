@@ -36,9 +36,28 @@ class Index_Segments{
                 <div class="" style="margin-top:6px"><a href="/spaces"><i class="fa fa-users"></i></a></div>
                 <div class="" style="margin-top:6px"><a href="/notifications"><i class="fa fa-bell-o"></i></a></div>
                 <div class="profile_image_div">
-                    <span onclick="show_div('')"><img src="/static/images/user_icon.png" class="profile_image"/></span>
+                    <span onclick="show_div('join_us')"><img src="/static/images/user_icon.png" class="profile_image"/></span>
                 </div>
             </div><!-- end of 2nd .headers --> 
+            <!-- .join_us starts -->
+            <div class="join_us" style="line-height:18px">
+                <div style="position:relative">
+                    <div style="position:absolute;float:right;right:12px;top:12px"><i class="fa fa-times"></i></div>
+                </div>
+                <div style="text-align:center;font-weight:bold">
+                    Join $site_name
+                </div>
+                <div>
+                    <a href="/create-or-login"><span class="button">Sign up</span></a>
+                </div>
+                <div>
+                    <a href="/create-or-login"><span class="button">Sign in</span></a>
+                </div>
+                <div style="text-align:center;border-top:1px solid #888;padding:18px;font-size:12px">
+                    About Blog Privacy Terms
+                </div>
+            </div>
+            <!-- .join_us ends -->
 HTML;
     }
     
