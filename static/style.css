@@ -744,7 +744,8 @@ h1, h2, h3, h4, h5, h6{
     padding:6px;
     background-color:#fff;
     font-size:15px;
-    color:var(--site_color_alt);
+    color:#888;
+    /*color:var(--site_color_alt);*/
     border:1px solid var(--site_color_alt);
     border-radius:15px;
 }
