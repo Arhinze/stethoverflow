@@ -132,7 +132,7 @@ HTML;
                             </div>
                         </div>
 
-                        <div style="display:flex;justify-content:space-around;">
+                        <div style="display:flex;justify-content:space-around;margin-top:15px;font-size:15px">
                             <div><b>Add Question</b></div>
                             <div><b>Create Post</b></div>
                         </div>
