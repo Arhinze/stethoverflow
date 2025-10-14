@@ -210,7 +210,7 @@ HTML;
                                 <div class="profile_image_div">
                                     <a href="/static/images/profile.png"><img src="/static/images/profile.png" class="profile_image"/></a>
                                 </div>
-                                <div style="color:#888;margin-left:-13px;margin-bottom:-13px">Francis Arinze - <a href="/">@arhinze</a></div>
+                                <div style="color:#888;margin-left:-13px;margin-top:10px">Francis Arinze - <a href="/">@arhinze</a></div>
                             </div>
 
                             <div class="questions" style="margin-bottom:3px"><h4>What are some life saving surgical procedures you've witnessed?</h4></div>
