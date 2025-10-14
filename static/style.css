@@ -440,6 +440,8 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .question_tips{
+    margin-top:12px;
+    font-size:12px;
     background-color: #d6e2fd;
     color:#2b8eeb;
     padding:15px
