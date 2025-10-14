@@ -650,7 +650,7 @@ HTML;
                                     <li>Ensure the question has not already been asked</li>
                                 </ul>
                             </div>
-                            <textarea class="textarea" style="border-bottom:0;border-radius:0" placeholder="Ask your question"></textarea>
+                            <textarea class="textarea" style="border-bottom:0;border-radius:0;height:75px" placeholder="Ask your question"></textarea>
                         </div><!-- ask_question ends -->
 
                         <!-- create_post starts -->
