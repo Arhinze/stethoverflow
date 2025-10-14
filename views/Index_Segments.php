@@ -122,6 +122,12 @@ HTML;
                             <div style="font-size:18px;color:#888" onclick="show_div('ask_or_post_div')"><b> X </b></div>
                             <div class="button" style="font-size:12px">Post</div>
                         </div><!-- .write_answer_top ends -->
+
+                        <div style="display:flex;justify-content:space-around;margin-top:15px;font-size:15px">
+                            <div style="border-bottom:2px solid #2b8eeb"><b>Add Question</b></div>
+                            <div><b>Create Post</b></div>
+                        </div>
+
                         <div style="display:flex">
                             <div class="profile_image_div" style="margin-top:5px">
                                 <a href="/static/images/profile.png"><img src="/static/images/profile.png" class="profile_image"/></a>
@@ -132,14 +138,8 @@ HTML;
                             </div>
                         </div>
 
-                        <div style="display:flex;justify-content:space-around;margin-top:15px;font-size:15px">
-                            <div><b>Add Question</b></div>
-                            <div><b>Create Post</b></div>
-                        </div>
-                        
-                        
                         <div class="">
-                            <textarea class="textarea" placeholder="Write your answer on this"></textarea>
+                            <textarea class="textarea" style="border-bottom:0;border-radius:0" placeholder="Ask your question"></textarea>
                         </div>
                     </div><!-- .write_answer ends -->
                     </div><!-- .ask_or_post_div ends ~ only shown onclick -->
