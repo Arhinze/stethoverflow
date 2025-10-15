@@ -80,7 +80,7 @@ $profile_or_sign_in = "";
 if ($data) {
     $profile_or_sign_in = <<<HTML
         <!-- .join_us starts -->
-        <div class="join_us" id="join_us" style="display:none">
+        <div class="join_us">
             <div style="position:relative">
                 <div style="position:absolute;float:right;right:12px;top:12px" onclick="show_div('join_us')"><i class="fa fa-times"></i></div>
             </div>
@@ -102,7 +102,7 @@ HTML;
 } else {
     $profile_or_sign_in = <<<HTML
         <!-- profile for logged in user starts -->
-        <div class="join_us" style="display:none">
+        <div class="join_us">
             <b>Logged in *</b>
             <div>View profile -></div>
         </div><!-- profile for logged in user ends -->

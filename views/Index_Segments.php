@@ -39,13 +39,14 @@ class Index_Segments{
                     <span onclick="show_div('join_us')"><img src="/static/images/user_icon.png" class="profile_image"/></span>
                 </div>
             </div><!-- end of 2nd .headers --> 
-
-            <div id="join_us">$profile_or_sign_in</div>
+            
+            <div id="join_us" style="display:none">$profile_or_sign_in</div>
+            
 HTML;
     }
-    
+
     public static function header($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $Hi_user = "", $title=SITE_NAME){
-        
+
         $main_header = Index_Segments::main_header();
         $css_version = filemtime($_SERVER["DOCUMENT_ROOT"]."/static/style.css");
 
