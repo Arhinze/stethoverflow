@@ -91,7 +91,7 @@ if ($data) {
             <div onclick="show_div('coming_soon')">Bookmarks</div>
             <div><a href="/drafts" style="color:#000">Drafts</a></div>
 
-            <div id="coming_soon" class="invalid">Feature coming soon</div>
+            <div id="coming_soon" class="invalid" style="display:none">Feature coming soon</div>
         </div><!-- profile for logged in user ends -->
 HTML;       
     
