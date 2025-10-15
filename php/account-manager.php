@@ -98,7 +98,7 @@ if ($data) {
         </div><!-- profile for logged in user ends -->
 
         <!-- just a dummy div to close profile menu -->
-        <div class="profile_menu" style="background-color:#888;top:0;right:0;width:30%"></div>
+        <div class="profile_menu" style="background-color:#888;top:0;right:0;width:30%" onclick="show_div('join_us')"></div>
         <!-- just a dummy div to close profile menu -->
 
 HTML;       
