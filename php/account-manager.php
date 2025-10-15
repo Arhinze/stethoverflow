@@ -85,7 +85,7 @@ if ($data) {
         <div class="profile_menu" style="left:0">
             <div style="padding:21px 12px 0 12px">
                 <div class="profile_image_div">
-                    <span><img src="$profile_picture" class="profile_image"/></span>
+                    <a href="$profile_picture"><img src="$profile_picture" class="profile_image"/></a>
                 </div>
                 <div style="margin:6px;font-size:16px"><b>$data->real_name</b></div>
             </div>
