@@ -90,9 +90,9 @@ if ($data) {
                 <div style="margin:6px;font-size:16px"><b>$data->real_name</b></div>
             </div>
             <div style="margin:15px;border-top:1px solid #888">
-                <div onclick="show_div('coming_soon')"><i class="fa fa-message"></i> Messages</div>
-                <div onclick="show_div('coming_soon')">Bookmarks</div>
-                <div><a href="/drafts" style="color:#000">Drafts</a></div>    
+                <div><a href="/messages" style="color:#000"><i class="fa fa-newspaper"></i> Messages</a></div>
+                <div><a href="/bookmarks" style="color:#000"><i class="fa fa-bookmark-o"></i> Bookmarks</a></div>
+                <div><a href="/drafts" style="color:#000"><i class="fa fa-pencil-square-o"></i> Drafts</a></div>    
                 <div id="coming_soon" class="invalid" style="display:none">Feature coming soon</div>
             </div>
         </div><!-- profile menu for logged in user ends -->
