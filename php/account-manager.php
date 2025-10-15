@@ -25,7 +25,7 @@ $code_out = explode("_", generate_unique_id())[1];
 
 if(isset($_COOKIE["google_user_email"])) {
     $nge = htmlentities($_COOKIE["google_user_email"]);
-    $nge_stmt = $pdo->prepare("SELECT * FROM customers WHERE customer_email = ? LIMIT ?, ?");
+    $nge_stmt = $pdo->prepare("SELECT * FROM stethoverflow_users WHERE user_email = ? LIMIT ?, ?");
     $nge_stmt->execute([$nge, 0, 1]);
     $nge_data = $nge_stmt->fetch(PDO::FETCH_OBJ);
 
