@@ -102,8 +102,9 @@ HTML;
 } else {
     $profile_or_sign_in = <<<HTML
         <!-- profile for logged in user starts -->
-        <div class="join_us" id="join_us" style="display:none">
-
+        <div class="join_us" style="display:none">
+            <b>Logged in *</b>
+            <div>View profile -></div>
         </div><!-- profile for logged in user ends -->
 HTML;    
 }  

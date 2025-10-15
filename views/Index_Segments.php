@@ -40,7 +40,7 @@ class Index_Segments{
                 </div>
             </div><!-- end of 2nd .headers --> 
 
-            <div>$profile_or_sign_in</div>
+            <div id="join_us">$profile_or_sign_in</div>
 HTML;
     }
     
