@@ -36,7 +36,7 @@ if(isset($_POST["email"])){//check if new user already exists:
                     $user_unique_id = generate_unique_id();
 
                     //create(insert) new user
-                    $create_user_stmt = $pdo->prepare("INSERT INTO stethoverflow_users(date_joined, customer_realname, `password`, customer_email, unique_id) VALUES(?,?,?,?,?)");
+                    $create_user_stmt = $pdo->prepare("INSERT INTO stethoverflow_users(entry_date, customer_realname, `password`, customer_email, unique_id) VALUES(?,?,?,?,?)");
                     $create_user_stmt->execute([date("Y-m-d H:i:s", time()), htmlentities($_POST["full_name"]), htmlentities($_POST["password"]), $email, $user_unique_id]);
 
                     //delete possible old unique_id cookie:
