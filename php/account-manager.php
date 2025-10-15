@@ -74,3 +74,13 @@ if((isset($_COOKIE["unique_id"]))){
 }
 
 // then call 'if data(){ ... }' for all necessary dashboard related page.
+
+//to know if to tell user to sign in or view profile:
+$profile_or_sign_in = "";
+if ($data) {
+    $profile_or_sign_in = "Yes, Logged in";
+} else {
+    $profile_or_sign_in = "No, Logged out";
+}  
+    
+define("PROFILE_OR_SIGN_IN", $profile_or_sign_in);
