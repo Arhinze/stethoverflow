@@ -96,6 +96,11 @@ if ($data) {
                 <div id="coming_soon" class="invalid" style="display:none">Feature coming soon</div>
             </div>
         </div><!-- profile for logged in user ends -->
+
+        <!-- just a dummy div to close profile menu -->
+        <div class="profile_menu" style="background-color:#888;top:0;right:0;width:30%"></div>
+        <!-- just a dummy div to close profile menu -->
+
 HTML;       
     
 } else {
