@@ -11,7 +11,7 @@ class Index_Segments{
     protected static $pdo;
 
     public static function main_header($site_name = SITE_NAME_SHORT) {
-        $profile_or_sign_in = $this->pdo->data;
+        $profile_or_sign_in = Index_Segments::$pdo->data;
         $output = "";       
         if($profile_or_sign_in){
             $output = "Yes, Logged in";
@@ -48,6 +48,7 @@ class Index_Segments{
             </div><!-- end of 2nd .headers --> 
 
             <h1>$output</h1>
+
             <!-- .join_us starts -->
             <div class="join_us" id="join_us" style="display:none">
                 <div style="position:relative">
