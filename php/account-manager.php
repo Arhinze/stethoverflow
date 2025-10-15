@@ -87,7 +87,7 @@ if ($data) {
                 <div class="profile_image_div">
                     <span onclick="show_div('join_us')"><img src="$profile_picture" class="profile_image"/></span>
                 </div>
-                <div style="margin:12px 6px;font-size:16px"><b>$data->real_name</b></div>
+                <div style="margin:6px;font-size:16px"><b>$data->real_name</b></div>
             </div>
             <div style="margin:15px;border-top:1px solid #888">
                 <div onclick="show_div('coming_soon')"><i class="fa fa-message"></i> Messages</div>
@@ -98,7 +98,7 @@ if ($data) {
         </div><!-- profile for logged in user ends -->
 
         <!-- just a dummy div to close profile menu -->
-        <div class="profile_menu" style="background-color:none;top:0;right:0;width:30%" onclick="show_div('join_us')"></div>
+        <div class="profile_menu" style="background-color:none;opacity:0.1;top:0;right:0;width:30%" onclick="show_div('join_us')"></div>
         <!-- just a dummy div to close profile menu -->
 
 HTML;       
