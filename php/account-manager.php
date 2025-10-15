@@ -82,7 +82,7 @@ if ($data) {
     $profile_picture = $data->profile_picture;
     $profile_or_sign_in = <<<HTML
         <!-- profile for logged in user starts -->
-        <div class="join_us" style="top:0;left:0">
+        <div class="profile_menu">
             <div class="profile_image_div">
                 <span onclick="show_div('join_us')"><img src="$profile_picture" class="profile_image"/></span>
             </div>
