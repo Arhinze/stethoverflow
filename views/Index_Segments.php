@@ -40,26 +40,7 @@ class Index_Segments{
                 </div>
             </div><!-- end of 2nd .headers --> 
 
-            <h1 style="margin-top:50px">$profile_or_sign_in</h1>
-
-            <!-- .join_us starts -->
-            <div class="join_us" id="join_us" style="display:none">
-                <div style="position:relative">
-                    <div style="position:absolute;float:right;right:12px;top:12px" onclick="show_div('join_us')"><i class="fa fa-times"></i></div>
-                </div>
-                <div style="font-weight:bold;margin-top:21px">
-                    Join $site_name
-                </div>
-                <div>
-                    <a href="/login"><span class="button" style="padding:6px 21px">Sign up</span></a>
-                </div>
-                <div>
-                    <a href="/login"><span class="button" style="padding:6px 21px;border:1px solid #888;background-color:#fff;color:#888">Sign in</span></a>
-                </div>
-                <div style="text-align:center;border-top:1px solid #888;padding:18px;font-size:12px">
-                    About Blog Privacy Terms
-                </div>
-            </div><!-- .join_us ends -->
+            <div>$profile_or_sign_in</div>
 HTML;
     }
     
