@@ -83,15 +83,18 @@ if ($data) {
     $profile_or_sign_in = <<<HTML
         <!-- profile for logged in user starts -->
         <div class="profile_menu">
-            <div class="profile_image_div">
-                <span onclick="show_div('join_us')"><img src="$profile_picture" class="profile_image"/></span>
+            <div style="padding:21px 12px">
+                <div class="profile_image_div">
+                    <span onclick="show_div('join_us')"><img src="$profile_picture" class="profile_image"/></span>
+                </div>
+                <div style="margin:12px 6px;font-size:16px"><b>$data->real_name</b></div>
             </div>
-            <div style="margin:12px 6px;font-size:16px"><b>$data->real_name</b></div>
-            <div onclick="show_div('coming_soon')"><i class="fa fa-message"></i> Messages</div>
-            <div onclick="show_div('coming_soon')">Bookmarks</div>
-            <div><a href="/drafts" style="color:#000">Drafts</a></div>
-
-            <div id="coming_soon" class="invalid" style="display:none">Feature coming soon</div>
+            <div syle="padding:18px 12px;border-top:1px solid #888">
+                <div onclick="show_div('coming_soon')"><i class="fa fa-message"></i> Messages</div>
+                <div onclick="show_div('coming_soon')">Bookmarks</div>
+                <div><a href="/drafts" style="color:#000">Drafts</a></div>    
+                <div id="coming_soon" class="invalid" style="display:none">Feature coming soon</div>
+            </div>
         </div><!-- profile for logged in user ends -->
 HTML;       
     
