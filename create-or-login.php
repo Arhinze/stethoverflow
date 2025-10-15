@@ -7,6 +7,7 @@ $remember_email = "";
 $remember_full_name = "";
 $heading = "";
 $full_name_tag = "";
+$username_tag = "";
 $repeat_password_tag = "";
 $remember_email = "";
 $google_or_email_log_in = "";
