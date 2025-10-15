@@ -82,9 +82,16 @@ if ($data) {
     $profile_picture = $data->profile_picture;
     $profile_or_sign_in = <<<HTML
         <!-- profile for logged in user starts -->
-        <div class="join_us">
-            <b>Logged in *</b>
-            <div>View profile -></div>
+        <div class="join_us" style="top:0;left:0">
+            <div class="profile_image_div">
+                <span onclick="show_div('join_us')"><img src="$profile_picture" class="profile_image"/></span>
+            </div>
+            <div style="margin:12px 6px;font-size:16px"><b>$data->real_name</b></div>
+            <div onclick="show_div('coming_soon')"><i class="fa fa-message"></i> Messages</div>
+            <div onclick="show_div('coming_soon')">Bookmarks</div>
+            <div><a href="/drafts" style="color:#000">Drafts</a></div>
+
+            <div id="coming_soon" class="invalid">Feature coming soon</div>
         </div><!-- profile for logged in user ends -->
 HTML;       
     
