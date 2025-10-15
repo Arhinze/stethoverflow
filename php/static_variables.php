@@ -14,4 +14,14 @@ define("SITE_URL_SHORT", "stethoverflow.com");
 
 ini_set("display_errors", '1');
 date_default_timezone_set('Africa/Lagos');
+
+//to know if to tell user to sign in or view profile:
+$profile_or_sign_in = "";
+if ($data) {
+    $profile_or_sign_in = "Yes, Logged in";
+} else {
+    $profile_or_sign_in = "No, Logged out";
+}  
+    
+define("PROFILE_OR_SIGN_IN", $profile_or_sign_in);
 ?>

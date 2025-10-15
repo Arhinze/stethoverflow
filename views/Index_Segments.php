@@ -10,14 +10,7 @@ class Index_Segments{
     }
     protected static $pdo;
 
-    public static function main_header($site_name = SITE_NAME_SHORT) {
-        $profile_or_sign_in = Index_Segments::$pdo->data;
-        $output = "";       
-        if($profile_or_sign_in){
-            $output = "Yes, Logged in";
-        }else {
-            $output = "No, Logged out";
-        }
+    public static function main_header($site_name = SITE_NAME_SHORT, $profile_or_sign_in = PROFILE_OR_SIGN_IN) {
         echo <<<HTML
             <!-- start of .headers --> 
             <div class="headers">
@@ -47,7 +40,7 @@ class Index_Segments{
                 </div>
             </div><!-- end of 2nd .headers --> 
 
-            <h1 style="margin-top:50px">$output</h1>
+            <h1 style="margin-top:50px">$profile_or_sign_in</h1>
 
             <!-- .join_us starts -->
             <div class="join_us" id="join_us" style="display:none">
