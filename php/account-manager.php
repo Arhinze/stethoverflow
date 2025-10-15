@@ -89,7 +89,7 @@ if ($data) {
                 </div>
                 <div style="margin:12px 6px;font-size:16px"><b>$data->real_name</b></div>
             </div>
-            <div syle="padding:18px 12px;border-top:1px solid #888">
+            <div syle="margin:15px;border-top:1px solid #888">
                 <div onclick="show_div('coming_soon')"><i class="fa fa-message"></i> Messages</div>
                 <div onclick="show_div('coming_soon')">Bookmarks</div>
                 <div><a href="/drafts" style="color:#000">Drafts</a></div>    
