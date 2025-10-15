@@ -11,6 +11,13 @@ class Index_Segments{
     protected static $pdo;
 
     public static function main_header($site_name = SITE_NAME_SHORT) {
+        $profile_or_sign_in = $this->pdo->data;
+        $output = "";       
+        if($profile_or_sign_in){
+            $output = "Yes, Logged in";
+        }else {
+            $output = "No, Logged out";
+        }
         echo <<<HTML
             <!-- start of .headers --> 
             <div class="headers">
@@ -39,6 +46,8 @@ class Index_Segments{
                     <span onclick="show_div('join_us')"><img src="/static/images/user_icon.png" class="profile_image"/></span>
                 </div>
             </div><!-- end of 2nd .headers --> 
+
+            <h1>$output</h1>
             <!-- .join_us starts -->
             <div class="join_us" id="join_us" style="display:none">
                 <div style="position:relative">
@@ -56,8 +65,7 @@ class Index_Segments{
                 <div style="text-align:center;border-top:1px solid #888;padding:18px;font-size:12px">
                     About Blog Privacy Terms
                 </div>
-            </div>
-            <!-- .join_us ends -->
+            </div><!-- .join_us ends -->
 HTML;
     }
     
