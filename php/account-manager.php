@@ -45,7 +45,7 @@ if(isset($_COOKIE["google_user_email"])) {
         $user_unique_id = generate_unique_id();
 
         //create(insert) new user
-        $create_user_stmt = $pdo->prepare("INSERT INTO customers(date_joined, customer_realname, `password`, customer_email, unique_id) VALUES(?,?,?,?,?)");
+        $create_user_stmt = $pdo->prepare("INSERT INTO stethoverflow_users(entry_date, real_name, `password`, user_email, unique_id) VALUES(?,?,?,?,?)");
         $create_user_stmt->execute([date("Y-m-d H:i:s", time()), htmlentities($_COOKIE["google_user_name"]), "Goo--gle1",htmlentities($_COOKIE["google_user_email"]),$user_unique_id]);
 
         //delete google cookies:
@@ -58,12 +58,6 @@ if(isset($_COOKIE["google_user_email"])) {
 
         //set new unique_id cookie:
         setcookie("unique_id", $user_unique_id,  time()+(48*3600), "/");
-
-        //get user details from database:
-        //$stmt = $pdo->prepare("SELECT * FROM customers WHERE unique_id = ? LIMIT ?, ?");
-        //$stmt->execute([$user_unique_id, 0, 1]);
-      
-        //$data = $stmt->fetch(PDO::FETCH_OBJ);
     }
 }
 
