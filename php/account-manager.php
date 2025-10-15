@@ -83,7 +83,7 @@ if ($data) {
     $profile_or_sign_in = <<<HTML
         <!-- profile for logged in user starts -->
         <div class="profile_menu" style="left:0">
-            <div style="padding:21px 12px">
+            <div style="padding:21px 12px 12px 12px">
                 <div class="profile_image_div">
                     <span onclick="show_div('join_us')"><img src="$profile_picture" class="profile_image"/></span>
                 </div>
@@ -98,7 +98,7 @@ if ($data) {
         </div><!-- profile for logged in user ends -->
 
         <!-- just a dummy div to close profile menu -->
-        <div class="profile_menu" style="background-color:#888;top:0;right:0;width:30%" onclick="show_div('join_us')"></div>
+        <div class="profile_menu" style="background-color:none;top:0;right:0;width:30%" onclick="show_div('join_us')"></div>
         <!-- just a dummy div to close profile menu -->
 
 HTML;       
