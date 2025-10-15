@@ -79,6 +79,15 @@ if((isset($_COOKIE["unique_id"]))){
 $profile_or_sign_in = "";
 if ($data) {
     $profile_or_sign_in = <<<HTML
+        <!-- profile for logged in user starts -->
+        <div class="join_us">
+            <b>Logged in *</b>
+            <div>View profile -></div>
+        </div><!-- profile for logged in user ends -->
+HTML;       
+    
+} else {
+    $profile_or_sign_in = <<<HTML
         <!-- .join_us starts -->
         <div class="join_us">
             <div style="position:relative">
@@ -99,14 +108,6 @@ if ($data) {
         </div><!-- .join_us ends -->
 HTML;
 
-} else {
-    $profile_or_sign_in = <<<HTML
-        <!-- profile for logged in user starts -->
-        <div class="join_us">
-            <b>Logged in *</b>
-            <div>View profile -></div>
-        </div><!-- profile for logged in user ends -->
-HTML;    
 }  
     
 define("PROFILE_OR_SIGN_IN", $profile_or_sign_in);
