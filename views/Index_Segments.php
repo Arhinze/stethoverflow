@@ -653,13 +653,17 @@ HTML;
                                     <li>Ensure the question has not already been asked</li>
                                 </ul>
                             </div>
-                            <textarea class="textarea" style="border-bottom:0;border-radius:0;height:75px" placeholder="Ask your question"></textarea>
+                            <form method="post" action="">
+                                <textarea name="question" class="textarea" style="border-bottom:0;border-radius:0;height:75px" placeholder="Ask your question"></textarea>
+                            </form>
                         </div><!-- ask_question ends -->
 
                         <!-- create_post starts -->
                         <div id="create_post" style="display:none">
                             <div style="color:#888;margin:12px 0">+ Add Image</div>
-                            <textarea class="textarea" style="border-bottom:0;border-radius:0" placeholder="Create a post about something"></textarea>
+                            <form method="post" action="">
+                                <textarea name="write_up" class="textarea" style="border-bottom:0;border-radius:0" placeholder="Create a post about something"></textarea>
+                            </form>
                         </div><!-- create_post ends -->
                     </div><!-- .write_answer ends -->
                     </div><!-- .ask_or_post_div ends ~ only shown onclick -->
