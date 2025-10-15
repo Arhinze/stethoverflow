@@ -77,7 +77,9 @@ if((isset($_COOKIE["unique_id"]))){
 
 //to know if to tell user to sign in or view profile:
 $profile_or_sign_in = "";
+$profile_picture = $site_url."/static/images/user_icon.png";
 if ($data) {
+    $profile_picture = $data->profile_picture;
     $profile_or_sign_in = <<<HTML
         <!-- profile for logged in user starts -->
         <div class="join_us">
@@ -111,3 +113,4 @@ HTML;
 }  
     
 define("PROFILE_OR_SIGN_IN", $profile_or_sign_in);
+define("PROFILE_PICTURE", $profile_picture);

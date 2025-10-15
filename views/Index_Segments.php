@@ -10,7 +10,7 @@ class Index_Segments{
     }
     protected static $pdo;
 
-    public static function main_header($site_name = SITE_NAME_SHORT, $profile_or_sign_in = PROFILE_OR_SIGN_IN) {
+    public static function main_header($site_name = SITE_NAME_SHORT, $profile_or_sign_in = PROFILE_OR_SIGN_IN, $profile_picture = PROFILE_PICTURE) {
         echo <<<HTML
             <!-- start of .headers --> 
             <div class="headers">
@@ -36,7 +36,7 @@ class Index_Segments{
                 <div class="" style="margin-top:6px"><a href="/spaces"><i class="fa fa-users"></i></a></div>
                 <div class="" style="margin-top:6px"><a href="/notifications"><i class="fa fa-bell-o"></i></a></div>
                 <div class="profile_image_div">
-                    <span onclick="show_div('join_us')"><img src="/static/images/user_icon.png" class="profile_image"/></span>
+                    <span onclick="show_div('join_us')"><img src="$profile_picture" class="profile_image"/></span>
                 </div>
             </div><!-- end of 2nd .headers --> 
             
