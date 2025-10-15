@@ -47,7 +47,7 @@ class Index_Segments{
                 </div>
             </div><!-- end of 2nd .headers --> 
 
-            <h1>$output</h1>
+            <h1 style="margin-top:50px">$output</h1>
 
             <!-- .join_us starts -->
             <div class="join_us" id="join_us" style="display:none">
