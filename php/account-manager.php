@@ -81,11 +81,11 @@ $profile_picture = $site_url."/static/images/user_icon.png";
 if ($data) {
     $profile_picture = $data->profile_picture;
     $profile_or_sign_in = <<<HTML
-        <!-- profile for logged in user starts -->
+        <!-- profile menu for logged in user starts -->
         <div class="profile_menu" style="left:0">
             <div style="padding:21px 12px 0 12px">
                 <div class="profile_image_div">
-                    <span onclick="show_div('join_us')"><img src="$profile_picture" class="profile_image"/></span>
+                    <span><img src="$profile_picture" class="profile_image"/></span>
                 </div>
                 <div style="margin:6px;font-size:16px"><b>$data->real_name</b></div>
             </div>
@@ -95,7 +95,7 @@ if ($data) {
                 <div><a href="/drafts" style="color:#000">Drafts</a></div>    
                 <div id="coming_soon" class="invalid" style="display:none">Feature coming soon</div>
             </div>
-        </div><!-- profile for logged in user ends -->
+        </div><!-- profile menu for logged in user ends -->
 
         <!-- just a dummy div to close profile menu -->
         <div class="profile_menu" style="background-color:#888;opacity:0.1;top:0;right:0;width:30%" onclick="show_div('join_us')"></div>
