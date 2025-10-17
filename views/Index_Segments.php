@@ -256,7 +256,7 @@ HTML;
                         <!-- .like,comment and share icons start -->
                         <div class="like_comment_and_share_icons">
                             <div class="" style="display:flex">
-                                <div><span id="post$post_d->post_id" style="color:grey" onclick="like_post('$post_d->post_id')"><i class="fa fa-heart-o"></i></span> <span id="no_of_likes$post_d->post_id">10</span></div>
+                                <div><span id="post$post_d->post_id" style="color:grey" onclick="like_post('post$post_d->post_id')"><i class="fa fa-heart-o"></i></span> <span id="no_of_likes$post_d->post_id">10</span></div>
                                 <div style="margin-left:10px"><i class="fa fa-comment-o" onclick="show_div('add_comment$post_d->post_id')"></i> <span id="no_of_comments$post_d->post_id">9</span></div>
                                 <div style="margin-left:10px"><i class="fa fa-retweet" onclick="show_div('quote_comment_div$post_d->post_id')"></i> <span id="no_of_quotes$post_d->post_id">3</span></div>
                                 <div style="margin-left:10px"><i class="fa fa-share-alt"></i> <span id="no_of_shares$post_d->post_id">5</span></div>
@@ -404,13 +404,13 @@ HTML;
                 }
             }
 
-            function like_post(){
-                if (document.getElementById("post1").style.color == "grey") {
-                    document.getElementById("post1").style.color = "red";
-                    document.getElementById("post1").innerHTML = "<i class='fa fa-heartbeat'></i>";             
-                } else if (document.getElementById("post1").style.color == "red") {
-                    document.getElementById("post1").style.color = "grey";
-                    document.getElementById("post1").innerHTML = "<i class='fa fa-heart-o'></i>";             
+            function like_post(vari){
+                if (document.getElementById(vari).style.color == "grey") {
+                    document.getElementById(vari).style.color = "red";
+                    document.getElementById(vari).innerHTML = "<i class='fa fa-heartbeat'></i>";             
+                } else if (document.getElementById(vari).style.color == "red") {
+                    document.getElementById(vari).style.color = "grey";
+                    document.getElementById(vari).innerHTML = "<i class='fa fa-heart-o'></i>";             
                 }
             }
 
