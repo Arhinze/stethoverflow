@@ -168,7 +168,7 @@ HTML;
         <html lang="en">
         <head>
           
-            <link rel="stylesheet" href="/static/style.css?$css_version"/>
+            <link rel="stylesheet" href="/static/style000.css?$css_version"/>
             <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
             <link rel="stylesheet" href="/static/font-awesome-4.7.0/css/font-awesome.min.css">
             <link rel="preconnect" href="https://fonts.googleapis.com">
