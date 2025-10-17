@@ -613,61 +613,91 @@ HTML;
                                                                 
                                                                 
         public static function footer($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $additional_scripts = "", $whatsapp_chat = "on"){ 
-                                                                            
-            $index_scripts = Index_Segments::index_scripts();    
+   
+            $index_scripts = Index_Segments::index_scripts();  
+
+            $images_array = ["image1"];
+
+            echo <<<HTML
+                <!-- .ask_or_post_div starts ~ only shown onclick and placed on footer area so that users can access it from any page and not just the home page -->
+                <div class="ask_or_post_div" id="ask_or_post_div" style="display:none">
+                <!-- .write_answer starts -->
+                <div class="write_answer">
+                    <!-- .write_answer_top starts -->
+                    <div class="write_answer_top">
+                        <div style="font-size:18px;color:#888" onclick="show_div('ask_or_post_div')"><b> X </b></div>
+                        <div class="button" style="font-size:12px">Post</div>
+                    </div><!-- .write_answer_top ends -->
+
+                    <div style="display:flex;justify-content:space-around;margin:15px 0;font-size:15px">
+                        <div onclick="alternate_add_question_and_create_post('aq_text','add_question')" id="aq_text" class="aq_cp_text" style = "border-bottom:2px solid #2b8eeb"><b>Ask Question</b></div>
+                        <div onclick="alternate_add_question_and_create_post('cp_text','create_post')" id="cp_text" class="aq_cp_text"><b>Create Post</b></div>
+                    </div>
+                    <div style="display:flex">
+                        <div class="profile_image_div" style="margin-top:5px">
+                            <a href="/static/images/profile_new.png"><img src="/static/images/profile_new.png" class="profile_image"/></a>
+                        </div>
+                        <div style="margin-left:-13px">
+                            <div style="font-size:12px"><b>Cassy Maya</b></b></div>
+                            <div class="input" style="width:100%;font-size:12px">Orthopaedic Surgeon (2007 - present) &nbsp; <i class="fa fa-angle-down"></i></div>
+                        </div>
+                    </div>
+                    <!-- add_question starts -->
+                    <div id="add_question" style="display:block">
+                        <div class="question_tips">
+                            <div><b>Keep Questions Simple:</b></div>
+                            <ul>
+                                <li>Double check your grammar.</li>
+                                <li>Start question with "why", "what", "how"</li>
+                                <li>Ensure the question has not already been asked</li>
+                            </ul>
+                        </div>
+                        <form method="post" action="">
+                            <textarea name="question" class="textarea" style="border-bottom:0;border-radius:0;height:75px" placeholder="Ask your question"></textarea>
+                        </form>
+                    </div><!-- ask_question ends -->
+                    <!-- create_post starts -->
+                    <div id="create_post" style="display:none">
+                        <!-- Add Image Starts -->
+                        <div style="font-size:18px;margin:15px 0 9px 0"><b>Add Images:</b> <span style="font-size:12px;color:green"></span></div>
+
+                        <div class="x_scroll"><!-- style .overflow-x:scroll starts -->
+                            <div class="additional_product_images_div_container" style="width:fit-content;overflow:visible"><!-- .additional_product_images_div_container starts -->
+HTML;
+                        foreach($images_array as $images_ad) {
+                echo <<<HTML
+                            <div class="additional_product_images_div"><!-- img1 to img10 -->
+                                <label for="add_<?=$images_ad?>_file_upload_tag"><img src="/static/images/add_image_icon.png" id="add_<?=$images_ad?>" class="additional_product_image"/><span class="additional_product_image_number"><?=str_replace("image", "", $images_ad)?></span></label>
+                            </div>
+HTML;
+                        }
+                echo <<<HTML
+                        </div><!-- .additional_product_images_div_container ends -->
+                    </div><!-- style .overflow-x:scroll ends -->
+
+                    <!-- The input tags which does the work but remains hidden starts -->
+HTML;
+                        foreach($images_array as $images_ad) {
+                echo <<<HTML
+                            <input type="file" name="add_<?=$images_ad?>" id="add_<?=$images_ad?>_file_upload_tag" accept="image/*" style="display:none" onchange="loadFile(event, 'add_<?=$images_ad?>')"/><!-- file tag 1 to file tag 10 -->
+                            <!-- The input tags which does the work but remains hidden ends -->
+                    <!-- Add Image Ends -->
+HTML;
+                        }   
+
+
+            echo <<<HTML
+                        <form method="post" action="">
+                            <textarea name="write_up" class="textarea" style="border-bottom:0;border-radius:0" placeholder="Create a post about something"></textarea>
+                        </form>
+                    </div><!-- create_post ends -->
+                </div><!-- .write_answer ends -->
+                </div><!-- .ask_or_post_div ends ~ only shown onclick -->
+HTML;
+
 
             if ($whatsapp_chat == "on") {
                 echo <<<HTML
-                    <!-- .ask_or_post_div starts ~ only shown onclick and placed on footer area so that users can access it from any page and not just the home page -->
-                    <div class="ask_or_post_div" id="ask_or_post_div" style="display:none">
-                    <!-- .write_answer starts -->
-                    <div class="write_answer">
-                        <!-- .write_answer_top starts -->
-                        <div class="write_answer_top">
-                            <div style="font-size:18px;color:#888" onclick="show_div('ask_or_post_div')"><b> X </b></div>
-                            <div class="button" style="font-size:12px">Post</div>
-                        </div><!-- .write_answer_top ends -->
-
-                        <div style="display:flex;justify-content:space-around;margin:15px 0;font-size:15px">
-                            <div onclick="alternate_add_question_and_create_post('aq_text','add_question')" id="aq_text" class="aq_cp_text" style = "border-bottom:2px solid #2b8eeb"><b>Ask Question</b></div>
-                            <div onclick="alternate_add_question_and_create_post('cp_text','create_post')" id="cp_text" class="aq_cp_text"><b>Create Post</b></div>
-                        </div>
-
-                        <div style="display:flex">
-                            <div class="profile_image_div" style="margin-top:5px">
-                                <a href="/static/images/profile_new.png"><img src="/static/images/profile_new.png" class="profile_image"/></a>
-                            </div>
-                            <div style="margin-left:-13px">
-                                <div style="font-size:12px"><b>Cassy Maya</b></b></div>
-                                <div class="input" style="width:100%;font-size:12px">Orthopaedic Surgeon (2007 - present) &nbsp; <i class="fa fa-angle-down"></i></div>
-                            </div>
-                        </div>
-
-                        <!-- add_question starts -->
-                        <div id="add_question" style="display:block">
-                            <div class="question_tips">
-                                <div><b>Keep Questions Simple:</b></div>
-                                <ul>
-                                    <li>Double check your grammar.</li>
-                                    <li>Start question with "why", "what", "how"</li>
-                                    <li>Ensure the question has not already been asked</li>
-                                </ul>
-                            </div>
-                            <form method="post" action="">
-                                <textarea name="question" class="textarea" style="border-bottom:0;border-radius:0;height:75px" placeholder="Ask your question"></textarea>
-                            </form>
-                        </div><!-- ask_question ends -->
-
-                        <!-- create_post starts -->
-                        <div id="create_post" style="display:none">
-                            <div style="color:#888;margin:12px 0">+ Add Image</div>
-                            <form method="post" action="">
-                                <textarea name="write_up" class="textarea" style="border-bottom:0;border-radius:0" placeholder="Create a post about something"></textarea>
-                            </form>
-                        </div><!-- create_post ends -->
-                    </div><!-- .write_answer ends -->
-                    </div><!-- .ask_or_post_div ends ~ only shown onclick -->
-
                     <!-- .whatsapp_box starts -->
                     <div class="whatsapp_box" id="whatsapp_box" style="display:none;position:fixed;bottom:129px;right:18px;background-color:#fff;border-radius:9px;width:75%;box-shadow:0 0 3px 0 #888">
                         <div class="whatsapp_box_top" style="display:flex;justify-content:space-around;height:30%;padding:12px;background-color:green;color:#fff;border-radius:9px 9px 0 0">
