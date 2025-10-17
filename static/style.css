@@ -529,6 +529,7 @@ h1, h2, h3, h4, h5, h6{
 /* -- questions page starts -- */
 .ask_or_post_div{
     overflow-y:scroll;
+    position:relative;
 }
 
 .write_answer{
