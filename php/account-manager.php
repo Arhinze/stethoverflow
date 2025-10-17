@@ -129,3 +129,4 @@ HTML;
     
 define("PROFILE_OR_SIGN_IN", $profile_or_sign_in);
 define("PROFILE_PICTURE", $profile_picture);
+define("DATA", $data);

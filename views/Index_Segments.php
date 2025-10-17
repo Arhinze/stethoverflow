@@ -191,7 +191,7 @@ HTML;
 HTML;
        }
                 
-        public static function body($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $profile_picture = PROFILE_PICTURE){
+        public static function body($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $profile_picture = PROFILE_PICTURE, $data = DATA){
             $site_name_uc = strtoupper($site_name);
 
             echo <<<HTML
