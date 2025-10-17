@@ -4,6 +4,8 @@ ini_set("display_errors", '1'); //for testing purposes..
 include_once($_SERVER["DOCUMENT_ROOT"]."/php/connection.php");
 include_once($_SERVER["DOCUMENT_ROOT"]."/php/account-manager.php");
 
+$images_array = ["image1"];
+
 if($data){//if user is logged in:
     if(isset($_POST["question"])) {
         $search_question = $pdo->prepare("SELECT * FROM questions WHERE title = ? ORDER BY question_id DESC LIMIT ?, ?");
@@ -23,12 +25,64 @@ if($data){//if user is logged in:
         $search_post = $pdo->prepare("SELECT * FROM posts WHERE title = ? ORDER BY post_id DESC LIMIT ?, ?");
         $search_post->execute([htmlentities($_POST["write_up"]),0,1]);
         $sp_data = $search_post->fetch(PDO::FETCH_OBJ);
+
         if(!$sp_data) {//that means this is a new post
             $insert_stmt = $pdo->prepare("INSERT INTO posts(title,body,user_id,time_asked) VALUES(?,?,?,?)");
             $insert_stmt->execute([htmlentities($_POST["post_title"]),htmlentities($_POST["write_up"]),$data->user_id,date("Y-m-d H:i:s", time())]);
 
-            echo "<div class='invalid' style='background-color: #d6e2fb'>Question uploaded successfully</div>";
+            echo "<div class='invalid' style='background-color: #d6e2fb'>Post uploaded successfully</div>";
         }
+
+            //upload images:
+            $img_i = 0;
+            foreach($images_array as $images_ad) { //foreach loop - [images_array] starts
+                $img_i++;
+                if(!empty($_FILES["add_".$images_ad]["name"])){ //if (!empty($_FILES["add_".$images_ad])) starts
+                    /* Image Upload Script starts */
+                    $target_dir = "static/images/";
+                    $target_basename = $_POST["new_url"]."_".time()."_".$img_i.".png";
+                    $target_file = $target_dir.$target_basename;
+                    $uploadOk = 1;
+                    $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
+        
+                    //Check if image file is a actual image or fake image
+                    $check_img = getimagesize($_FILES["add_".$images_ad]["tmp_name"]);
+                    if ($check_img !== false) {
+                        //echo "image security test passed - ".$check_img["mime"].".<br/>";
+                        $uploadOk = 1;
+                    } else {
+                        echo "<div class='invalid'>image security test failed - file is not an image</div>";
+                        $uploadOk = 0;
+                    }
+                    if(file_exists($target_file)) {
+                        echo "<div class='invalid'>Sorry, file already exists</div>";
+                        $uploadOk = 0;
+                    }
+        
+                    //Allow certain file formats:
+                    if ($imageFileType != "jpg" && $imageFileType != "jpeg" && $imageFileType != "png" && $imageFileType != "gif" ) {
+                        echo "<div class='invalid'>Sorry, only JPG, JPEG, PNG & GIF files are allowed.</div>";
+                        $uploadOk = 0;
+                    }
+        
+                    //Checking if any $uploadOk = 0 by an error:
+                    if ($uploadOk == 0) {
+                        echo "<div class='invalid'>Sorry, your file was not uploaded.</div>";
+                    //if everything is ok, upload file
+                    } else {
+                        if (move_uploaded_file($_FILES["add_".$images_ad]["tmp_name"], $target_file)) {
+                            //echo "The file ".$target_basename." has been uploaded.<br />";
+                            
+                            //insert(update) product image(s)
+                            $up_stmt = $pdo->prepare("UPDATE products SET $images_ad = ? WHERE product_url = ?");
+                            $up_stmt->execute([$target_basename, $_POST["new_url"]]);
+                        } else {
+                          echo "<div class='invalid'>Sorry, there was an error uploading your file.</div>";
+                        }
+                    }
+                    /* Image Upload Script ends */
+                }//if(!empty($_FILES["add_".$images_ad])) ends
+            }//foreach loop - looping around array to upload multiple product images at once ends
     }
 } else {
     echo "<div class='invalid'>Login to continue</div>";
@@ -654,8 +708,6 @@ HTML;
         public static function footer($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $additional_scripts = "", $whatsapp_chat = "on"){ 
    
             $index_scripts = Index_Segments::index_scripts();  
-
-            $images_array = ["image1"];
 
             echo <<<HTML
                 <!-- .ask_or_post_div starts ~ only shown onclick and placed on footer area so that users can access it from any page and not just the home page -->
