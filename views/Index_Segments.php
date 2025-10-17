@@ -408,8 +408,7 @@ HTML;
 
             function like_post(vari){
                 number_of_likes = "no_of_likes_of_"+vari;
-                                                                
-                                                                
+                                               
                 obj = new XMLHttpRequest;
                 obj.onreadystatechange = function(){
                     if(obj.readyState == 4){
@@ -429,8 +428,6 @@ HTML;
                     document.getElementById(vari).style.color = "grey";
                     document.getElementById(vari).innerHTML = "<i class='fa fa-heart-o'></i>";             
                 }
-
-
             }
 
             function alternate_comment_div(add_comment,reply_comment){
