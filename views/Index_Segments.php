@@ -4,6 +4,35 @@ ini_set("display_errors", '1'); //for testing purposes..
 include_once($_SERVER["DOCUMENT_ROOT"]."/php/connection.php");
 include_once($_SERVER["DOCUMENT_ROOT"]."/php/account-manager.php");
 
+if($data){//if user is logged in:
+    if(isset($_POST["question"])) {
+        $search_question = $pdo->prepare("SELECT * FROM questions WHERE title = ? ORDER BY question_id DESC LIMIT ?, ?");
+        $search_question->execute([htmlentities($_POST["questions"]),0,1]);
+        $sq_data = $search_question->fetch(PDO::FETCH_OBJ);
+        if(!$sq_data) {//that means this is a new post
+            $insert_stmt = $pdo->prepare("INSERT INTO questions(title,user_id,time_asked) VALUES(?,?,?)");
+            $insert_stmt->execute([htmlentities($_POST["questions"]),$data->user_id,date("Y-m-d H:i:s", time())]);
+
+            echo "<div class='invalid' style='background-color: #d6e2fb'>Question uploaded successfully</div>";
+        }
+    }
+
+    if(isset($_POST["write_up"])) {
+        $search_post = $pdo->prepare("SELECT * FROM posts WHERE title = ? ORDER BY posts_id DESC LIMIT ?, ?");
+        $search_post->execute([htmlentities($_POST["write_up"]),0,1]);
+        $sp_data = $search_post->fetch(PDO::FETCH_OBJ);
+        if(!$sp_data) {//that means this is a new post
+            $insert_stmt = $pdo->prepare("INSERT INTO posts(title,body,user_id,time_asked) VALUES(?,?,?,?)");
+            $insert_stmt->execute([htmlentities($_POST["post_title"]),htmlentities($_POST["write_up"]),$data->user_id,date("Y-m-d H:i:s", time())]);
+
+            echo "<div class='invalid' style='background-color: #d6e2fb'>Question uploaded successfully</div>";
+        }
+    }
+} else {
+    echo "<div class='invalid'>Login to continue</div>";
+}
+
+
 class Index_Segments{
     public static function inject($obj) {
         Index_Segments::$pdo = $obj;
