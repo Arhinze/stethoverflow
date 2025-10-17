@@ -681,6 +681,7 @@ HTML;
                             <div class="input" style="width:100%;font-size:12px">Orthopaedic Surgeon (2007 - present) &nbsp; <i class="fa fa-angle-down"></i></div>
                         </div>
                     </div>
+
                     <!-- add_question starts -->
                     <div id="add_question" style="display:block">
                         <div class="question_tips">
@@ -693,9 +694,13 @@ HTML;
                         </div>
                         <form method="post" action="">
                             <textarea name="question" class="textarea" style="border-bottom:0;border-radius:0;height:75px" placeholder="Ask your question"></textarea>
+                            <input type="submit" id="submit_question_tag" style="display:none"/>
                         </form>
                     </div><!-- ask_question ends -->
+
+                    
                     <!-- create_post starts -->
+                    <form method="post" action="">
                     <div id="create_post" style="display:none">
                         <!-- Add Image Starts -->
                         <div style="font-size:18px;margin:15px 0 9px 0"><b>Add Image:</b> (accepted formats - png, jpg, jpeg, gif)<span style="font-size:12px;color:green"></span></div>
@@ -728,10 +733,10 @@ HTML;
 
 
             echo <<<HTML
-                        <form method="post" action="">
                             <textarea name="write_up" class="textarea" style="border-bottom:0;border-radius:0" placeholder="Create a post about something"></textarea>
-                        </form>
+                            <input type="submit" id="submit_post_tag" style="display:none"/>
                     </div><!-- create_post ends -->
+                    </form>
                 </div><!-- .write_answer ends -->
                 </div><!-- .ask_or_post_div ends ~ only shown onclick -->
 HTML;
