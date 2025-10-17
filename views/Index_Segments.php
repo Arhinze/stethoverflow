@@ -31,7 +31,7 @@ if($data){//if user is logged in:
             $insert_stmt = $pdo->prepare("INSERT INTO posts(title,body,user_id,time_asked) VALUES(?,?,?,?)");
             $insert_stmt->execute([htmlentities($_POST["post_title"]),htmlentities($_POST["write_up"]),$data->user_id,date("Y-m-d H:i:s", time())]);
 
-            echo "<div class='invalid' style='background-color: #d6e2fb'>Post uploaded successfully</div>";
+            echo "<div class='invalid' style='background-color: #2b8eeb'>Post uploaded successfully</div>";
 
             //upload images:
             $img_i = 0;
