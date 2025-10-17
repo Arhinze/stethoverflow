@@ -272,7 +272,7 @@ HTML;
                         <!-- .write_answer_top starts -->
                         <div class="write_answer_top">
                             <div style="font-size:18px;color:#888" onclick="show_div('quote_comment_div1')"><b> X </b></div>
-                            <div class="button" style="font-size:12px"><label for ="submit_post_tag">Post</label></div>
+                            <div class="button" style="font-size:12px">Post</div>
                         </div><!-- .write_answer_top ends -->
                         <div style="display:flex">
                             <div class="profile_image_div" style="margin-top:5px">
@@ -588,11 +588,13 @@ HTML;
                     document.getElementById('add_question').style.display = "block";
                     document.getElementById('create_post').style.display = "none";
                     document.getElementById('cp_text').style = "border:0";
+                    document.getElementById('aq_cp_tag').innerHTML = "<label for='submit_question_tag'>Post</label>";
                 } else {
                     document.getElementById('cp_text').style = "border-bottom:2px solid #2b8eeb";
                     document.getElementById('create_post').style.display = "block";
                     document.getElementById('add_question').style.display = "none";
                     document.getElementById('aq_text').style = "border:0";
+                    document.getElementById('aq_cp_tag').innerHTML = "<label for='submit_post_tag'>Post</label>";
                 }
             }        
 
@@ -717,7 +719,7 @@ HTML;
                     <!-- .write_answer_top starts -->
                     <div class="write_answer_top">
                         <div style="font-size:18px;color:#888" onclick="show_div('ask_or_post_div')"><b> X </b></div>
-                        <div class="button" style="font-size:12px"><label for="submit_question_tag">Post</label></div>
+                        <div class="button" style="font-size:12px" id="aq_cp_tag"><label for="submit_question_tag">Post</label></div>
                     </div><!-- .write_answer_top ends -->
 
                     <div style="display:flex;justify-content:space-around;margin:15px 0;font-size:15px">
@@ -744,7 +746,7 @@ HTML;
                                 <li>Ensure the question has not already been asked</li>
                             </ul>
                         </div>
-                        <form method="post" action="" enctype="multipart/form-data">
+                        <form method="post" action="">
                             <textarea name="question" class="textarea" style="border-bottom:0;border-radius:0;height:75px" placeholder="Ask your question" minlength="10" required></textarea>
                             <input type="submit" id="submit_question_tag" style="display:none"/>
                         </form>
@@ -752,7 +754,7 @@ HTML;
 
                     
                     <!-- create_post starts -->
-                    <form method="post" action="">
+                    <form method="post" action="" enctype="multipart/form-data">
                     <div id="create_post" style="display:none">
                         <!-- Add Image Starts -->
                         <div style="font-size:18px;margin:15px 0 9px 0"><b>Add Image:</b> (accepted formats - png, jpg, jpeg, gif)<span style="font-size:12px;color:green"></span></div>
