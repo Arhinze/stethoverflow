@@ -659,7 +659,7 @@ HTML;
 
             echo <<<HTML
                 <!-- .ask_or_post_div starts ~ only shown onclick and placed on footer area so that users can access it from any page and not just the home page -->
-                <div class="ask_or_post_div" id="ask_or_post_div" style="display:none">
+                <div class="ask_or_post_div" id="ask_or_post_div" style="display:block">
                 <!-- .write_answer starts -->
                 <div class="write_answer">
                     <!-- .write_answer_top starts -->
