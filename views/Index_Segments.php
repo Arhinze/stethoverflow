@@ -216,7 +216,7 @@ HTML;
                         <div class="answers" style="padding:6px">
                             $post_nl2br
                             
-                            <div><img src="/static/images/$pd->image1" style="width:100%;height:auto"/></div>
+                            <div><img src="/static/images/$post_d->image1" style="width:100%;height:auto"/></div>
                         </div>
 HTML;
                 }
