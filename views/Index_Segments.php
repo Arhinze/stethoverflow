@@ -7,6 +7,10 @@ include_once($_SERVER["DOCUMENT_ROOT"]."/php/account-manager.php");
 $images_array = ["image1"];
 define("IMAGES_ARRAY", $images_array);
 
+$posts_stmt = $pdo->prepare("SELECT * FROM posts ORDER by post_id DESC LIMIT ?, ?");
+$posts_stmt->execute(0,10);
+$posts_data = $posts_stmt->fetch(PDO::FETCH_OBJ);
+
 if($data){//if user is logged in:
     if(isset($_POST["question"])) {
         $search_question = $pdo->prepare("SELECT * FROM questions WHERE title = ? ORDER BY question_id DESC LIMIT ?, ?");
@@ -92,10 +96,11 @@ if($data){//if user is logged in:
 
 
 class Index_Segments{
-    public static function inject($obj) {
-        Index_Segments::$pdo = $obj;
+    private $pdo;
+
+    public function inject($obj) {
+        $this->pdo = $obj;
     }
-    protected static $pdo;
 
     public static function main_header($site_name = SITE_NAME_SHORT, $profile_or_sign_in = PROFILE_OR_SIGN_IN, $profile_picture = PROFILE_PICTURE) {
         echo <<<HTML
@@ -530,7 +535,11 @@ HTML;
                     </div><!-- .posts_and_questions_div ends -->
 
                     <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation -->
-
+HTML;
+ 
+            
+ 
+                echo <<<HTML
                     <!-- .posts_and_questions_div starts -->
                     <div class="posts_and_questions" style="margin:12px 6px">
                         <div class="questions" style="margin-bottom:3px;display:flex">
@@ -873,5 +882,7 @@ HTML;
     }
 }
 
-Index_Segments::inject($pdo);
+//Index_Segments::inject($pdo);
+$index_obj = new Index_Segments;
+$index_obj->inject($pdo);
 ?>
