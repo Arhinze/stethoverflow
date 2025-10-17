@@ -238,7 +238,7 @@ HTML;
                             </div>
                             <div style="margin-left:6px;margin-top:2px">
                                 <div style="font-size:15px"><b>$user_data_data->real_name</b> <i class="fa fa-circle" style="font-size:6px"></i> <b style="color:#2b8eeb">Follow</b></div>
-                                <div style="color:#888;font-size:12px">$user_data_data->bio<i class="fa fa-circle" style="font-size:6px"></i> $date_posted</div>
+                                <div style="color:#888;font-size:12px"> $user_data_data->bio &nbsp; <i class="fa fa-circle" style="font-size:6px"></i> &nbsp; $date_posted</div>
                             </div>
                         </div>
 
@@ -539,38 +539,9 @@ HTML;
 
                     <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation -->
 
-                    <!-- .posts_and_questions_div starts -->
-                    <div class="posts_and_questions" style="margin:12px 6px">
-                        <div style="display:flex">
-                            <div style="width:39px;height:39px;border:2px solid #d6e3fd;border-radius:100%">
-                                <a href="$site_url/static/images/profile_new.png"><img src="/static/images/profile_new.png" style="width:36px;height:36px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
-                            </div>
-                            <div style="margin-left:6px;margin-top:2px">
-                                <div style="font-size:15px"><b>Cassy Maya</b> <i class="fa fa-circle" style="font-size:6px"></i> <b style="color:#2b8eeb">Follow</b></div>
-                                <div style="color:#888;font-size:12px">Orthopaedic Surgeon (2007 - present) <i class="fa fa-circle" style="font-size:6px"></i> 21h</div>
-                            </div>
-                        </div>
 
-                        <!-- .answers start -->
-                        <div class="answers" style="padding:6px">
-                            <p>I lost a friend to glioblastoma.</p>
-                            
-                            <p>It's the most common brain cancer and starts with tumors in the brain. It's likely that many people seeing this have also lost someone to this disease.</p>
-                            
-                            <p>He woke up one day with a mind splitting headache and was rushed to the hospital.</p>
-                            
-                            <p>He was diagnosed. They removed the tumor in his brain and started radiation and chemotherapy.</p>
-                            
-                            <p>Despite this, the doctors said he'd have only two to three years to live at most (he lived 3.5 years, before passing). He was only 25 years old.</p>
-                            
-                            <p>Why is glioblastoma near impossible to cure? Because when you remove the tumor, it still has cells that spread to other parts of the brain, which then begin growing into new tumors. There's motility of the cancer cells. This is why people who this type of cancer have to get multiple brain surgeries to stay alive. They'll have scars all over their head if they live long enough.</p>
-                        
-                            <img src="/static/images/post8.png" style="width:100%;height:auto"/>
-                        </div><!-- .answers stop -->
-                    </div><!-- .posts_and_questions_div ends -->
 
-                    <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation -->
-
+                    
                     <!-- .posts_and_questions_div starts -->
                     <div class="posts_and_questions" style="margin:12px 6px">
                         <div class="questions" style="margin-bottom:3px;display:flex">
