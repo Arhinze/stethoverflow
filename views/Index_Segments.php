@@ -785,7 +785,8 @@ HTML;
 
 
             echo <<<HTML
-                            <textarea name="post_title" class="textarea" style="border-bottom:0;border-radius:0;height:60px" placeholder="Enter a title for this post(optional)"></textarea>
+                            <!--<textarea name="post_title" class="textarea" style="border-bottom:0;border-radius:0;height:60px" placeholder="Enter a title for this post(optional)"></textarea>-->
+                            <input type="hidden" name="post_title"/>
                             <textarea name="write_up" class="textarea" style="border-bottom:0;border-radius:0" placeholder="Create a post about something" minlength="30" required></textarea>
                             <input type="submit" id="submit_post_tag" style="display:none"/>
                     </div><!-- create_post ends -->
