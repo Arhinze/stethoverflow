@@ -5,6 +5,7 @@ include_once($_SERVER["DOCUMENT_ROOT"]."/php/connection.php");
 include_once($_SERVER["DOCUMENT_ROOT"]."/php/account-manager.php");
 
 $images_array = ["image1"];
+define("IMAGES_ARRAY", $images_array);
 
 if($data){//if user is logged in:
     if(isset($_POST["question"])) {
@@ -705,7 +706,7 @@ HTML;
         }
                                                                 
                                                                 
-        public static function footer($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $additional_scripts = "", $whatsapp_chat = "on"){ 
+        public static function footer($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $additional_scripts = "", $whatsapp_chat = "on", $images_array = IMAGES_ARRAY){ 
    
             $index_scripts = Index_Segments::index_scripts();  
 
