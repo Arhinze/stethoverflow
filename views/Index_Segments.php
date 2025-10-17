@@ -806,9 +806,11 @@ HTML;
                         $i=0;
                         foreach($images_array as $images_ad) {
                             $i++;
+                            $tag = "add_".$images_ad."_file_upload_tag";
+                            $img_id = "add_".$images_ad;
                 echo <<<HTML
                             <div class="additional_product_images_div"><!-- img1 to img4 -->
-                                <label for="add_<?=$images_ad?>_file_upload_tag"><img src="/static/images/add_image_icon.png" id="add_<?=$images_ad?>" class="additional_product_image"/><span class="additional_product_image_number">$i</span></label>
+                                <label for="$tag"><img src="/static/images/add_image_icon.png" id="$img_id" class="additional_product_image"/><span class="additional_product_image_number">$i</span></label>
                             </div>
 HTML;
                         }
@@ -819,8 +821,10 @@ HTML;
                     <!-- The input tags which does the work but remains hidden starts -->
 HTML;
                         foreach($images_array as $images_ad) {
+                            $tag = "add_".$images_ad."_file_upload_tag";
+                            $img_id = "add_".$images_ad;
                 echo <<<HTML
-                            <input type="file" name="add_<?=$images_ad?>" id="add_<?=$images_ad?>_file_upload_tag" accept="image/*" style="display:none" onchange="loadFile(event, 'add_<?=$images_ad?>')"/><!-- file tag 1 to file tag 10 -->
+                            <input type="file" name="$img_id" id="$tag" accept="image/*" style="display:none" onchange="loadFile(event, $img_id)"/><!-- file tag 1 to file tag 10 -->
                             <!-- The input tags which does the work but remains hidden ends -->
                     <!-- Add Image Ends -->
 HTML;
