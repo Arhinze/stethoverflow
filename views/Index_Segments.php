@@ -596,8 +596,8 @@ HTML;
                             <a href="/static/images/profile_new.png"><img src="/static/images/profile_new.png" class="profile_image"/></a>
                         </div>
                         <div style="margin-left:-13px">
-                            <div style="font-size:12px"><b>Cassy Maya</b></b></div>
-                            <div class="input" style="width:100%;font-size:12px">Orthopaedic Surgeon (2007 - present) &nbsp; <i class="fa fa-angle-down"></i></div>
+                            <div style="font-size:12px"><b>$user_real_name</b></b></div>
+                            <div class="input" style="width:100%;font-size:12px">$user_bio &nbsp; <i class="fa fa-angle-down"></i></div>
                         </div>
                     </div>
 
