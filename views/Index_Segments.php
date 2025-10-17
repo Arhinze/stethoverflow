@@ -28,7 +28,7 @@ if($data){//if user is logged in:
         $sp_data = $search_post->fetch(PDO::FETCH_OBJ);
 
         if(!$sp_data) {//that means this is a new post
-            $insert_stmt = $pdo->prepare("INSERT INTO posts(title,body,user_id,time_asked) VALUES(?,?,?,?)");
+            $insert_stmt = $pdo->prepare("INSERT INTO posts(title,body,user_id,time_posted) VALUES(?,?,?,?)");
             $insert_stmt->execute([htmlentities($_POST["post_title"]),htmlentities($_POST["write_up"]),$data->user_id,date("Y-m-d H:i:s", time())]);
 
             echo "<div class='invalid' style='background-color: #2b8eeb'>Post uploaded successfully</div>";
@@ -541,7 +541,7 @@ HTML;
 
 
 
-                    
+
                     <!-- .posts_and_questions_div starts -->
                     <div class="posts_and_questions" style="margin:12px 6px">
                         <div class="questions" style="margin-bottom:3px;display:flex">
