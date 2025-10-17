@@ -414,13 +414,13 @@ HTML;
                 }
             }
 
-            function alternate_comment_div(){
-                if (document.getElementById('add_comment').style.display == "block") {
-                    document.getElementById('add_comment').style.display = "none";
-                    document.getElementById('reply_comment').style.display = "block";
-                } else if (document.getElementById('add_comment').style.display == "none") {
-                    document.getElementById('add_comment').style.display = "block";
-                    document.getElementById('reply_comment').style.display = "none";
+            function alternate_comment_div(add_comment,reply_comment){
+                if (document.getElementById(add_comment).style.display == "block") {
+                    document.getElementById(add_comment).style.display = "none";
+                    document.getElementById(reply_comment).style.display = "block";
+                } else if (document.getElementById(add_comment).style.display == "none") {
+                    document.getElementById(add_comment).style.display = "block";
+                    document.getElementById(reply_comment).style.display = "none";
                 }
             }
 
