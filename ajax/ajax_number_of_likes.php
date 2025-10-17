@@ -11,7 +11,7 @@ if(isset($_GET["post_id"])){
 
     $number_of_likes = explode(";", $like_data->likes);
     if(in_array($data->user_id, $number_of_likes)){
-        unset($number_of_likes["$data->user_id"]);
+        array_diff($number_of_likes,["$data->user_id"]);
         echo count($number_of_likes)-1;//adding -1 to balance out the extra array counted from explode() function
     } else {
         $update_like_stmt = $pdo->prepare("UPDATE posts SET likes = ? WHERE post_id = ?");
