@@ -221,6 +221,13 @@ HTML;
             $posts_stmt->execute([0,10]);
             $posts_data = $posts_stmt->fetchAll(PDO::FETCH_OBJ);
 
+            $user_real_name = "Guest user";
+            $user_bio = "Stethoverflow Guest User (2025 - present)";
+            if ($data) {
+                $user_real_name = $data->real_name;
+                $user_bio = $data->bio;
+            }
+
             foreach($posts_data as $post_d) {
                 $post_nl2br = nl2br($post_d->body);
                 $user_data_stmt = self::$pdo->prepare("SELECT * FROM stethoverflow_users WHERE user_id = ?");
@@ -311,8 +318,8 @@ HTML;
                                 <a href="$profile_picture"><img src="$profile_picture" class="profile_image"/></a>
                             </div>
                             <div style="margin-left:-13px">
-                                <div style="font-size:12px"><b>$data->real_name</b></b></div>
-                                <div class="input" style="width:100%;font-size:12px">$data->bio &nbsp; <i class="fa fa-angle-down"></i></div>
+                                <div style="font-size:12px"><b>$user_real_name</b></b></div>
+                                <div class="input" style="width:100%;font-size:12px">$user_bio &nbsp; <i class="fa fa-angle-down"></i></div>
                             </div>
                         </div>
                      
