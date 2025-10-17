@@ -10,6 +10,6 @@ if(isset($_GET["post_id"])){
     $like_data = $like_stmt->fetch(PDO::FETCH_OBJ);
 
     $number_of_likes = explode(";", $like_data->likes);
-    echo count($number_of_likes);
+    echo count($number_of_likes)-1;
 }
 ?>
