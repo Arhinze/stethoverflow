@@ -744,7 +744,7 @@ HTML;
                                 <li>Ensure the question has not already been asked</li>
                             </ul>
                         </div>
-                        <form method="post" action="">
+                        <form method="post" action="" enctype="multipart/form-data">
                             <textarea name="question" class="textarea" style="border-bottom:0;border-radius:0;height:75px" placeholder="Ask your question" minlength="10" required></textarea>
                             <input type="submit" id="submit_question_tag" style="display:none"/>
                         </form>
