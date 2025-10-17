@@ -231,7 +231,7 @@ HTML;
 
                 $post_short_form = substr($post_d->body, 0, 36);
 
-                $number_of_likes = explode(";", $post_d->likes) - 1;
+                $number_of_likes = count(explode(";", $post_d->likes)) - 1;
 
                 echo <<<HTML
                     <!-- .posts_and_questions_div starts -->
