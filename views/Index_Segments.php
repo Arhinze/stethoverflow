@@ -229,6 +229,8 @@ HTML;
                 $user_data_data = $user_data_stmt->fetch(PDO::FETCH_OBJ);
                 $date_posted =  date("j M y", strtotime($post_d->time_posted));
 
+                $post_short_form = substr($post_d->body, 0, 36);
+
                 echo <<<HTML
                     <!-- .posts_and_questions_div starts -->
                     <div class="posts_and_questions" style="margin:12px 6px">
@@ -249,43 +251,15 @@ HTML;
                             $post_nl2br
                             <div><img src="/static/images/$post_d->image1" style="width:100%;height:auto"/></div>
                         </div><!-- .answer ends -->
-                    </div><!-- .posts_and_questions_div ends -->
 
-                    <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation --> 
-HTML;
-                }
-
-
-            echo <<<HTML
-                    <!-- .posts_and_questions_div starts -->
-                    <div class="posts_and_questions" style="margin:12px 6px">
-                        <div style="display:flex">
-                            <div style="width:39px;height:39px;border:2px solid #d6e3fd;border-radius:100%">
-                                <a href="$site_url/static/images/profile_new.png"><img src="/static/images/profile_new.png" style="width:36px;height:36px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
-                            </div>
-                            <div style="margin-left:6px;margin-top:2px">
-                                <div style="font-size:15px"><b>Cassy Maya</b> <i class="fa fa-circle" style="font-size:6px"></i> <b style="color:#2b8eeb">Follow</b></div>
-                                <div style="color:#888;font-size:12px">Orthopaedic Surgeon (2007 - present) <i class="fa fa-circle" style="font-size:6px"></i> 21h</div>
-                            </div>
-                        </div>
-
-                        <div class="questions" style="margin-bottom:3px"><h4>What are some life saving surgical procedures you've witnessed?</h4></div>
-
-                        <div class="answers" style="padding:6px">In 2014, 17-year-old Grace from the Democratic Republic of Congo underwent life-saving surgery to remove a very aggressive tumor.                            
-                            <p>The huge disfigurement was sprouting from the centre of her lower jaw bone and was formed by cells that usually make the enamel of teeth.</p>
-    
-                            <p>If she didn't have it removed, it would have eventually suffocated her to death.</p>
-                            
-                            <div><img src="/static/images/post1.png" style="width:100%;height:auto"/></div>
-                        </div>
 
                         <!-- .like,comment and share icons start -->
                         <div class="like_comment_and_share_icons">
                             <div class="" style="display:flex">
-                                <div><span id="post1" style="color:grey" onclick="like_post()"><i class="fa fa-heart-o"></i></span> 10</div>
-                                <div style="margin-left:10px"><i class="fa fa-comment-o" onclick="show_div('add_comment')"></i> 9</div>
-                                <div style="margin-left:10px"><i class="fa fa-retweet" onclick="show_div('quote_comment_div1')"></i> 3</div>
-                                <div style="margin-left:10px"><i class="fa fa-share-alt"></i> 5</div>
+                                <div><span id="post$post_d->post_id" style="color:grey" onclick="like_post('$post_d->post_id')"><i class="fa fa-heart-o"></i></span> <span id="no_of_likes$post_d->post_id">10</span></div>
+                                <div style="margin-left:10px"><i class="fa fa-comment-o" onclick="show_div('add_comment$post_d->post_id')"></i> <span id="no_of_comments$post_d->post_id">9</span></div>
+                                <div style="margin-left:10px"><i class="fa fa-retweet" onclick="show_div('quote_comment_div$post_d->post_id')"></i> <span id="no_of_quotes$post_d->post_id">3</span></div>
+                                <div style="margin-left:10px"><i class="fa fa-share-alt"></i> <span id="no_of_shares$post_d->post_id">5</span></div>
                             </div>
                             <div>
                                 ...
@@ -294,10 +268,10 @@ HTML;
                     </div><!-- .posts_and_questions_div ends -->
 
                     <!-- .add_comment starts -->
-                    <div style="display:none" class="add_comment" id="add_comment" onclick="alternate_comment_div()">
+                    <div style="display:none" class="add_comment" id="add_comment$post_d->post_id" onclick="alternate_comment_div('add_comment$post_d->post_id','reply_comment$post_d->post_id')">
                         <div style="display:flex">
                             <div class="profile_image_div" style="border:2px solid #fff">
-                                <a href="/static/images/profile_new.png"><img src="/static/images/profile_new.png" class="profile_image"/></a>
+                                <a href="$post_d->profile_picture"><img src="$post_d->profile_picture" class="profile_image"/></a>
                             </div>
                             <div class="input" style="background-color:#fff;color:#888;margin-left:-13px">Add a comment...</div>
                         </div>
@@ -305,15 +279,15 @@ HTML;
                     <!-- .add_comment ends -->
 
                     <!-- .reply_comment starts -->
-                    <div class="reply_comment" id="reply_comment" style="display:none">
+                    <div class="reply_comment" id="reply_comment$post_d->post_id" style="display:none">
                         <div style="display:flex;justify-content:space-between;margin-top:9px">
                             <div style="display:flex">
                                 <div class="profile_image_div">
-                                    <a href="/static/images/profile_new.png"><img src="/static/images/profile_new.png" class="profile_image"/></a>
+                                    <a href="$post_d->profile_picture"><img src="$post_d->profile_picture" class="profile_image"/></a>
                                 </div>
-                                <div style="margin-left:-17px;margin-top:7px;color:#888">Replying to <a href="/">@cassy_maya</a></div>
+                                <div style="margin-left:-17px;margin-top:7px;color:#888">Replying to <a href="/">@$post_d->username</a></div>
                             </div>
-                            <div style="margin-top:10px;margin-right:12px;color:#888"><i class="fa fa-times" onclick="alternate_comment_div()"></i></div>
+                            <div style="margin-top:10px;margin-right:12px;color:#888"><i class="fa fa-times" onclick="alternate_comment_div('add_comment$post_d->post_id','reply_comment$post_d->post_id')"></i></div>
                         </div>
                         <div>
                             <textarea class="textarea" style="height:150px"></textarea>
@@ -324,23 +298,23 @@ HTML;
 
                     <!-- .quote_comment starts -->
                     <!-- .write_answer starts -->
-                    <div class="write_answer" id="quote_comment_div1" style="display:none">
+                    <div class="write_answer" id="quote_comment_div$post_d->post_id" style="display:none">
                         <!-- .write_answer_top starts -->
                         <div class="write_answer_top">
-                            <div style="font-size:18px;color:#888" onclick="show_div('quote_comment_div1')"><b> X </b></div>
+                            <div style="font-size:18px;color:#888" onclick="show_div('quote_comment_div$post_d->post_id')"><b> X </b></div>
                             <div class="button" style="font-size:12px">Post</div>
                         </div><!-- .write_answer_top ends -->
                         <div style="display:flex">
                             <div class="profile_image_div" style="margin-top:5px">
-                                <a href="/static/images/profile_new.png"><img src="/static/images/profile_new.png" class="profile_image"/></a>
+                                <a href="$data->profile_picture"><img src="$data->profile_picture" class="profile_image"/></a>
                             </div>
                             <div style="margin-left:-13px">
-                                <div style="font-size:12px"><b>Cassy Maya</b></b></div>
-                                <div class="input" style="width:100%;font-size:12px">Orthopaedic Surgeon (2007 - present) &nbsp; <i class="fa fa-angle-down"></i></div>
+                                <div style="font-size:12px"><b>$data->real_name</b></b></div>
+                                <div class="input" style="width:100%;font-size:12px">$data->bio &nbsp; <i class="fa fa-angle-down"></i></div>
                             </div>
                         </div>
                      
-                        <div style="color:#888">Add Image + </div>
+                        <!--<div style="color:#888">Add Image + </div>--> <!-- coming soon -->
 
                         <div class="">
                             <textarea class="textarea" style="border-radius:0;border-bottom:0;height:50px" placeholder="Make a post about this"></textarea>
@@ -350,25 +324,29 @@ HTML;
                         <div style="border-left:2px solid #888;padding-left:9px">
                             <div style="display:flex">
                                 <div class="profile_image_div">
-                                    <a href="/static/images/profile_new.png"><img src="/static/images/profile_new.png" class="profile_image"/></a>
+                                    <a href="$user_data_data->profile_picture"><img src="$user_data_data->profile_picture" class="profile_image"/></a>
                                 </div>
-                                <div style="color:#888;margin-left:-17px;margin-top:7px">Cassy Maya - <a href="/">@cassy_maya</a></div>
+                                <div style="color:#888;margin-left:-17px;margin-top:7px">$user_data_data->real_name - <a href="/">@$user_data_data->username</a></div>
                             </div>
 
-                            <div class="questions" style="margin-bottom:3px"><h4>What are some life saving surgical procedures you've witnessed?</h4></div>
+                            <div class="questions" style="margin-bottom:3px"><h4>$post_d->title</h4></div>
     
                             <div class="answers" style="padding:6px">
-                                In 2014, 17-year-old Grace from the Democratic Republic of Congo underwent life-saving surgery to remove a very aggressive tumor.  
+                                $post_short_form ...
                             </div>
 
-                            <div><img src="/static/images/post1.png" style="width:100%;height:auto"/></div>
+                            <div><img src="$post_d->image1" style="width:100%;height:auto"/></div>
                         </div><!-- .quoted_post ends -->
                     </div><!-- .write_answer ends -->
                     <!-- .quote_comment ends -->
 
-                    <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation -->
+                    <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation --> 
 HTML;
-            
+                }
+  
+
+
+
 
 
 
