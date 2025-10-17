@@ -10,9 +10,13 @@ if(isset($_GET["post_id"])){
     $like_data = $like_stmt->fetch(PDO::FETCH_OBJ);
 
     $number_of_likes = explode(";", $like_data->likes);
+    
     if(in_array($data->user_id, $number_of_likes)){
         $new_no_of_likes = array_diff($number_of_likes,["$data->user_id"]);
         echo count($new_no_of_likes)-1;//adding -1 to balance out the extra array counted from explode() function
+
+        $update_like_stmt = $pdo->prepare("UPDATE posts SET likes = ? WHERE post_id = ?");
+        $update_like_stmt->execute([implode(";",$new_no_of_likes), $post_id]);
     } else {
         $update_like_stmt = $pdo->prepare("UPDATE posts SET likes = ? WHERE post_id = ?");
         $update_like_stmt->execute([$like_data->likes.$data->user_id.";", $post_id]);
