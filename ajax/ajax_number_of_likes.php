@@ -30,7 +30,7 @@ if($data) {
 } else {
     echo <<<HTML
         <div class='invalid' style='background-color:#2b8eeb;color:#fff;top:30%;left:15%;height:fit-content;width:70%;padding:18px'>
-            <div><b>kindly login to continue</b></div>
+            <b>kindly login to continue</b><
             <div>    
                 <div style="text-align:center;font-size:27px;margin-top:30px;margin-bottom:-16px;font-family:Dancing Script">Welcome to</div>
                 <h1 style="font-size:30px;text-align:center">Steth<span style="color: #2b8eeb">Overflow</span></h1>
