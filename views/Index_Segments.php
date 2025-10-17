@@ -308,7 +308,7 @@ HTML;
                         </div><!-- .write_answer_top ends -->
                         <div style="display:flex">
                             <div class="profile_image_div" style="margin-top:5px">
-                                <a href="$data->profile_picture"><img src="$data->profile_picture" class="profile_image"/></a>
+                                <a href="$profile_picture"><img src="$profile_picture" class="profile_image"/></a>
                             </div>
                             <div style="margin-left:-13px">
                                 <div style="font-size:12px"><b>$data->real_name</b></b></div>
