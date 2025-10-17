@@ -946,6 +946,7 @@ h1, h2, h3, h4, h5, h6{
     width:100%;
     height:24px;padding:8px;
     background-color:pink;
+    color:#fff;
     /*animation:blink 6s infinite .2s alternate;*/
     font-size:15px;
     font-weight:bold;

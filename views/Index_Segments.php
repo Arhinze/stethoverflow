@@ -7,11 +7,11 @@ include_once($_SERVER["DOCUMENT_ROOT"]."/php/account-manager.php");
 if($data){//if user is logged in:
     if(isset($_POST["question"])) {
         $search_question = $pdo->prepare("SELECT * FROM questions WHERE title = ? ORDER BY question_id DESC LIMIT ?, ?");
-        $search_question->execute([htmlentities($_POST["questions"]),0,1]);
+        $search_question->execute([htmlentities($_POST["question"]),0,1]);
         $sq_data = $search_question->fetch(PDO::FETCH_OBJ);
         if(!$sq_data) {//that means this is a new post
             $insert_stmt = $pdo->prepare("INSERT INTO questions(title,user_id,time_asked) VALUES(?,?,?)");
-            $insert_stmt->execute([htmlentities($_POST["questions"]),$data->user_id,date("Y-m-d H:i:s", time())]);
+            $insert_stmt->execute([htmlentities($_POST["question"]),$data->user_id,date("Y-m-d H:i:s", time())]);
 
             echo "<div class='invalid' style='background-color: #344c80ff'>Question uploaded successfully</div>";
         } else {
