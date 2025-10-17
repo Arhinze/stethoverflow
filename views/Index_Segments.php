@@ -7,10 +7,6 @@ include_once($_SERVER["DOCUMENT_ROOT"]."/php/account-manager.php");
 $images_array = ["image1"];
 define("IMAGES_ARRAY", $images_array);
 
-$posts_stmt = $pdo->prepare("SELECT * FROM posts ORDER by post_id DESC LIMIT ?, ?");
-$posts_stmt->execute(0,10);
-$posts_data = $posts_stmt->fetch(PDO::FETCH_OBJ);
-
 if($data){//if user is logged in:
     if(isset($_POST["question"])) {
         $search_question = $pdo->prepare("SELECT * FROM questions WHERE title = ? ORDER BY question_id DESC LIMIT ?, ?");
@@ -207,7 +203,26 @@ HTML;
                     <!-- .main_page_topmost_div ends -->
 
                     <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation --> 
+HTML;
+                $posts_stmt = $this->pdo->prepare("SELECT * FROM posts ORDER by post_id DESC LIMIT ?, ?");
+                $posts_stmt->execute(0,10);
+                $posts_data = $posts_stmt->fetch(PDO::FETCH_OBJ);
 
+                foreach($posts_data as $pd) {
+                    $post_nl2br = nl2br($pd->body);
+                    echo <<<HTML
+                        <div class="questions" style="margin-bottom:3px"><h4>$pd->title</h4></div>
+
+                        <div class="answers" style="padding:6px">
+                            $post_nl2br
+                            
+                            <div><img src="/static/images/$pd->image1" style="width:100%;height:auto"/></div>
+                        </div>
+HTML;
+                }
+
+
+            echo <<<HTML
                     <!-- .posts_and_questions_div starts -->
                     <div class="posts_and_questions" style="margin:12px 6px">
                         <div style="display:flex">
@@ -318,7 +333,9 @@ HTML;
                     <!-- .quote_comment ends -->
 
                     <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation -->
-
+HTML;
+            
+            echo <<<HTML
                     <!-- .posts_and_questions_div starts -->
                     <div class="posts_and_questions" style="margin:12px 6px">
                         <div style="display:flex">
