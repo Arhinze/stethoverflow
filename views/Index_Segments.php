@@ -87,7 +87,9 @@ if($data){//if user is logged in:
         }
     }
 } else {
-    echo "<div class='invalid'>Login to continue</div>";
+    if(isset($_POST["question"]) || isset($_POST["write_up"])) { //if user is not logged in but attempting to post
+        echo "<div class='invalid'>Login to continue</div>";
+    }
 }
 
 
