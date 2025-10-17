@@ -206,7 +206,7 @@ HTML;
 HTML;
                 $posts_stmt = self::$pdo->prepare("SELECT * FROM posts ORDER by post_id DESC LIMIT ?, ?");
                 $posts_stmt->execute([0,10]);
-                $posts_data = $posts_stmt->fetch(PDO::FETCH_OBJ);
+                $posts_data = $posts_stmt->fetchAll(PDO::FETCH_OBJ);
 
                 foreach($posts_data as $post_d) {
                     echo "<h1>$post_d </h1>";
