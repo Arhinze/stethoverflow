@@ -73,7 +73,7 @@ if($data){//if user is logged in:
                         if (move_uploaded_file($_FILES["add_".$images_ad]["tmp_name"], $target_file)) {
                             //echo "The file ".$target_basename." has been uploaded.<br />";                            
                             //insert(update) image(s)
-                            $up_stmt = $pdo->prepare("UPDATE posts SET $images_ad = ? WHERE title = ?");
+                            $up_stmt = $pdo->prepare("UPDATE posts SET $images_ad = ? WHERE body = ?");
                             $up_stmt->execute([$target_basename, htmlentitites($_POST["body"])]);
                         } else {
                           echo "<div class='invalid'>Sorry, there was an error uploading your file.</div>";
