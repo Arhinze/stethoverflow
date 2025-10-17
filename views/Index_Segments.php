@@ -337,7 +337,7 @@ HTML;
                                 $post_short_form ...
                             </div>
 
-                            <div><img src="$post_d->image1" style="width:100%;height:auto"/></div>
+                            <div><img src="/static/images/$post_d->image1" style="width:100%;height:auto"/></div>
                         </div><!-- .quoted_post ends -->
                     </div><!-- .write_answer ends -->
                     <!-- .quote_comment ends -->
