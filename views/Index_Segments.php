@@ -221,7 +221,7 @@ HTML;
             $posts_stmt->execute([0,10]);
             $posts_data = $posts_stmt->fetchAll(PDO::FETCH_OBJ);
 
-            $user_real_name = "Guest user";
+            $user_real_name = "Guest user - <a href='/login'>Login</a> to continue";
             $user_bio = "Stethoverflow Guest User (2025 - present)";
             if ($data) {
                 $user_real_name = $data->real_name;
@@ -236,7 +236,7 @@ HTML;
                 $user_data_data = $user_data_stmt->fetch(PDO::FETCH_OBJ);
                 $date_posted =  date("j M y", strtotime($post_d->time_posted));
 
-                $post_short_form = substr($post_d->body, 0, 36);
+                $post_short_form = substr($post_d->body, 0, 100);
 
                 $number_of_likes = count(explode(";", $post_d->likes)) - 1;
 
