@@ -29,10 +29,10 @@ if($data) {
     }
 } else {
     echo <<<HTML
-        <div class='invalid' id="invalid_sign_in" style='background-color: #2b8eeb;color:#fff;top:30%;left:15%;height:fit-content;width:70%;padding:18px'>
+        <div class='invalid' id="invalid_sign_in" style='background-color: #2b8eeb;color:#fff;top:30%;left:15%;height:fit-content;width:70%;padding:18px;display:block'>
             <div style="display:flex;justify-content:space-between">
                 <div><b>kindly login to continue</b></div>
-                <div onclick="show_div('invalid_sign_in')"><i class="fa fa-times"></i></div>
+                <div onclick="close_div('invalid_sign_in')"><i class="fa fa-times"></i></div>
             </div>
             <div>    
                 <div style="text-align:center;font-size:27px;margin-top:30px;margin-bottom:-16px;font-family:Dancing Script">Welcome to</div>
@@ -48,6 +48,12 @@ if($data) {
                 <a href="/login.php" style="color:#fff;padding:12px 21%"> &nbsp; Login/Sign up</a>
             </div>
         </div>
+
+        <script>
+            close_div(vari) {
+                document.getElementById(vari).style.display = "none";
+            }
+        </script>
 HTML;
 }
 ?>
