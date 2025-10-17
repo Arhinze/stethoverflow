@@ -283,7 +283,7 @@ HTML;
                         <div style="display:flex;justify-content:space-between;margin-top:9px">
                             <div style="display:flex">
                                 <div class="profile_image_div">
-                                    <a href="$post_d->profile_picture"><img src="$post_d->profile_picture" class="profile_image"/></a>
+                                    <a href="$profile_picture"><img src="$profile_picture" class="profile_image"/></a>
                                 </div>
                                 <div style="margin-left:-17px;margin-top:7px;color:#888">Replying to <a href="/">@$post_d->username</a></div>
                             </div>
