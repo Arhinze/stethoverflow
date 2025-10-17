@@ -191,7 +191,7 @@ HTML;
 HTML;
        }
                 
-        public static function body($site_name = SITE_NAME_SHORT, $site_url = SITE_URL){
+        public static function body($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $profile_picture = PROFILE_PICTURE){
             $site_name_uc = strtoupper($site_name);
 
             echo <<<HTML
@@ -201,7 +201,7 @@ HTML;
                     <div class="main_page_topmost_div" style="padding:12px">
                         <div style="display:flex;background-color:#fff" onclick="show_div('ask_or_post_div')">
                             <div style="width:30px;height:30px;border:2px solid #d6e3fd;border-radius:100%">
-                                <a href="$site_url/static/images/profile_new.png"><img src="/static/images/profile_new.png" style="width:27px;height:27px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
+                                <a href="$site_url/static/images/profile_new.png"><img src="$profile_picture" style="width:27px;height:27px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
                             </div>
                             <div class="input" style="background-color:#fff;color:#888;margin-left:5px">What do you want to ask or post?</div>
                         </div>
