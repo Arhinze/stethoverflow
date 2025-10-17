@@ -91,6 +91,11 @@ if($data){//if user is logged in:
         } else { //that means post already exists
             echo "<div class='invalid'>Sorry, this post already exists.</div>";
         }
+
+        //check for file upload errors:
+        if ($_FILES['photo']['error'] !== UPLOAD_ERR_OK) {
+            echo "<h1 style='margin-top:75px'>Upload failed with error code " . $_FILES['photo']['error']."</h1>";
+        }
     }
 } else {
     if(isset($_POST["question"]) || isset($_POST["write_up"])) { //if user is not logged in but attempting to post
