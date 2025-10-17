@@ -664,10 +664,12 @@ HTML;
                         <div class="x_scroll"><!-- style .overflow-x:scroll starts -->
                             <div class="additional_product_images_div_container" style="width:fit-content;overflow:visible"><!-- .additional_product_images_div_container starts -->
 HTML;
+                        $i=0;
                         foreach($images_array as $images_ad) {
+                            $i++;
                 echo <<<HTML
-                            <div class="additional_product_images_div"><!-- img1 to img10 -->
-                                <label for="add_<?=$images_ad?>_file_upload_tag"><img src="/static/images/add_image_icon.png" id="add_<?=$images_ad?>" class="additional_product_image"/><span class="additional_product_image_number"><?=str_replace("image", "", $images_ad)?></span></label>
+                            <div class="additional_product_images_div"><!-- img1 to img4 -->
+                                <label for="add_<?=$images_ad?>_file_upload_tag"><img src="/static/images/add_image_icon.png" id="add_<?=$images_ad?>" class="additional_product_image"/><span class="additional_product_image_number">$i</span></label>
                             </div>
 HTML;
                         }
