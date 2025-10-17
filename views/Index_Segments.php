@@ -271,7 +271,7 @@ HTML;
                     <div style="display:none" class="add_comment" id="add_comment$post_d->post_id" onclick="alternate_comment_div('add_comment$post_d->post_id','reply_comment$post_d->post_id')">
                         <div style="display:flex">
                             <div class="profile_image_div" style="border:2px solid #fff">
-                                <a href="$post_d->profile_picture"><img src="$post_d->profile_picture" class="profile_image"/></a>
+                                <a href="$profile_picture"><img src="$profile_picture" class="profile_image"/></a>
                             </div>
                             <div class="input" style="background-color:#fff;color:#888;margin-left:-13px">Add a comment...</div>
                         </div>
