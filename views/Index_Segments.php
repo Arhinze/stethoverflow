@@ -239,7 +239,7 @@ HTML;
                                 <a href="$user_data_data->profile_picture"><img src="$user_data_data->profile_picture" style="width:36px;height:36px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
                             </div>
                             <div style="margin-left:6px;margin-top:2px">
-                                <div style="font-size:15px"><b>$user_data_data->real_name</b> <i class="fa fa-circle" style="font-size:6px"></i> <b style="color:#2b8eeb">Follow</b></div>
+                                <div style="font-size:15px"><b>$user_data_data->real_name</b> &nbsp; <i class="fa fa-circle" style="font-size:6px"></i> &nbsp; <!-- <b style="color:#2b8eeb">Follow</b>--> </div>
                                 <div style="color:#888;font-size:12px"> $user_data_data->bio &nbsp; <i class="fa fa-circle" style="font-size:6px"></i> &nbsp; $date_posted</div>
                             </div>
                         </div>
