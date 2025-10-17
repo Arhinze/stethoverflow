@@ -285,7 +285,7 @@ HTML;
                                 <div class="profile_image_div">
                                     <a href="$profile_picture"><img src="$profile_picture" class="profile_image"/></a>
                                 </div>
-                                <div style="margin-left:-17px;margin-top:7px;color:#888">Replying to <a href="/">@$post_d->username</a></div>
+                                <div style="margin-left:-17px;margin-top:7px;color:#888">Replying to <a href="/">@$user_data_data->username</a></div>
                             </div>
                             <div style="margin-top:10px;margin-right:12px;color:#888"><i class="fa fa-times" onclick="alternate_comment_div('add_comment$post_d->post_id','reply_comment$post_d->post_id')"></i></div>
                         </div>
