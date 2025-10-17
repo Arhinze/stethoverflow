@@ -951,7 +951,7 @@ h1, h2, h3, h4, h5, h6{
     /*animation:blink 6s infinite .2s alternate;*/
     font-size:15px;
     font-weight:bold;
-    z-index:5;
+    z-index:33;
 }
 
 .investor_input, .investor_input2{
