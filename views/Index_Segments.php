@@ -509,9 +509,17 @@ HTML;
                     document.getElementById('add_question').style.display = "none";
                     document.getElementById('aq_text').style = "border:0";
                 }
-            }                                                                            
+            }        
+
+            var loadFile = function(event, img_id_num) { //function to make pictures visible to user before upload to server
+                var img_id = document.getElementById(img_id_num);
+                img_id.src = URL.createObjectURL(event.target.files[0]);
+                img_id.onload = function(){
+                    URL.revokeObjectURL(img_id.src);
+                }
+            }                                                                    
             const collection = document.getElementsByClassName("invalid");
-                                                                                                 
+                 
             for (let i=0; i < collection.length; i++){
                 //collection[i].style = "display:none";
                                                                                                             
