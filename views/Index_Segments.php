@@ -223,9 +223,11 @@ HTML;
 
             $user_real_name = "Guest user - <a href='/login'>Login</a> to continue";
             $user_bio = "Stethoverflow Guest User (2025 - present)";
+            $data_validator = false;
             if ($data) {
                 $user_real_name = $data->real_name;
                 $user_bio = $data->bio;
+                $data_validator = true;
             }
 
             foreach($posts_data as $post_d) {
@@ -265,7 +267,7 @@ HTML;
                         <!-- .like,comment and share icons start -->
                         <div class="like_comment_and_share_icons">
                             <div class="" style="display:flex">
-                                <div><span id="post$post_d->post_id" style="color:grey" onclick="like_post('post$post_d->post_id','$data')"><i class="fa fa-heart-o"></i></span> <span id="no_of_likes_of_post$post_d->post_id">$number_of_likes</span></div>
+                                <div><span id="post$post_d->post_id" style="color:grey" onclick="like_post('post$post_d->post_id','$data_validator')"><i class="fa fa-heart-o"></i></span> <span id="no_of_likes_of_post$post_d->post_id">$number_of_likes</span></div>
                                 <div style="margin-left:10px"><i class="fa fa-comment-o" onclick="show_div('add_comment$post_d->post_id')"></i> <span id="no_of_comments$post_d->post_id">9</span></div>
                                 <div style="margin-left:10px"><i class="fa fa-retweet" onclick="show_div('quote_comment_div$post_d->post_id')"></i> <span id="no_of_quotes$post_d->post_id"> </span></div>
                                 <div style="margin-left:10px"><i class="fa fa-share-alt"></i> <span id="no_of_shares$post_d->post_id"> </span></div>
