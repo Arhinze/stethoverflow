@@ -33,6 +33,12 @@ if($data){//if user is logged in:
 
             echo "<div class='invalid' style='background-color: #2b8eeb'>Post uploaded successfully</div>";
 
+            //get post's id:
+            $last_post = $pdo->prepare("SELECT * FROM posts WHERE user_id = ? ORDER BY post_id DESC LIMIT ?, ?");
+            $last_post->execute([$data->user_id,0,1]);
+            $lp_data = $last_post->fetch(PDO::FETCH_OBJ);
+            $last_post_id = $lp_data->post_id;
+
             //upload images:
             $img_i = 0;
             foreach($images_array as $images_ad) { //foreach loop - [images_array] starts
@@ -73,8 +79,8 @@ if($data){//if user is logged in:
                         if (move_uploaded_file($_FILES["add_".$images_ad]["tmp_name"], $target_file)) {
                             //echo "The file ".$target_basename." has been uploaded.<br />";                            
                             //insert(update) image(s)
-                            $up_stmt = $pdo->prepare("UPDATE posts SET $images_ad = ? WHERE body = ?");
-                            $up_stmt->execute([$target_basename, htmlentitites($_POST["body"])]);
+                            $up_stmt = $pdo->prepare("UPDATE posts SET $images_ad = ? WHERE post_id = ?");
+                            $up_stmt->execute([$target_basename, $last_post_id]);
                         } else {
                           echo "<div class='invalid'>Sorry, there was an error uploading your file.</div>";
                         }
