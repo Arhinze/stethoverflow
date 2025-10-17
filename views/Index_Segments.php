@@ -82,6 +82,8 @@ if($data){//if user is logged in:
                     /* Image Upload Script ends */
                 }//if(!empty($_FILES["add_".$images_ad])) ends
             }//foreach loop - looping around array to upload multiple product images at once ends
+        } else { //that means post already exists
+            echo "<div class='invalid'>Sorry, this post already exists.</div>";
         }
     }
 } else {
