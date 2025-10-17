@@ -20,7 +20,7 @@ if($data){//if user is logged in:
     }
 
     if(isset($_POST["write_up"])) {
-        $search_post = $pdo->prepare("SELECT * FROM posts WHERE title = ? ORDER BY posts_id DESC LIMIT ?, ?");
+        $search_post = $pdo->prepare("SELECT * FROM posts WHERE title = ? ORDER BY post_id DESC LIMIT ?, ?");
         $search_post->execute([htmlentities($_POST["write_up"]),0,1]);
         $sp_data = $search_post->fetch(PDO::FETCH_OBJ);
         if(!$sp_data) {//that means this is a new post
