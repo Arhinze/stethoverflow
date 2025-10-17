@@ -23,7 +23,7 @@ if($data){//if user is logged in:
     }
 
     if(isset($_POST["write_up"])) {
-        $search_post = $pdo->prepare("SELECT * FROM posts WHERE title = ? ORDER BY post_id DESC LIMIT ?, ?");
+        $search_post = $pdo->prepare("SELECT * FROM posts WHERE body = ? ORDER BY post_id DESC LIMIT ?, ?");
         $search_post->execute([htmlentities($_POST["write_up"]),0,1]);
         $sp_data = $search_post->fetch(PDO::FETCH_OBJ);
 
@@ -32,7 +32,6 @@ if($data){//if user is logged in:
             $insert_stmt->execute([htmlentities($_POST["post_title"]),htmlentities($_POST["write_up"]),$data->user_id,date("Y-m-d H:i:s", time())]);
 
             echo "<div class='invalid' style='background-color: #d6e2fb'>Post uploaded successfully</div>";
-        }
 
             //upload images:
             $img_i = 0;
@@ -72,11 +71,10 @@ if($data){//if user is logged in:
                     //if everything is ok, upload file
                     } else {
                         if (move_uploaded_file($_FILES["add_".$images_ad]["tmp_name"], $target_file)) {
-                            //echo "The file ".$target_basename." has been uploaded.<br />";
-                            
-                            //insert(update) product image(s)
-                            $up_stmt = $pdo->prepare("UPDATE products SET $images_ad = ? WHERE product_url = ?");
-                            $up_stmt->execute([$target_basename, $_POST["new_url"]]);
+                            //echo "The file ".$target_basename." has been uploaded.<br />";                            
+                            //insert(update) image(s)
+                            $up_stmt = $pdo->prepare("UPDATE posts SET $images_ad = ? WHERE title = ?");
+                            $up_stmt->execute([$target_basename, htmlentitites($_POST["body"])]);
                         } else {
                           echo "<div class='invalid'>Sorry, there was an error uploading your file.</div>";
                         }
@@ -84,6 +82,7 @@ if($data){//if user is logged in:
                     /* Image Upload Script ends */
                 }//if(!empty($_FILES["add_".$images_ad])) ends
             }//foreach loop - looping around array to upload multiple product images at once ends
+        }
     }
 } else {
     echo "<div class='invalid'>Login to continue</div>";
@@ -746,7 +745,7 @@ HTML;
                             </ul>
                         </div>
                         <form method="post" action="">
-                            <textarea name="question" class="textarea" style="border-bottom:0;border-radius:0;height:75px" placeholder="Ask your question"></textarea>
+                            <textarea name="question" class="textarea" style="border-bottom:0;border-radius:0;height:75px" placeholder="Ask your question" minlength="10" required></textarea>
                             <input type="submit" id="submit_question_tag" style="display:none"/>
                         </form>
                     </div><!-- ask_question ends -->
@@ -786,7 +785,8 @@ HTML;
 
 
             echo <<<HTML
-                            <textarea name="write_up" class="textarea" style="border-bottom:0;border-radius:0" placeholder="Create a post about something"></textarea>
+                            <textarea name="post_title" class="textarea" style="border-bottom:0;border-radius:0;height:60px" placeholder="Enter a title for this post(optional)"></textarea>
+                            <textarea name="write_up" class="textarea" style="border-bottom:0;border-radius:0" placeholder="Create a post about something" minlength="30" required></textarea>
                             <input type="submit" id="submit_post_tag" style="display:none"/>
                     </div><!-- create_post ends -->
                     </form>
