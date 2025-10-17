@@ -232,7 +232,7 @@ HTML;
                     <div class="posts_and_questions" style="margin:12px 6px">
                         <div style="display:flex">
                             <div style="width:39px;height:39px;border:2px solid #d6e3fd;border-radius:100%">
-                                <a href="$site_url/static/images/profile_new.png"><img src="/static/images/$user_data_data->profile_picture" style="width:36px;height:36px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
+                                <a href="$user_data_data->profile_picture"><img src="$user_data_data->profile_picture" style="width:36px;height:36px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
                             </div>
                             <div style="margin-left:6px;margin-top:2px">
                                 <div style="font-size:15px"><b>$user_data_data->real_name</b> <i class="fa fa-circle" style="font-size:6px"></i> <b style="color:#2b8eeb">Follow</b></div>
