@@ -46,7 +46,7 @@ if($data){//if user is logged in:
                 if(!empty($_FILES["add_".$images_ad]["name"])){ //if (!empty($_FILES["add_".$images_ad])) starts
                     /* Image Upload Script starts */
                     $target_dir = "static/images/";
-                    $target_basename = $data->user_id."_".time()."_".$img_i.".png";
+                    $target_basename = "stethoverflow_".$data->user_id."_".time()."_".$img_i.".png";
                     $target_file = $target_dir.$target_basename;
                     $uploadOk = 1;
                     $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
