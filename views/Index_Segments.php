@@ -94,7 +94,7 @@ if($data){//if user is logged in:
 
         //check for file upload errors:
         if ($_FILES['add_image1']['error'] !== UPLOAD_ERR_OK) {
-            echo "<h1 style='margin-top:75px'>Upload failed with error code " . $_FILES['add_image1']['error']."</h1>";
+            echo "<div class='invalid'>Upload failed with error code " . $_FILES['add_image1']['error']."</div>";
         }
     }
 } else {
@@ -824,7 +824,7 @@ HTML;
                             $tag = "add_".$images_ad."_file_upload_tag";
                             $img_id = "add_".$images_ad;
                 echo <<<HTML
-                            <input type="file" name="$img_id" id="$tag" accept="image/*" style="display:none" onchange="loadFile(event, $img_id)"/><!-- file tag 1 to file tag 10 -->
+                            <input type="file" name="$img_id" id="$tag" accept="image/*" style="display:none" onchange="loadFile(event, '$img_id')"/><!-- file tag 1 to file tag 10 -->
                             <!-- The input tags which does the work but remains hidden ends -->
                     <!-- Add Image Ends -->
 HTML;
