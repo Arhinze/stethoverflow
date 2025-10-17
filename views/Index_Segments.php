@@ -667,7 +667,7 @@ HTML;
                     <!-- create_post starts -->
                     <div id="create_post" style="display:none">
                         <!-- Add Image Starts -->
-                        <div style="font-size:18px;margin:15px 0 9px 0"><b>Add Image: (accepted formats - png, jpg, jpeg, gif)</b> <span style="font-size:12px;color:green"></span></div>
+                        <div style="font-size:18px;margin:15px 0 9px 0"><b>Add Image:</b> (accepted formats - png, jpg, jpeg, gif)<span style="font-size:12px;color:green"></span></div>
 
                         <div class="x_scroll"><!-- style .overflow-x:scroll starts -->
                             <div class="additional_product_images_div_container" style="width:fit-content;overflow:visible"><!-- .additional_product_images_div_container starts -->
