@@ -217,20 +217,39 @@ HTML;
 
                     <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation --> 
 HTML;
-                $posts_stmt = self::$pdo->prepare("SELECT * FROM posts ORDER by post_id DESC LIMIT ?, ?");
-                $posts_stmt->execute([0,10]);
-                $posts_data = $posts_stmt->fetchAll(PDO::FETCH_OBJ);
+            $posts_stmt = self::$pdo->prepare("SELECT * FROM posts ORDER by post_id DESC LIMIT ?, ?");
+            $posts_stmt->execute([0,10]);
+            $posts_data = $posts_stmt->fetchAll(PDO::FETCH_OBJ);
 
-                foreach($posts_data as $post_d) {
-                    $post_nl2br = nl2br($post_d->body);
-                    echo <<<HTML
+            foreach($posts_data as $post_d) {
+                $post_nl2br = nl2br($post_d->body);
+                $user_data_stmt = self::$pdo->prepare("SELECT * FROM stethoverflow_users WHERE user_id = ?");
+                $user_data_stmt->execute([$post_d->user_id]);
+                $user_data_data = $user_data_stmt->fetch(PDO::FETCH_OBJ);
+
+                echo <<<HTML
+                    <!-- .posts_and_questions_div starts -->
+                    <div class="posts_and_questions" style="margin:12px 6px">
+                        <div style="display:flex">
+                            <div style="width:39px;height:39px;border:2px solid #d6e3fd;border-radius:100%">
+                                <a href="$site_url/static/images/profile_new.png"><img src="/static/images/$user_data_data->profile_picture" style="width:36px;height:36px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
+                            </div>
+                            <div style="margin-left:6px;margin-top:2px">
+                                <div style="font-size:15px"><b>$user_data_data->real_name</b> <i class="fa fa-circle" style="font-size:6px"></i> <b style="color:#2b8eeb">Follow</b></div>
+                                <div style="color:#888;font-size:12px">$user_data_data->bio<i class="fa fa-circle" style="font-size:6px"></i> $post_d->time_posted</div>
+                            </div>
+                        </div>
+
                         <div class="questions" style="margin-bottom:3px"><h4>$post_d->title</h4></div>
 
+                        <!-- .answer starts -->
                         <div class="answers" style="padding:6px">
                             $post_nl2br
-                            
                             <div><img src="/static/images/$post_d->image1" style="width:100%;height:auto"/></div>
-                        </div>
+                        </div><!-- .answer ends -->
+                    </div><!-- .posts_and_questions_div ends -->
+
+                    <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation --> 
 HTML;
                 }
 
