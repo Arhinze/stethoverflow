@@ -13,7 +13,9 @@ if($data){//if user is logged in:
             $insert_stmt = $pdo->prepare("INSERT INTO questions(title,user_id,time_asked) VALUES(?,?,?)");
             $insert_stmt->execute([htmlentities($_POST["questions"]),$data->user_id,date("Y-m-d H:i:s", time())]);
 
-            echo "<div class='invalid' style='background-color: #d6e2fb'>Question uploaded successfully</div>";
+            echo "<div class='invalid' style='background-color: #344c80ff'>Question uploaded successfully</div>";
+        } else {
+            echo "<div class='invalid'>Sorry, the question has already been asked.</div>";
         }
     }
 
@@ -216,7 +218,7 @@ HTML;
                         <!-- .write_answer_top starts -->
                         <div class="write_answer_top">
                             <div style="font-size:18px;color:#888" onclick="show_div('quote_comment_div1')"><b> X </b></div>
-                            <div class="button" style="font-size:12px">Post</div>
+                            <div class="button" style="font-size:12px"><label for ="submit_post_tag">Post</label></div>
                         </div><!-- .write_answer_top ends -->
                         <div style="display:flex">
                             <div class="profile_image_div" style="margin-top:5px">
@@ -663,7 +665,7 @@ HTML;
                     <!-- .write_answer_top starts -->
                     <div class="write_answer_top">
                         <div style="font-size:18px;color:#888" onclick="show_div('ask_or_post_div')"><b> X </b></div>
-                        <div class="button" style="font-size:12px">Post</div>
+                        <div class="button" style="font-size:12px"><label for="submit_question_tag">Post</label></div>
                     </div><!-- .write_answer_top ends -->
 
                     <div style="display:flex;justify-content:space-around;margin:15px 0;font-size:15px">
