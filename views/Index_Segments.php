@@ -572,7 +572,13 @@ HTML;
         }
                                                                 
                                                                 
-        public static function footer($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $additional_scripts = "", $whatsapp_chat = "on", $images_array = IMAGES_ARRAY){ 
+        public static function footer($site_name = SITE_NAME_SHORT, $site_url = SITE_URL, $additional_scripts = "", $whatsapp_chat = "on", $images_array = IMAGES_ARRAY, $profile_picture = PROFILE_PICTURE, $data = DATA){ 
+            $user_real_name = "Guest user - <a href='/login'>Login</a> to continue";
+            $user_bio = "Stethoverflow Guest User (2025 - present)";
+            if ($data) {
+                $user_real_name = $data->real_name;
+                $user_bio = $data->bio;
+            }
    
             $index_scripts = Index_Segments::index_scripts();  
 
@@ -593,7 +599,7 @@ HTML;
                     </div>
                     <div style="display:flex">
                         <div class="profile_image_div" style="margin-top:5px">
-                            <a href="/static/images/profile_new.png"><img src="/static/images/profile_new.png" class="profile_image"/></a>
+                            <a href="$profile_picture"><img src="$profile_picture" class="profile_image"/></a>
                         </div>
                         <div style="margin-left:-13px">
                             <div style="font-size:12px"><b>$user_real_name</b></b></div>
