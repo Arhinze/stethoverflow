@@ -208,10 +208,11 @@ HTML;
                 $posts_stmt->execute([0,10]);
                 $posts_data = $posts_stmt->fetch(PDO::FETCH_OBJ);
 
-                foreach($posts_data as $pd) {
-                    $post_nl2br = nl2br($pd->body);
+                foreach($posts_data as $post_d) {
+                    echo "<h1>$post_d </h1>";
+                    $post_nl2br = nl2br($post_d->body);
                     echo <<<HTML
-                        <div class="questions" style="margin-bottom:3px"><h4>$pd->title</h4></div>
+                        <div class="questions" style="margin-bottom:3px"><h4>$post_d->title</h4></div>
 
                         <div class="answers" style="padding:6px">
                             $post_nl2br
