@@ -92,10 +92,10 @@ if($data){//if user is logged in:
 
 
 class Index_Segments{
-    private $pdo;
+    private static PDO $pdo;
 
-    public function inject($obj) {
-        $this->pdo = $obj;
+    public static function inject(PDO $obj) {
+        self::$pdo = $obj;
     }
 
     public static function main_header($site_name = SITE_NAME_SHORT, $profile_or_sign_in = PROFILE_OR_SIGN_IN, $profile_picture = PROFILE_PICTURE) {
@@ -204,7 +204,7 @@ HTML;
 
                     <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation --> 
 HTML;
-                $posts_stmt = $this->pdo->prepare("SELECT * FROM posts ORDER by post_id DESC LIMIT ?, ?");
+                $posts_stmt = self::$pdo->prepare("SELECT * FROM posts ORDER by post_id DESC LIMIT ?, ?");
                 $posts_stmt->execute(0,10);
                 $posts_data = $posts_stmt->fetch(PDO::FETCH_OBJ);
 
@@ -899,7 +899,5 @@ HTML;
     }
 }
 
-//Index_Segments::inject($pdo);
-$index_obj = new Index_Segments;
-$index_obj->inject($pdo);
+Index_Segments::inject($pdo);
 ?>
