@@ -225,7 +225,9 @@ HTML;
                 $post_nl2br = nl2br($post_d->body);
                 $user_data_stmt = self::$pdo->prepare("SELECT * FROM stethoverflow_users WHERE user_id = ?");
                 $user_data_stmt->execute([$post_d->user_id]);
+
                 $user_data_data = $user_data_stmt->fetch(PDO::FETCH_OBJ);
+                $date_posted =  date("j M y", strtotime($post_d->time_posted));
 
                 echo <<<HTML
                     <!-- .posts_and_questions_div starts -->
@@ -236,7 +238,7 @@ HTML;
                             </div>
                             <div style="margin-left:6px;margin-top:2px">
                                 <div style="font-size:15px"><b>$user_data_data->real_name</b> <i class="fa fa-circle" style="font-size:6px"></i> <b style="color:#2b8eeb">Follow</b></div>
-                                <div style="color:#888;font-size:12px">$user_data_data->bio<i class="fa fa-circle" style="font-size:6px"></i> $post_d->time_posted</div>
+                                <div style="color:#888;font-size:12px">$user_data_data->bio<i class="fa fa-circle" style="font-size:6px"></i> $date_posted</div>
                             </div>
                         </div>
 
