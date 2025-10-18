@@ -394,7 +394,7 @@ HTML;
                     <!-- .quote_comment ends -->
 
                     <!-- .comments_div starts -->
-                    <div class="comments_div" id='comment_div$post_d->post_id'>
+                    <div class="comments_div" id='comment_div$post_d->post_id' style="display:none">
                         <div style="padding:21px;border-top:1px solid #000"><b>Comments</b></div>
                     
 HTML;
@@ -402,7 +402,7 @@ HTML;
                         $comment_data_stmt->execute([$post_d->post_id]);
                         $comment_data = $comment_data_stmt->fetchAll(PDO::FETCH_OBJ);    
 
-                        if (count($comment_data == 0)) {
+                        if (count($comment_data) == 0) {
                             echo "Be the first to comment <i class='fa fa-comment-o'></i>";
                         }
                         
