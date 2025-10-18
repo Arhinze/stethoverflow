@@ -29,7 +29,7 @@ if($data) {
     }
 } else {
     echo <<<HTML
-        <div class='invalid' id="invalid_sign_in" style='background-color: #2b8eeb;color:#fff;top:30%;left:15%;height:fit-content;width:70%;padding:18px;display:block'>
+        <div class='invalid' id="invalid_sign_in" style='background-color: #2b8eeb;color:#fff;top:25%;left:15%;height:fit-content;width:70%;padding:18px;display:block'>
             <div style="display:flex;justify-content:space-between">
                 <div><b>kindly login to continue</b></div>
                 <div onclick="close_div('invalid_sign_in')"><i class="fa fa-times"></i></div>
