@@ -273,6 +273,14 @@ HTML;
                     }
                 }
 
+                $number_of_comments = 0;
+
+                $comment_data_stmt = self::$pdo->prepare("SELECT * FROM comments WHERE post_id = ?");
+                $comment_data_stmt->execute([$post_d->post_id]);
+                $comment_data = $comment_data_stmt->fetchAll(PDO::FETCH_OBJ);
+
+                $number_of_comments = count($comment_data);
+
                 echo <<<HTML
                     <!-- .posts_and_questions_div starts -->
                     <div class="posts_and_questions" style="margin:12px 6px">
@@ -300,7 +308,7 @@ HTML;
                         <div class="like_comment_and_share_icons">
                             <div class="" style="display:flex">
                                 <div><span id="post$post_d->post_id" style="color:$like_icon_color" onclick="like_post('post$post_d->post_id','$data_validator')">$like_icon</span> <span id="no_of_likes_of_post$post_d->post_id">$number_of_likes</span></div>
-                                <div style="margin-left:10px"><i class="fa fa-comment-o" onclick="show_div('add_comment$post_d->post_id')"></i> <span id="no_of_comments$post_d->post_id">9</span></div>
+                                <div style="margin-left:10px"><i class="fa fa-comment-o" onclick="show_div('add_comment$post_d->post_id')"></i> <span id="no_of_comments$post_d->post_id">$number_of_comments</span></div>
                                 <div style="margin-left:10px"><i class="fa fa-retweet" onclick="show_div('quote_comment_div$post_d->post_id')"></i> <span id="no_of_quotes$post_d->post_id"> </span></div>
                                 <div style="margin-left:10px"><i class="fa fa-share-alt"></i> <span id="no_of_shares$post_d->post_id"> </span></div>
                             </div>
