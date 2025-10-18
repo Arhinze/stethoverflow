@@ -128,7 +128,15 @@ HTML;
 HTML;
 
 }  
-    
+
+$user_real_name = "Guest user - <a href='/login'>Login</a> to continue";
+$user_bio = "Stethoverflow Guest User (2025 - present)";
+
+if ($data) {
+    $user_real_name = $data->real_name;
+    $user_bio = $data->bio;
+}
+   
 define("PROFILE_OR_SIGN_IN", $profile_or_sign_in);
 define("PROFILE_PICTURE", $profile_picture);
 define("DATA", $data);
