@@ -54,7 +54,7 @@ Index_Segments::header();
 
 <?php
     $search_question = $pdo->prepare("SELECT * FROM questions ORDER BY question_id DESC LIMIT ?, ?");
-    $search_question->execute([htmlentities($_POST["question"]),0,1000]);
+    $search_question->execute([0,1000]);
     $sq_data = $search_question->fetchAll(PDO::FETCH_OBJ);
 
     foreach($sq_data as $sd){
