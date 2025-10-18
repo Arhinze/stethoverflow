@@ -9,42 +9,42 @@ Index_Segments::header();
         <div style="border-bottom:2px solid #2b8eeb;padding:12px 9px"><h3>Your Spaces</h3></div>
         
         <div style="display:flex;justify-content:space-between;padding:12px;border-bottom:1px solid #888">
-            <div><img src="/static/images/space1.png"/> &nbsp; <b>Medical Robotics</b></div>
+            <div class="spaces_img_div"><img src="/static/images/space1.png" class="spaces_img"/> &nbsp; <b>Medical Robotics</b></div>
             <div><i class="fa fa-angle-right"></i></div>
         </div>
 
         <div style="display:flex;justify-content:space-between;padding:12px;border-bottom:1px solid #888">
-            <div><img src="/static/images/space2.png"/> &nbsp; <b>Surgery</b></div>
+            <div class="spaces_img_div"><img src="/static/images/space2.png" class="spaces_img"/> &nbsp; <b>Surgery</b></div>
             <div><i class="fa fa-angle-right"></i></div>
         </div>
 
         <div style="display:flex;justify-content:space-between;padding:12px;border-bottom:1px solid #888">
-            <div><img src="/static/images/space2.png"/> &nbsp; <b>Anatomy</b></div>
+            <div class="spaces_img_div"><img src="/static/images/space2.png" class="spaces_img"/> &nbsp; <b>Anatomy</b></div>
             <div><i class="fa fa-angle-right"></i></div>
         </div>
 
         <div style="display:flex;justify-content:space-between;padding:12px;border-bottom:1px solid #888">
-            <div><img src="/static/images/space2.png"/> &nbsp; <b>Biochemistry</b></div>
+            <div class="spaces_img_div"><img src="/static/images/space2.png" class="spaces_img"/> &nbsp; <b>Biochemistry</b></div>
             <div><i class="fa fa-angle-right"></i></div>
         </div>
 
         <div style="display:flex;justify-content:space-between;padding:12px;border-bottom:1px solid #888">
-            <div><img src="/static/images/space2.png"/> &nbsp; <b>Pharmacology</b></div>
+            <div class="spaces_img_div"><img src="/static/images/space2.png" class="spaces_img"/> &nbsp; <b>Pharmacology</b></div>
             <div><i class="fa fa-angle-right"></i></div>
         </div>
 
         <div style="display:flex;justify-content:space-between;padding:12px;border-bottom:1px solid #888">
-            <div><img src="/static/images/space2.png"/> &nbsp; <b>Bioelectronics</b></div>
+            <div class="spaces_img_div"><img src="/static/images/space2.png" class="spaces_img"/> &nbsp; <b>Bioelectronics</b></div>
             <div><i class="fa fa-angle-right"></i></div>
         </div>
 
         <div style="display:flex;justify-content:space-between;padding:12px;border-bottom:1px solid #888">
-            <div><img src="/static/images/space2.png"/> &nbsp; <b>Medical Wearables and IOT in Medicine</b></div>
+            <div class="spaces_img_div"><img src="/static/images/space2.png" class="spaces_img"/> &nbsp; <b>Medical Wearables and IOT in Medicine</b></div>
             <div><i class="fa fa-angle-right"></i></div>
         </div>
 
         <div style="display:flex;justify-content:space-between;padding:12px;border-bottom:1px solid #888">
-            <div><img src="/static/images/space2.png"/> &nbsp; <b>Internal Medicine</b></div>
+            <div class="spaces_img_div"><img src="/static/images/space2.png" class="spaces_img"/> &nbsp; <b>Internal Medicine</b></div>
             <div><i class="fa fa-angle-right"></i></div>
         </div>
     </div><!-- .spaces end -->

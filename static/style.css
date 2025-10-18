@@ -597,6 +597,21 @@ h1, h2, h3, h4, h5, h6{
     height:auto;
     border-radius:9px;
 }
+
+.spaces_img_div{
+    width:75px;
+    height:75px;
+    overflow:hidden;
+    border:1px solid #888;
+    border-radius: 6px;
+    margin-right:12px;
+}
+
+.spaces_img{
+    width:75px;
+    height:auto;
+    border-radius:6px;
+}
 /* -- spaces page starts -- */
 
 
