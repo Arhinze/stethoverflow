@@ -236,7 +236,7 @@ HTML;
             foreach($posts_data as $post_d) {
                 if ($data){
                     if (isset($_POST["comment_on_post_$post_d->post_id"])) {
-                        $comment_check_stmt = $self::$pdo->prepare("SELECT * FROM comments WHERE comment = ?,post_id = ? AND user_id = ?");
+                        $comment_check_stmt = self::$pdo->prepare("SELECT * FROM comments WHERE comment = ?,post_id = ? AND user_id = ?");
                         $comment_check_stmt->execute([htmlentities($_POST["comment_on_post_$post_d->post_id"]),$post_d->post_id,$data->user_id]);
                         $comment_check_data = $comment_check_stmt->fetch(PDO::FETCH_OBJ);
 
