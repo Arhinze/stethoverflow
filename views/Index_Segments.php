@@ -308,7 +308,7 @@ HTML;
                         <div class="like_comment_and_share_icons">
                             <div class="" style="display:flex">
                                 <div><span id="post$post_d->post_id" style="color:$like_icon_color" onclick="like_post('post$post_d->post_id','$data_validator')">$like_icon</span> <span id="no_of_likes_of_post$post_d->post_id">$number_of_likes</span></div>
-                                <div style="margin-left:10px"><i class="fa fa-comment-o" onclick="show_div('add_comment$post_d->post_id')"></i> <span id="no_of_comments$post_d->post_id">$number_of_comments</span></div>
+                                <div style="margin-left:10px"><i class="fa fa-comment-o" onclick="show_multiple_div('add_comment$post_d->post_id','comment_div$post_d->post_id')"></i> <span id="no_of_comments$post_d->post_id">$number_of_comments</span></div>
                                 <div style="margin-left:10px"><i class="fa fa-retweet" onclick="show_div('quote_comment_div$post_d->post_id')"></i> <span id="no_of_quotes$post_d->post_id"> </span></div>
                                 <div style="margin-left:10px"><i class="fa fa-share-alt"></i> <span id="no_of_shares$post_d->post_id"> </span></div>
                             </div>
@@ -394,13 +394,17 @@ HTML;
                     <!-- .quote_comment ends -->
 
                     <!-- .comments_div starts -->
-                    <div class="comments_div">
+                    <div class="comments_div" id='comment_div$post_d->post_id'style="display:none">
                         <div style="padding:21px;border-top:1px solid #000"><b>Comments</b></div>
                     
 HTML;
                         $comment_data_stmt = self::$pdo->prepare("SELECT * FROM comments WHERE post_id = ?");
                         $comment_data_stmt->execute([$post_d->post_id]);
                         $comment_data = $comment_data_stmt->fetchAll(PDO::FETCH_OBJ);    
+
+                        if (count($comment_data == 0)) {
+                            echo "Be the first to comment <i class='fa fa-comment-o'></i>";
+                        }
                         
                         foreach($comment_data as $comm_d){
                             $commenter_data_stmt = self::$pdo->prepare("SELECT * FROM stethoverflow_users WHERE user_id = ? LIMIT ?, ?");
@@ -421,8 +425,7 @@ HTML;
 HTML;
                         }
                 echo <<<HTML
-                    </div>
-                    <!-- .comments_div ends -->
+                    </div> <!-- .comments_div ends -->
                     
                     <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation --> 
 HTML;
@@ -486,6 +489,11 @@ HTML;
                 } else if (document.getElementById(vari).style.display == "block") {
                     document.getElementById(vari).style.display = "none";
                 }
+            }
+
+            function show_multiple_div(vari1,vari2) {
+                show_div(vari1);
+                show_div(vari2);
             }
 
             /*function close_invalid_signin() {
