@@ -9,17 +9,17 @@ Index_Segments::header();
         <div style="border-bottom:2px solid #2b8eeb;padding:12px 9px"><h3>Your Spaces</h3></div>
         
         <div style="display:flex;justify-content:space-between;padding:12px;border-bottom:1px solid #888">
-            <div class="spaces_img_div"><img src="/static/images/space1.png" class="spaces_img"/> &nbsp; <b>Medical Robotics</b></div>
+            <div class="spaces_img_div"><a href="/static/images/space1.png"><img src="/static/images/space1.png" class="spaces_img"/></a> &nbsp; <b>Medical Robotics</b></div>
             <div><i class="fa fa-angle-right"></i></div>
         </div>
 
         <div style="display:flex;justify-content:space-between;padding:12px;border-bottom:1px solid #888">
-            <div class="spaces_img_div"><img src="/static/images/space2.png" class="spaces_img"/> &nbsp; <b>Surgery</b></div>
+            <div class="spaces_img_div"><a href="/static/images/space2.png"><img src="/static/images/space2.png" class="spaces_img"/></a> &nbsp; <b>Surgery</b></div>
             <div><i class="fa fa-angle-right"></i></div>
         </div>
 
         <div style="display:flex;justify-content:space-between;padding:12px;border-bottom:1px solid #888">
-            <div class="spaces_img_div"><img src="/static/images/space3.png" class="spaces_img"/> &nbsp; <b>Anatomy</b></div>
+            <div class="spaces_img_div"><a href="/static/images/space3.png"><img src="/static/images/space3.png" class="spaces_img"/></a> &nbsp; <b>Anatomy</b></div>
             <div><i class="fa fa-angle-right"></i></div>
         </div>
 
