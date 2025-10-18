@@ -394,7 +394,7 @@ HTML;
                     <!-- .quote_comment ends -->
 
                     <!-- .comments_div starts -->
-                    <div class="comments_div" id='comment_div$post_d->post_id'style="display:none">
+                    <div class="comments_div" id='comment_div$post_d->post_id' style="display:none">
                         <div style="padding:21px;border-top:1px solid #000"><b>Comments</b></div>
                     
 HTML;
