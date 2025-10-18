@@ -18,6 +18,19 @@ Index_Segments::header();
     $sq_data = $search_question->fetchAll(PDO::FETCH_OBJ);
 
     foreach($sq_data as $sd){
+        if(isset($_POST["answer_to_question_$sd->question_id"])) {
+            $search_answer = $pdo->prepare("SELECT * FROM answers WHERE answer = ? AND question_id = ? ORDER BY answer_id DESC LIMIT ?, ?");
+            $search_answer->execute([htmlentities($_POST["answer_to_question_$sd->question_id"]),0,1]);
+            $sa_data = $search_answer->fetch(PDO::FETCH_OBJ);
+            if(!$sa_data) {//that means this is a new answer
+                $insert_stmt = $pdo->prepare("INSERT INTO answers(question_id,answer,user_id,time_asked) VALUES(?,?,?)");
+                $insert_stmt->execute([htmlentities($sq->question_id, $_POST["answer_to_question_$sd->question_id"]),$data->user_id,date("Y-m-d H:i:s", time())]);
+        
+                echo "<div class='invalid' style='background-color: #344c80ff'>Answer uploaded successfully</div>";
+            } else {
+                echo "<div class='invalid'>Sorry, this answer has already been given.</div>";
+            }
+        }
 ?>
     <!-- Question 1,2,3... -->
     <!-- .posts_and_questions_div starts -->
@@ -54,7 +67,7 @@ Index_Segments::header();
         <h4 style="width:90%"><?=$sd->title?></h4>
         <!--<div style="color:#888">Add Image + </div>--><!-- coming soon -->
         <div class="">
-            <textarea class="textarea" placeholder="Write your answer on this"></textarea>
+            <textarea class="textarea" name="answer_to_question_<?=$sd->question_id?>" placeholder="Write your answer on this"></textarea>
         </div>
     </div><!-- .write_answer ends -->
 
