@@ -561,6 +561,19 @@ HTML;
                 }
             }
 
+            function show_signin(vari) {
+                obj = new XMLHttpRequest;
+                obj.onreadystatechange = function(){
+                    if(obj.readyState == 4){
+                        if (document.getElementById("ajax_div")){
+                            document.getElementById("ajax_div").innerHTML = obj.responseText;
+                        }
+                    }
+                }                                           
+                obj.open("GET","/ajax/ajax_signin_popup.php");
+                obj.send(null);
+            }
+
             function alternate_add_question_and_create_post(vari_text,vari_div){
                 if (vari_text == "aq_text"){
                     document.getElementById('aq_text').style = "border-bottom:2px solid #2b8eeb";

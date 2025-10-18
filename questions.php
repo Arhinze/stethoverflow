@@ -12,12 +12,20 @@ Index_Segments::header();
 
     <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation -->
 
+    <!-- ajax will use this div to display sign in for logged out users: -->
+    <div id="random_signin"></div>
 <?php
     $search_question = $pdo->prepare("SELECT * FROM questions ORDER BY question_id DESC LIMIT ?, ?");
     $search_question->execute([0,1000]);
     $sq_data = $search_question->fetchAll(PDO::FETCH_OBJ);
 
     foreach($sq_data as $sd){
+        if($data) {
+            $submit_post = "<label for='answer_tag_<?=$sd->question_id?>'>Post</label>"; 
+        } else {
+            $submit_post = "<span onclick=show_signin('random_signin')>Post</span>";
+        }
+
         if(isset($_POST["answer_to_question_$sd->question_id"])) {
             $search_answer = $pdo->prepare("SELECT * FROM answers WHERE answer = ? AND question_id = ? ORDER BY answer_id DESC LIMIT ?, ?");
             $search_answer->execute([htmlentities($_POST["answer_to_question_$sd->question_id"]),0,1]);
@@ -52,7 +60,7 @@ Index_Segments::header();
         <!-- .write_answer_top starts -->
         <div class="write_answer_top">
             <div style="font-size:18px;color:#888" onclick="show_div('write_answer_div<?=$sd->question_id?>')"><b> X </b></div>
-            <div class="button" style="font-size:12px">Post</div>
+            <div class="button" style="font-size:12px"><?=$submit_post?></div>
         </div><!-- .write_answer_top ends -->
         <div style="display:flex">
             <div class="profile_image_div" style="margin-top:5px">
@@ -67,7 +75,10 @@ Index_Segments::header();
         <h4 style="width:90%"><?=$sd->title?></h4>
         <!--<div style="color:#888">Add Image + </div>--><!-- coming soon -->
         <div class="">
+            <form method="post" action="">
             <textarea class="textarea" name="answer_to_question_<?=$sd->question_id?>" placeholder="Write your answer on this"></textarea>
+            <input type="submit" style="display:none" id="answer_tag_<?=$sd->question_id?>"/>
+            </form>
         </div>
     </div><!-- .write_answer ends -->
 
