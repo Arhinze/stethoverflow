@@ -234,6 +234,23 @@ HTML;
             }
 
             foreach($posts_data as $post_d) {
+                if ($data){
+                    if (isset($_POST["comment_on_post_$post_d->post_id"])) {
+                        $comment_check_stmt = $self::$pdo->prepare("SELECT * FROM comments WHERE comment = ?,post_id = ? AND user_id = ?");
+                        $comment_check_stmt->execute([htmlentities($_POST["comment_on_post_$post_d->post_id"]),$post_d->post_id,$data->user_id]);
+                        $comment_check_data = $comment_check_stmt->fetch(PDO::FETCH_OBJ);
+
+                        if($comment_check_data) {
+                            echo "<div class='invalid'>Comment already added</div>";
+                        } else {
+                            $comment_insert_stmt = $self::$pdo->prepare("INSERT INTO comments(post_id,user_id,comment) VALUES(?,?,?)");
+                            $comment_insert_stmt->execute([$post_d->post_id,$data->user_id,htmlentities($_POST["comment_on_post_$post_d->post_id"])]);
+
+                            echo "<div class='invalid' style='background-color:#2b8eeb'>Comment added successfully</div>";
+                        }
+                    }
+                }
+
                 $post_nl2br = nl2br($post_d->body);
                 $user_data_stmt = self::$pdo->prepare("SELECT * FROM stethoverflow_users WHERE user_id = ?");
                 $user_data_stmt->execute([$post_d->user_id]);
@@ -314,10 +331,12 @@ HTML;
                             </div>
                             <div style="margin-top:10px;margin-right:12px;color:#888"><i class="fa fa-times" onclick="alternate_comment_div('add_comment$post_d->post_id','reply_comment$post_d->post_id','$data_validator')"></i></div>
                         </div>
+                        <form method="post" action="#post$post_d->post_id">
                         <div>
-                            <textarea class="textarea" style="height:150px"></textarea>
+                            <textarea class="textarea" name="comment_on_post_$post_d->post_id" style="height:150px"></textarea>
                         </div>
-                        <div><button class="button">Reply</button></div>
+                        <div><button class="button" type="submit">Reply</button></div>
+                        </form>
                     </div>
                     <!-- .reply_comment ends -->
 
