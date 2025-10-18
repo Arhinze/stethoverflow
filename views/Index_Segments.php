@@ -342,7 +342,7 @@ HTML;
                         </div>
                         <form method="post" action="#ref_to_post$post_d->post_id">
                         <div>
-                            <textarea class="textarea" name="comment_on_post_$post_d->post_id" style="height:150px"></textarea>
+                            <textarea class="textarea" placeholder="Add a comment" name="comment_on_post_$post_d->post_id" style="height:75px"></textarea>
                         </div>
                         <div><button class="button" type="submit">Reply</button></div>
                         </form>
