@@ -402,7 +402,7 @@ HTML;
                         $comment_data = $comment_data_stmt->fetchAll(PDO::FETCH_OBJ);    
 
                         if (count($comment_data) == 0) {
-                            echo "Be the first to comment <i class='fa fa-comment-o'></i>";
+                            echo "<div style='text-align:center;padding:12px'>Be the first to comment <i class='fa fa-comment-o'></i></div>";
                         }
                         
                         foreach($comment_data as $comm_d){
