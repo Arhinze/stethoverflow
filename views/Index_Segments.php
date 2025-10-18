@@ -413,7 +413,7 @@ HTML;
                                     <div class="profile_image_div">
                                         <a href="$commenter_data->profile_picture"><img src="$commenter_data->profile_picture" class="profile_image"/></a>
                                     </div>
-                                    <div>
+                                    <div style="margin-left:-13px">
                                         <div><b>$commenter_data->real_name</b> <i class="fa fa-circle" style="font-size:3px"></i> $comment_time</div>
                                         <div>$comm_d->comment</div>
                                     </div>
