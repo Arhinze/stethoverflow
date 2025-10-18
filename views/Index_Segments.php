@@ -398,8 +398,8 @@ HTML;
                         <div style="padding:21px;border-top:1px solid #000"><b>Comments</b></div>
                     
 HTML;
-                        $comment_data_stmt = self::$pdo->prepare("SELECT * FROM comments WHERE post_id = ? ORDER BY comment_id DESC");
-                        $comment_data_stmt->execute([$post_d->post_id]);
+                        $comment_data_stmt = self::$pdo->prepare("SELECT * FROM comments WHERE post_id = ? ORDER BY comment_id DESC LIMIT ?, ?");
+                        $comment_data_stmt->execute([$post_d->post_id, 0, 1000]);
                         $comment_data = $comment_data_stmt->fetchAll(PDO::FETCH_OBJ);    
 
                         if (count($comment_data) == 0) {
