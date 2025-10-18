@@ -40,8 +40,8 @@ if($data) {
                 <div style="color: #d6e2fb;font-size:15px;text-align:center;margin-top:-19px"><i class="fa fa-key"></i>&nbsp; All data is encrypted</div>
             </div>
         
-            <div class="input" style="border-radius:36px;text-align:center;background-color:#d6e2fb;border:1px solid blue;font-weight:bold;color:#2b8eeb;margin-top:30px">
-                <a href="/auth/google-login.php" style="color:#fff;padding:12px 21%"><i class="fa fa-google" id="signinButton"></i>&nbsp; Continue with Google</a>
+            <div class="input" style="border-radius:36px;text-align:center;background-color:#d6e2fb;border:1px solid blue;font-weight:bold;margin-top:30px">
+                <a href="/auth/google-login.php" style="color:#2b8eeb;padding:12px 21%"><i class="fa fa-google" id="signinButton"></i>&nbsp; Continue with Google</a>
             </div>
 
             <div class="input" style="border-radius:36px;text-align:center;background-color:blue;border:1px solid blue;font-weight:bold;color:#fff;margin-top:30px">
