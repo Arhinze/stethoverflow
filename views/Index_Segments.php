@@ -463,7 +463,7 @@ HTML;
                         }
                     }
                                                                             
-                    obj.open("GET","/ajax/ajax_signin_popup.php.php");
+                    obj.open("GET","/ajax/ajax_signin_popup.php");
                     obj.send(null);
                 }
             }
