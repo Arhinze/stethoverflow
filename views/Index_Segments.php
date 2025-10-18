@@ -403,7 +403,7 @@ HTML;
                         $comment_data = $comment_data_stmt->fetchAll(PDO::FETCH_OBJ);    
                         
                         foreach($comment_data as $comm_d){
-                            $commenter_data_stmt = self::$pdo->prepare("SELECT * FROM stethoverflow_users WHERE user_id = ?, LIMIT ?, ?");
+                            $commenter_data_stmt = self::$pdo->prepare("SELECT * FROM stethoverflow_users WHERE user_id = ? LIMIT ?, ?");
                             $commenter_data_stmt->execute([$comm_d->user_id, 0, 1]);
                             $commenter_data = $commenter_data_stmt->fetch(PDO::FETCH_OBJ);  
                             $comment_time = date("M y", strtotime($comm_d->time_commented));
