@@ -41,10 +41,10 @@ if($data) {
             </div>
         
             <div class="input" style="border-radius:36px;text-align:center;background-color:#d6e2fb;border:1px solid blue;font-weight:bold;margin-top:30px">
-                <a href="/auth/google-login.php" style="color:#2b8eeb;padding:12px 21%"><i class="fa fa-google" id="signinButton"></i>&nbsp; Continue with Google</a>
+                <a href="/auth/google-login.php" style="color: #2b8eeb;padding:12px 21%"><i class="fa fa-google" id="signinButton"></i>&nbsp; Continue with Google</a>
             </div>
 
-            <div class="input" style="border-radius:36px;text-align:center;background-color:blue;border:1px solid blue;font-weight:bold;color:#fff;margin-top:30px">
+            <div class="input" style="border-radius:36px;text-align:center;background-color:blue;border:1px solid blue;font-weight:bold;color:#fff;margin-top:15px">
                 <a href="/login.php" style="color:#fff;padding:12px 21%"> &nbsp; Login/Sign up</a>
             </div>
         </div>
