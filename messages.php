@@ -5,7 +5,7 @@ Index_Segments::header();
 
 <div class="main_body">
     <div style="text-align:center;padding:3%;font-size:15px;margin-top:50px">
-        <i class="fa fa-commenting-o"></i> Your messages will appear hear.
+        <i class="fa fa-commenting-o"></i> &nbsp; Your messages will appear hear.
     </div>
 </div>
 
