@@ -427,14 +427,6 @@ HTML;
 
             function like_post(vari, dt){
                 if (dt) {
-                    if (document.getElementById(vari).style.color == "grey") {
-                        document.getElementById(vari).style.color = "red";
-                        document.getElementById(vari).innerHTML = "<i class='fa fa-heartbeat'></i>";             
-                    } else if (document.getElementById(vari).style.color == "red") {
-                        document.getElementById(vari).style.color = "grey";
-                        document.getElementById(vari).innerHTML = "<i class='fa fa-heart-o'></i>";             
-                    }
-                } else {
                     number_of_likes = "no_of_likes_of_"+vari;                       
                     obj = new XMLHttpRequest;
                     obj.onreadystatechange = function(){
@@ -445,6 +437,25 @@ HTML;
                         }
                     }                                                    
                     obj.open("GET","/ajax/ajax_number_of_likes.php?post_id="+vari);
+                    obj.send(null);
+
+                    if (document.getElementById(vari).style.color == "grey") {
+                        document.getElementById(vari).style.color = "red";
+                        document.getElementById(vari).innerHTML = "<i class='fa fa-heartbeat'></i>";             
+                    } else if (document.getElementById(vari).style.color == "red") {
+                        document.getElementById(vari).style.color = "grey";
+                        document.getElementById(vari).innerHTML = "<i class='fa fa-heart-o'></i>";             
+                    }
+                } else {
+                    obj = new XMLHttpRequest;
+                    obj.onreadystatechange = function(){
+                        if(obj.readyState == 4){
+                            if (document.getElementById("ajax_div")){
+                                document.getElementById("ajax_div").innerHTML = obj.responseText;
+                            }
+                        }
+                    }                                                  
+                    obj.open("GET","/ajax/ajax_signin_popup.php");
                     obj.send(null);
                 }
             }
