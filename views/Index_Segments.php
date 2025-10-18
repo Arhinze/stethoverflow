@@ -395,7 +395,7 @@ HTML;
 
                     <!-- .comments_div starts -->
                     <div class="comments_div">
-                        <div style="padding:21px"><b>Comments</b></div>
+                        <div style="padding:21px;border-top:1px solid #000"><b>Comments</b></div>
                     
 HTML;
                         $comment_data_stmt = self::$pdo->prepare("SELECT * FROM comments WHERE post_id = ?");
@@ -409,7 +409,7 @@ HTML;
                             $comment_time = date("d M y", strtotime($comm_d->time_commented));
 
                             echo <<<HTML
-                                <div style="display:flex;padding:18px;border-top:2px solid #888;margin:3px 6px">
+                                <div style="display:flex;padding:18px;border-top:1px solid #888;margin:3px 6px">
                                     <div class="profile_image_div">
                                         <a href="$commenter_data->profile_picture"><img src="$commenter_data->profile_picture" class="profile_image"/></a>
                                     </div>
