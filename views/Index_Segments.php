@@ -290,6 +290,7 @@ HTML;
 
                         <!-- .answer starts -->
                         <div class="answers" style="padding:6px">
+                            <span id ="ref_to_post$post_d->post_id"></span><!-- ~ to refer users back to the post after commenting -->
                             $post_nl2br
                             <div><img src="/static/images/$post_d->image1" style="width:100%;height:auto"/></div>
                         </div><!-- .answer ends -->
@@ -331,7 +332,7 @@ HTML;
                             </div>
                             <div style="margin-top:10px;margin-right:12px;color:#888"><i class="fa fa-times" onclick="alternate_comment_div('add_comment$post_d->post_id','reply_comment$post_d->post_id','$data_validator')"></i></div>
                         </div>
-                        <form method="post" action="#post$post_d->post_id">
+                        <form method="post" action="#ref_to_post$post_d->post_id">
                         <div>
                             <textarea class="textarea" name="comment_on_post_$post_d->post_id" style="height:150px"></textarea>
                         </div>
