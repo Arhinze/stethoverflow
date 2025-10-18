@@ -954,21 +954,6 @@ h1, h2, h3, h4, h5, h6{
     z-index:33;
 }
 
-.invalid_signin {
-    position:fixed;
-    background-color: #2b8eeb;
-    color:#fff;
-    top:25%;
-    left:15%;
-    height:fit-content;
-    width:70%;
-    padding:8px;
-    /*animation:blink 6s infinite .2s alternate;*/
-    font-size:15px;
-    font-weight:bold;
-    z-index:33;
-}
-
 .investor_input, .investor_input2{
     height:24px;
     border:1px solid var(--site_color_alt);

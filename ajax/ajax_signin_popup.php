@@ -2,7 +2,7 @@
     $random_number = mt_rand(0, 3000);
 ?>
 
-<div class='invalid_signin' id="invalid_sign_in$random_number" style='display:block'>
+<div class='invalid' id="invalid_sign_in$random_number" style='background-color: #2b8eeb;color:#fff;top:25%;left:15%;height:fit-content;width:70%;padding:18px;display:block'>
     <div style="display:flex;justify-content:space-between">
         <div><b>kindly login to continue</b></div>
         <div onclick="show_div('invalid_sign_in$random_number')"><i class="fa fa-times"></i></div>
