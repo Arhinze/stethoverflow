@@ -112,7 +112,7 @@ Index_Segments::header();
 
                 <div class="discover_spaces_text">
                     <div style="padding:15px 12px"><b>Dermatology</b></div>
-                    <div style="padding:0 12px 15px 12px">Do you want to know why your skin is the way it is? and how you can achieve and maintain a fresh well nourished skin?</div>
+                    <div style="padding:0 12px 15px 12px">Do you want to know why your skin is the way it is? and how you can achi...</div>
                 </div>
 
                 <div class="discover_spaces_pp_div"><img src="/static/images/spaces_profile_photo5.png" class="discover_spaces_pp_img"/></div>
@@ -124,7 +124,7 @@ Index_Segments::header();
 
                 <div class="discover_spaces_text">
                     <div style="padding:15px 12px"><b>Medical Movies and Series</b></div>
-                    <div style="padding:0 12px 15px 12px">We discuss about the best medical series and movies that provide the blend of factual and futuristic medical practices as well as have great entertainment value.</div>
+                    <div style="padding:0 12px 15px 12px">We discuss about the best medical series and movies that provide the blend of factual and futuristic medical practices as well...</div>
                 </div>
 
                 <div class="discover_spaces_pp_div"><img src="/static/images/spaces_profile_photo6.png" class="discover_spaces_pp_img"/></div>
