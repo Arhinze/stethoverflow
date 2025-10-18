@@ -301,7 +301,7 @@ HTML;
                                 </div>
                                 <div style="margin-left:-17px;margin-top:7px;color:#888">Replying to <a href="/">@$user_data_data->username</a></div>
                             </div>
-                            <div style="margin-top:10px;margin-right:12px;color:#888"><i class="fa fa-times" onclick="alternate_comment_div('add_comment$post_d->post_id','reply_comment$post_d->post_id')"></i></div>
+                            <div style="margin-top:10px;margin-right:12px;color:#888"><i class="fa fa-times" onclick="alternate_comment_div('add_comment$post_d->post_id','reply_comment$post_d->post_id','$data_validator')"></i></div>
                         </div>
                         <div>
                             <textarea class="textarea" style="height:150px"></textarea>
