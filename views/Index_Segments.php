@@ -415,7 +415,7 @@ HTML;
                                     </div>
                                     <div>
                                         <div><b>$commenter_data->real_name</b> <i class="fa fa-circle" style="font-size:3px"></i> $comment_time</div>
-                                        <div><b>$comm_d->comment</b></div>
+                                        <div>$comm_d->comment</div>
                                     </div>
                                 </div>
 HTML;
