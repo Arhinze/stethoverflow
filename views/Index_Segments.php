@@ -188,6 +188,9 @@ HTML;
             
             <div id="search_hint"></div>
             <!-- used by index_ajax_search() function-->
+
+             <div id="ajax_div"></div>
+            <!-- used by JS to load some ajax functions-->
 HTML;
        }
                 
@@ -279,7 +282,7 @@ HTML;
                     </div><!-- .posts_and_questions_div ends -->
 
                     <!-- .add_comment starts -->
-                    <div style="display:none" class="add_comment" id="add_comment$post_d->post_id" onclick="alternate_comment_div('add_comment$post_d->post_id','reply_comment$post_d->post_id')">
+                    <div style="display:none" class="add_comment" id="add_comment$post_d->post_id" onclick="alternate_comment_div('add_comment$post_d->post_id','reply_comment$post_d->post_id','$data_validator')">
                         <div style="display:flex">
                             <div class="profile_image_div" style="border:2px solid #fff">
                                 <a href="$profile_picture"><img src="$profile_picture" class="profile_image"/></a>
@@ -441,13 +444,27 @@ HTML;
                 }
             }
 
-            function alternate_comment_div(add_comment,reply_comment){
-                if (document.getElementById(add_comment).style.display == "block") {
-                    document.getElementById(add_comment).style.display = "none";
-                    document.getElementById(reply_comment).style.display = "block";
-                } else if (document.getElementById(add_comment).style.display == "none") {
-                    document.getElementById(add_comment).style.display = "block";
-                    document.getElementById(reply_comment).style.display = "none";
+            function alternate_comment_div(add_comment,reply_comment, dt){
+                if(dt) {
+                    if (document.getElementById(add_comment).style.display == "block") {
+                        document.getElementById(add_comment).style.display = "none";
+                        document.getElementById(reply_comment).style.display = "block";
+                    } else if (document.getElementById(add_comment).style.display == "none") {
+                        document.getElementById(add_comment).style.display = "block";
+                        document.getElementById(reply_comment).style.display = "none";
+                    }
+                } else {
+                    obj = new XMLHttpRequest;
+                    obj.onreadystatechange = function(){
+                        if(obj.readyState == 4){
+                            if (document.getElementById("ajax_div")){
+                                document.getElementById("ajax_div").innerHTML = obj.responseText;
+                            }
+                        }
+                    }
+                                                                            
+                    obj.open("GET","/ajax/ajax_signin_popup.php.php");
+                    obj.send(null);
                 }
             }
 
