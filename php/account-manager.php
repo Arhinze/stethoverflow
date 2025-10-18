@@ -90,10 +90,12 @@ if ($data) {
                 <div style="margin:6px;font-size:16px"><b>$data->real_name</b></div>
             </div>
             <div style="margin:15px;border-top:1px solid #888">
-                <div><a href="/messages" style="color:#000"><i class="fa fa-newspaper"></i> Messages</a></div>
-                <div><a href="/bookmarks" style="color:#000"><i class="fa fa-bookmark-o"></i> Bookmarks</a></div>
-                <div><a href="/drafts" style="color:#000"><i class="fa fa-pencil-square-o"></i> Drafts</a></div>    
+                <div><a href="/messages" style="color:#000"><i class="fa fa-commenting-o"></i> &nbsp; Messages</a></div>
+                <div><a href="/bookmarks" style="color:#000"><i class="fa fa-bookmark-o"></i> &nbsp; Bookmarks</a></div>
+                <div><a href="/drafts" style="color:#000"><i class="fa fa-pencil-square-o"></i> &nbsp; Drafts</a></div>    
                 <div id="coming_soon" class="invalid" style="display:none">Feature coming soon</div>
+                
+                <!-- Logout button -->
             </div>
         </div><!-- profile menu for logged in user ends -->
 
