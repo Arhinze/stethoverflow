@@ -406,7 +406,7 @@ HTML;
                             $commenter_data_stmt = self::$pdo->prepare("SELECT * FROM stethoverflow_users WHERE user_id = ? LIMIT ?, ?");
                             $commenter_data_stmt->execute([$comm_d->user_id, 0, 1]);
                             $commenter_data = $commenter_data_stmt->fetch(PDO::FETCH_OBJ);  
-                            $comment_time = date("M y", strtotime($comm_d->time_commented));
+                            $comment_time = date("d M y", strtotime($comm_d->time_commented));
 
                             echo <<<HTML
                                 <div style="display:flex">
