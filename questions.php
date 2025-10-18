@@ -26,13 +26,14 @@ Index_Segments::header();
             $submit_post = "<span onclick=show_signin('random_signin')>Post</span>";
         }
 
-        if(isset($_POST["answer_to_question_$sd->question_id"])) {
+        $atqi = "answer_to_question_".$sd->question_id;
+        if(isset($_POST[$atqi])) {
             $search_answer = $pdo->prepare("SELECT * FROM answers WHERE answer = ? AND question_id = ? ORDER BY answer_id DESC LIMIT ?, ?");
-            $search_answer->execute([htmlentities($_POST["answer_to_question_$sd->question_id"]),0,1]);
+            $search_answer->execute([htmlentities($_POST[$atqi]),0,1]);
             $sa_data = $search_answer->fetch(PDO::FETCH_OBJ);
             if(!$sa_data) {//that means this is a new answer
                 $insert_stmt = $pdo->prepare("INSERT INTO answers(question_id,answer,user_id,time_asked) VALUES(?,?,?)");
-                $insert_stmt->execute([htmlentities($sq->question_id, $_POST["answer_to_question_$sd->question_id"]),$data->user_id,date("Y-m-d H:i:s", time())]);
+                $insert_stmt->execute([htmlentities($sq->question_id, $_POST[$atqi]),$data->user_id,date("Y-m-d H:i:s", time())]);
         
                 echo "<div class='invalid' style='background-color: #344c80ff'>Answer uploaded successfully</div>";
             } else {
