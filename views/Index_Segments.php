@@ -189,7 +189,7 @@ HTML;
             <div id="search_hint"></div>
             <!-- used by index_ajax_search() function-->
 
-             <div id="ajax_div"></div>
+             <div id="ajax_div" class="invalid_sign_in_div"></div>
             <!-- used by JS to load some ajax functions-->
 HTML;
        }
@@ -418,21 +418,14 @@ HTML;
                 }
             }
 
-            function like_post(vari, dt){
-                number_of_likes = "no_of_likes_of_"+vari;
-                                               
-                obj = new XMLHttpRequest;
-                obj.onreadystatechange = function(){
-                    if(obj.readyState == 4){
-                        if (document.getElementById(number_of_likes)){
-                            document.getElementById(number_of_likes).innerHTML = obj.responseText;
-                        }
-                    }
-                }
-                                                                        
-                obj.open("GET","/ajax/ajax_number_of_likes.php?post_id="+vari);
-                obj.send(null);
+            function close_invalid_signin() {
+                const invalid_sign_in_classes = document.getElementsByClassName("invalid_sign_in_div");
+                for (i=0; i<invalid_sign_in_classes.length; i++){
+                    invalid_sign_in_classes[i].style.display = "none";
+                }  
+            }
 
+            function like_post(vari, dt){
                 if (dt) {
                     if (document.getElementById(vari).style.color == "grey") {
                         document.getElementById(vari).style.color = "red";
@@ -441,6 +434,18 @@ HTML;
                         document.getElementById(vari).style.color = "grey";
                         document.getElementById(vari).innerHTML = "<i class='fa fa-heart-o'></i>";             
                     }
+                } else {
+                    number_of_likes = "no_of_likes_of_"+vari;                       
+                    obj = new XMLHttpRequest;
+                    obj.onreadystatechange = function(){
+                        if(obj.readyState == 4){
+                            if (document.getElementById(number_of_likes)){
+                                document.getElementById(number_of_likes).innerHTML = obj.responseText;
+                            }
+                        }
+                    }                                                    
+                    obj.open("GET","/ajax/ajax_number_of_likes.php?post_id="+vari);
+                    obj.send(null);
                 }
             }
 
