@@ -50,93 +50,59 @@ Index_Segments::header();
             <textarea class="textarea" placeholder="Write your answer on this"></textarea>
         </div>
     </div><!-- .write_answer ends -->
-
     <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation -->
 
-    <!-- Question 2 -->
+<?php
+    $search_question = $pdo->prepare("SELECT * FROM questions ORDER BY question_id DESC LIMIT ?, ?");
+    $search_question->execute([htmlentities($_POST["question"]),0,1000]);
+    $sq_data = $search_question->fetchAll(PDO::FETCH_OBJ);
+
+    foreach($sq_data as $sd){
+?>
+    <!-- Question 1,2,3... -->
     <!-- .posts_and_questions_div starts -->
-    <div class="posts_and_questions" style="margin:12px 6px">
+    <div class="posts_and_questions" id="pq<?=$sd->question_id?>" style="margin:12px 6px">
         <div class="questions" style="margin-bottom:3px;display:flex">
-            <h4 style="width:90%">Which year of medical school is the hardest — and why?</h4>
-            <div style="width:6%;margin-top:24px;margin-left:6px"><i class="fa fa-times"></i></div>
+            <h4 style="width:90%"><?=$sd->title?></h4>
+            <div style="width:6%;margin-top:24px;margin-left:6px;color:#888" onclick="show_div('pq<?=$sd->question_id?>')"><i class="fa fa-times"></i></div>
         </div>
 
         <!-- .below_only_questions start -->
         <div class="below_only_questions" style="display:flex">
-            <div style="border:1px solid #888;padding:6px;border-radius:15px"><i class="fa fa-edit"></i>&nbsp; Answer </div>
-            <div style="margin-left:12px;margin-top:6px"><i class="fa fa-feed"></i>&nbsp; Follow <i class="fa fa-circle" style="font-size:3px"></i> 3</div>
+            <div style="border:1px solid #888;padding:6px;border-radius:15px" onclick="show_div('write_answer_div<?=$sd->question_id?>')"><i class="fa fa-edit"></i>&nbsp; Answer </div>
+            <!--<div style="margin-left:12px;margin-top:6px"><i class="fa fa-feed"></i>&nbsp; Follow <i class="fa fa-circle" style="font-size:3px"></i> 3</div>--><!-- coming soon -->
         </div><!-- .below_only_questions end -->
     </div><!-- .posts_and_questions_div ends -->
 
-    <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation -->
-
-    <!-- Question 3 -->
-    <!-- .posts_and_questions_div starts -->
-    <div class="posts_and_questions" style="margin:12px 6px">
-        <div class="questions" style="margin-bottom:3px;display:flex">
-            <h4 style="width:90%">If you could redesign medical school, what's one thing you'd change?</h4>
-            <div style="width:6%;margin-top:24px;margin-left:6px"><i class="fa fa-times"></i></div>
+    <!-- .write_answer starts -->
+    <div class="write_answer" id="write_answer_div<?=$sd->question_id?>" style="display:none">
+        <!-- .write_answer_top starts -->
+        <div class="write_answer_top">
+            <div style="font-size:18px;color:#888" onclick="show_div('write_answer_div<?=$sd->question_id?>')"><b> X </b></div>
+            <div class="button" style="font-size:12px">Post</div>
+        </div><!-- .write_answer_top ends -->
+        <div style="display:flex">
+            <div class="profile_image_div" style="margin-top:5px">
+                <a href="<?=$profile_picture?>"><img src="<?=$profile_picture?>" class="profile_image"/></a>
+            </div>
+            <div style="margin-left:-13px">
+                <div style="font-size:12px"><b><?=$data->real_name?></b></b></div>
+                <div class="input" style="width:100%;font-size:12px"><?=$data->bio?> &nbsp; <i class="fa fa-angle-down"></i></div>
+            </div>
         </div>
-
-        <!-- .below_only_questions start -->
-        <div class="below_only_questions" style="display:flex">
-            <div style="border:1px solid #888;padding:6px;border-radius:15px"><i class="fa fa-edit"></i>&nbsp; Answer </div>
-            <div style="margin-left:12px;margin-top:6px"><i class="fa fa-feed"></i>&nbsp; Follow <i class="fa fa-circle" style="font-size:3px"></i> 3</div>
-        </div><!-- .below_only_questions end -->
-    </div><!-- .posts_and_questions_div ends -->
-
-    <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation -->
-
-    <!-- Question 4 -->
-    <!-- .posts_and_questions_div starts -->
-    <div class="posts_and_questions" style="margin:12px 6px">
-        <div class="questions" style="margin-bottom:3px;display:flex">
-            <h4 style="width:90%">Can AI replace radiologists and pathologists in the next decade?</h4>
-            <div style="width:6%;margin-top:24px;margin-left:6px"><i class="fa fa-times"></i></div>
+        
+        <h4 style="width:90%"><?=$sd->title?></h4>
+        <!--<div style="color:#888">Add Image + </div>--><!-- coming soon -->
+        <div class="">
+            <textarea class="textarea" placeholder="Write your answer on this"></textarea>
         </div>
-
-        <!-- .below_only_questions start -->
-        <div class="below_only_questions" style="display:flex">
-            <div style="border:1px solid #888;padding:6px;border-radius:15px"><i class="fa fa-edit"></i>&nbsp; Answer </div>
-            <div style="margin-left:12px;margin-top:6px"><i class="fa fa-feed"></i>&nbsp; Follow <i class="fa fa-circle" style="font-size:3px"></i> 3</div>
-        </div><!-- .below_only_questions end -->
-    </div><!-- .posts_and_questions_div ends -->
+    </div><!-- .write_answer ends -->
 
     <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation -->
+<?php
+    }
+?>
 
-    <!-- Question 5 -->
-    <!-- .posts_and_questions_div starts -->
-    <div class="posts_and_questions" style="margin:12px 6px">
-        <div class="questions" style="margin-bottom:3px;display:flex">
-            <h4 style="width:90%">Which medical specialties are most at risk of being replaced by AI in the next 10 years?</h4>
-            <div style="width:6%;margin-top:24px;margin-left:6px"><i class="fa fa-times"></i></div>
-        </div>
-
-        <!-- .below_only_questions start -->
-        <div class="below_only_questions" style="display:flex">
-            <div style="border:1px solid #888;padding:6px;border-radius:15px"><i class="fa fa-edit"></i>&nbsp; Answer </div>
-            <div style="margin-left:12px;margin-top:6px"><i class="fa fa-feed"></i>&nbsp; Follow <i class="fa fa-circle" style="font-size:3px"></i> 3</div>
-        </div><!-- .below_only_questions end -->
-    </div><!-- .posts_and_questions_div ends -->
-
-    <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation -->
-
-    <!-- Question 6 -->
-    <!-- .posts_and_questions_div starts -->
-    <div class="posts_and_questions" style="margin:12px 6px">
-        <div class="questions" style="margin-bottom:3px;display:flex">
-            <h4 style="width:90%">What's the most underrated medical innovation in the last decade?</h4>
-            <div style="width:6%;margin-top:24px;margin-left:6px"><i class="fa fa-times"></i></div>
-        </div>
-
-        <!-- .below_only_questions start -->
-        <div class="below_only_questions" style="display:flex">
-            <div style="border:1px solid #888;padding:6px;border-radius:15px"><i class="fa fa-edit"></i>&nbsp; Answer </div>
-            <div style="margin-left:12px;margin-top:6px"><i class="fa fa-feed"></i>&nbsp; Follow <i class="fa fa-circle" style="font-size:3px"></i> 3</div>
-        </div><!-- .below_only_questions end -->
-    </div><!-- .posts_and_questions_div ends -->
-
-    <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation -->
 </div><!-- .main_body ends -->
 
 <?php
