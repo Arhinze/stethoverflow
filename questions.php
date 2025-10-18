@@ -33,7 +33,7 @@ Index_Segments::header();
             $sa_data = $search_answer->fetch(PDO::FETCH_OBJ);
             if(!$sa_data) {//that means this is a new answer
                 $insert_stmt = $pdo->prepare("INSERT INTO answers(question_id,answer,user_id,time_answered) VALUES(?,?,?,?)");
-                $insert_stmt->execute([htmlentities($sd->question_id, $_POST[$atqi]),$data->user_id,date("Y-m-d H:i:s", time())]);
+                $insert_stmt->execute([$sd->question_id,htmlentities($_POST[$atqi]),$data->user_id,date("Y-m-d H:i:s", time())]);
         
                 echo "<div class='invalid' style='background-color: #344c80ff'>Answer uploaded successfully</div>";
             } else {
