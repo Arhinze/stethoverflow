@@ -410,7 +410,9 @@ HTML;
 
                             echo <<<HTML
                                 <div style="display:flex">
-                                    <div></div>
+                                    <div class="profile_image_div">
+                                        <a href="$commenter_data->profile_picture"><img src="$commenter_data->profile_picture" class="profile_image"/></a>
+                                    </div>
                                     <div>
                                         <div><b>$commenter_data->real_name</b> <i class="fa fa-circle" style="font-size:3px"></i> $comment_time</div>
                                         <div><b>$comm_d->comment</b></div>
