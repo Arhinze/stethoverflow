@@ -418,12 +418,12 @@ HTML;
                 }
             }
 
-            function close_invalid_signin() {
+            /*function close_invalid_signin() {
                 const invalid_sign_in_classes = document.getElementsByClassName("invalid_sign_in_div");
                 for (i=0; i<invalid_sign_in_classes.length; i++){
                     invalid_sign_in_classes[i].style.display = "none";
                 }  
-            }
+            }*/
 
             function like_post(vari, dt){
                 if (dt) {
