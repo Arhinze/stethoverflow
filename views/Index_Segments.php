@@ -204,7 +204,7 @@ HTML;
                     <div class="main_page_topmost_div" style="padding:12px">
                         <div style="display:flex;background-color:#fff" onclick="show_div('ask_or_post_div')">
                             <div style="width:30px;height:30px;border:2px solid #d6e3fd;border-radius:100%">
-                                <a href="$site_url/static/images/profile_new.png"><img src="$profile_picture" style="width:27px;height:27px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
+                                <a href="$profile_picture"><img src="$profile_picture" style="width:27px;height:27px;border-radius:100%;margin:1.35px 0 0 1.35px"/></a>
                             </div>
                             <div class="input" style="background-color:#fff;color:#888;margin-left:5px">What do you want to ask or post?</div>
                         </div>
@@ -240,11 +240,11 @@ HTML;
                         $comment_check_stmt->execute([htmlentities($_POST["comment_on_post_$post_d->post_id"]),$post_d->post_id,$data->user_id]);
                         $comment_check_data = $comment_check_stmt->fetch(PDO::FETCH_OBJ);
 
-                        if($comment_check_data) {
+                        if($comment_check_data) {//already commented -- notify user
                             echo "<div class='invalid'>Comment already added</div>";
-                        } else {
-                            $comment_insert_stmt = self::$pdo->prepare("INSERT INTO comments(post_id,user_id,comment) VALUES(?,?,?)");
-                            $comment_insert_stmt->execute([$post_d->post_id,$data->user_id,htmlentities($_POST["comment_on_post_$post_d->post_id"])]);
+                        } else {//new comment -- insert
+                            $comment_insert_stmt = self::$pdo->prepare("INSERT INTO comments(post_id,user_id,comment,time_commented) VALUES(?,?,?,?)");
+                            $comment_insert_stmt->execute([$post_d->post_id,$data->user_id,htmlentities($_POST["comment_on_post_$post_d->post_id"]),date("Y-m-d H:i:s", time())]);
 
                             echo "<div class='invalid' style='background-color:#2b8eeb'>Comment added successfully</div>";
                         }
@@ -393,6 +393,35 @@ HTML;
                     </div><!-- .write_answer ends -->
                     <!-- .quote_comment ends -->
 
+                    <!-- .comments_div starts -->
+                    <div class="comments_div">
+                        <div style="padding:21px"><b>Comments</b></div>
+                    
+HTML;
+                        $comment_data_stmt = self::$pdo->prepare("SELECT * FROM comments WHERE post_id = ?");
+                        $comment_data_stmt->execute([$post_d->post_id]);
+                        $comment_data = $comment_data_stmt->fetchAll(PDO::FETCH_OBJ);    
+                        
+                        foreach($comment_data as $comm_d){
+                            $commenter_data_stmt = self::$pdo->prepare("SELECT * FROM stethoverflow_users WHERE user_id = ?, LIMIT ?, ?");
+                            $commenter_data_stmt->execute([$comm_d->user_id, 0, 1]);
+                            $commenter_data = $commenter_data_stmt->fetch(PDO::FETCH_OBJ);  
+                            $comment_time = date("M y", strtotime($comm_d->time_commented));
+
+                            echo <<<HTML
+                                <div style="display:flex">
+                                    <div></div>
+                                    <div>
+                                        <div><b>$commenter_data->real_name</b> <i class="fa fa-circle" style="font-size:3px"></i> $comment_time</div>
+                                        <div><b>$comm_d->comment</b></div>
+                                    </div>
+                                </div>
+HTML;
+                        }
+                echo <<<HTML
+                    </div>
+                    <!-- .comments_div ends -->
+                    
                     <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation --> 
 HTML;
                 }
