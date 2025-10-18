@@ -409,7 +409,7 @@ HTML;
                             $comment_time = date("d M y", strtotime($comm_d->time_commented));
 
                             echo <<<HTML
-                                <div style="display:flex">
+                                <div style="display:flex;padding:18px;border-top:2px solid #888">
                                     <div class="profile_image_div">
                                         <a href="$commenter_data->profile_picture"><img src="$commenter_data->profile_picture" class="profile_image"/></a>
                                     </div>
