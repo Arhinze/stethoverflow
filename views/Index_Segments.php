@@ -326,8 +326,7 @@ HTML;
                             </div>
                             <div class="input" style="background-color:#fff;color:#888;margin-left:-13px">Add a comment...</div>
                         </div>
-                    </div>
-                    <!-- .add_comment ends -->
+                    </div><!-- .add_comment ends -->
 
                     <!-- .reply_comment starts -->
                     <div class="reply_comment" id="reply_comment$post_d->post_id" style="display:none">
