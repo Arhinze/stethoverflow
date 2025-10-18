@@ -29,7 +29,7 @@ Index_Segments::header();
         $atqi = "answer_to_question_".$sd->question_id;
         if(isset($_POST[$atqi])) {
             $search_answer = $pdo->prepare("SELECT * FROM answers WHERE answer = ? AND question_id = ? ORDER BY answer_id DESC LIMIT ?, ?");
-            $search_answer->execute([htmlentities($_POST[$atqi]),0,1]);
+            $search_answer->execute([htmlentities($_POST[$atqi]),$sd->question_id,0,1]);
             $sa_data = $search_answer->fetch(PDO::FETCH_OBJ);
             if(!$sa_data) {//that means this is a new answer
                 $insert_stmt = $pdo->prepare("INSERT INTO answers(question_id,answer,user_id,time_asked) VALUES(?,?,?)");
