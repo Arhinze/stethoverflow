@@ -24,27 +24,27 @@ Index_Segments::header();
         </div>
 
         <div style="display:flex;justify-content:space-between;padding:12px;border-bottom:1px solid #888">
-            <div class="spaces_img_div"><img src="/static/images/space4.png" class="spaces_img"/> &nbsp; <b>Biochemistry</b></div>
+            <div class="spaces_img_div"><a href="/static/images/space4.png"><img src="/static/images/space4.png" class="spaces_img"/></a> &nbsp; <b>Biochemistry</b></div>
             <div><i class="fa fa-angle-right"></i></div>
         </div>
 
         <div style="display:flex;justify-content:space-between;padding:12px;border-bottom:1px solid #888">
-            <div class="spaces_img_div"><img src="/static/images/space5.png" class="spaces_img"/> &nbsp; <b>Pharmacology</b></div>
+            <div class="spaces_img_div"><a href="/static/images/space5.png"><img src="/static/images/space5.png" class="spaces_img"/></a> &nbsp; <b>Pharmacology</b></div>
             <div><i class="fa fa-angle-right"></i></div>
         </div>
 
         <div style="display:flex;justify-content:space-between;padding:12px;border-bottom:1px solid #888">
-            <div class="spaces_img_div"><img src="/static/images/space6.png" class="spaces_img"/> &nbsp; <b>Bioelectronics</b></div>
+            <div class="spaces_img_div"><a href="/static/images/space6.png"><img src="/static/images/space6.png" class="spaces_img"/></a> &nbsp; <b>Bioelectronics</b></div>
             <div><i class="fa fa-angle-right"></i></div>
         </div>
 
         <div style="display:flex;justify-content:space-between;padding:12px;border-bottom:1px solid #888">
-            <div class="spaces_img_div"><img src="/static/images/space7.png" class="spaces_img"/> &nbsp; <b>Medical Wearables and IOT in Medicine</b></div>
+            <div class="spaces_img_div"><a href="/static/images/space7.png"><img src="/static/images/space7.png" class="spaces_img"/></a> &nbsp; <b>Medical Wearables and IOT in Medicine</b></div>
             <div><i class="fa fa-angle-right"></i></div>
         </div>
 
         <div style="display:flex;justify-content:space-between;padding:12px;border-bottom:1px solid #888">
-            <div class="spaces_img_div"><img src="/static/images/space8.png" class="spaces_img"/> &nbsp; <b>Internal Medicine</b></div>
+            <div class="spaces_img_div"><a href="/static/images/space8.png"><img src="/static/images/space8.png" class="spaces_img"/></a> &nbsp; <b>Internal Medicine</b></div>
             <div><i class="fa fa-angle-right"></i></div>
         </div>
     </div><!-- .spaces end -->
