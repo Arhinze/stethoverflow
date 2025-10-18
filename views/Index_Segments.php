@@ -243,7 +243,7 @@ HTML;
                         if($comment_check_data) {
                             echo "<div class='invalid'>Comment already added</div>";
                         } else {
-                            $comment_insert_stmt = $self::$pdo->prepare("INSERT INTO comments(post_id,user_id,comment) VALUES(?,?,?)");
+                            $comment_insert_stmt = self::$pdo->prepare("INSERT INTO comments(post_id,user_id,comment) VALUES(?,?,?)");
                             $comment_insert_stmt->execute([$post_d->post_id,$data->user_id,htmlentities($_POST["comment_on_post_$post_d->post_id"])]);
 
                             echo "<div class='invalid' style='background-color:#2b8eeb'>Comment added successfully</div>";
