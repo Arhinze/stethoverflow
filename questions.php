@@ -21,7 +21,7 @@ Index_Segments::header();
 
     foreach($sq_data as $sd){
         if($data) {
-            $submit_post = "<label for='answer_tag_<?=$sd->question_id?>'>Post</label>"; 
+            $submit_post = "<label for='answer_tag_$sd->question_id'>Post</label>"; 
         } else {
             $submit_post = "<span onclick=show_signin('random_signin')>Post</span>";
         }
