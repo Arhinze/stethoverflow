@@ -493,59 +493,6 @@ HTML;
                     collection[i].style.display = "none";
                 }  
             }
-                                                                
-            //Implementing multi-line placeholder for textarea html documents
-            var textAreas = document.getElementsByTagName('textarea');
-                                                                
-            Array.prototype.forEach.call(textAreas, function(elem) {
-                elem.placeholder = elem.placeholder.replace(/\\n/g, '\\n');
-            });
-                                                                
-            function show_bt_input_div(){
-                document.getElementById("bt_input_div").style.display = "block";
-            }
-                                                                        
-            function close_bt_input_div(){
-                document.getElementById("bt_input_div").style.display = "none";
-            }
-                                                                    
-            function calculate_total(){
-                total_num = document.getElementById("total_number").value;
-                amt_for_each = document.getElementById("amount_to_pay_each_person").value;
-                total_amount = Number(total_num) * Number(amt_for_each);
-                                                                    
-                document.getElementById("total_to_transfer_text").innerHTML = "<div style='margin:12px 3px'>Total cost of transaction: <b><i class='fa fa-naira'></i>N "+total_amount.toString()+"</b></div>";
-                                                                
-                obj = new XMLHttpRequest;
-                obj.onreadystatechange = function(){
-                    if(obj.readyState == 4){
-                        if (document.getElementById("current_balance_text")){
-                            document.getElementById("current_balance_text").innerHTML = obj.responseText;
-                        }
-                    }
-                }
-                                                                        
-                obj.open("GET","/ajax/ajax_cb.php?total_="+total_amount);
-                obj.send(null);
-                                                                
-                //disable button and allow only when total_amount < current balance and amt_for_each > 100
-                button_status = document.getElementById("proceed_to_pay_button");
-                current_balance_text = document.getElementById("current_balance_text");
-                if((Number((current_balance_text.innerHTML).replace("N", "")) >= total_amount) & (amt_for_each >= 10)) {
-                    button_status.style="background-color:#333131";
-                    button_status.disabled = false;
-                } else {
-                    button_status.style="background-color:#888";
-                    button_status.disabled = true;
-                }
-                                                                
-                //turn current balance text green or red depending on if it's > or < than total_amount
-                if(Number((current_balance_text.innerHTML).replace("N", "")) >= total_amount) {
-                    current_balance_text.style="color:green";
-                } else {
-                    current_balance_text.style="color:red";
-                }
-            }
         </script>
 
         <script>
