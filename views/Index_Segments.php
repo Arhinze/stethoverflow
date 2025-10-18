@@ -227,19 +227,10 @@ HTML;
             $user_real_name = "Guest user - <a href='/login'>Login</a> to continue";
             $user_bio = "Stethoverflow Guest User (2025 - present)";
             $data_validator = false;
-
-            $like_icon = "<i class='fa fa-heart-o'></i>";
-            $like_icon_color = "grey";
-                
             if ($data) {
                 $user_real_name = $data->real_name;
                 $user_bio = $data->bio;
                 $data_validator = true;
-
-                if(in_array($data->user_id, $likes_array)){
-                    $like_icon = "<i class='fa fa-heartbeat'></i>";
-                    $like_icon_color = "red";
-                }
             }
 
             foreach($posts_data as $post_d) {
@@ -254,6 +245,16 @@ HTML;
 
                 $likes_array = explode(";", $post_d->likes);
                 $number_of_likes = count($likes_array) - 1;
+
+                $like_icon = "<i class='fa fa-heart-o'></i>";
+                $like_icon_color = "grey";
+
+                if($data) {
+                    if(in_array($data->user_id, $likes_array)){
+                        $like_icon = "<i class='fa fa-heartbeat'></i>";
+                        $like_icon_color = "red";
+                    }
+                }
 
                 echo <<<HTML
                     <!-- .posts_and_questions_div starts -->
