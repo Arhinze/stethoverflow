@@ -21,7 +21,7 @@ Index_Segments::header();
 ?>
     <!-- Question 1,2,3... -->
     <!-- .posts_and_questions_div starts -->
-    <div class="posts_and_questions" id="question_id_<?=$sd->question_id?>" style="margin:12px 6px">
+    <div class="posts_and_questions" id="question_id_<?=$sd->question_id?>" style="margin:12px 6px;display:block">
         <div class="questions" style="margin-bottom:3px;display:flex">
             <h4 style="width:90%"><?=$sd->title?></h4>
             <div style="width:6%;margin-top:24px;margin-left:6px;color:#888" onclick="show_div('question_id_<?=$sd->question_id?>')"><i class="fa fa-times"></i></div>
