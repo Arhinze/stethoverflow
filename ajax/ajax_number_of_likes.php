@@ -32,7 +32,7 @@ if($data) {
         <div class='invalid' id="invalid_sign_in" style='background-color: #2b8eeb;color:#fff;top:25%;left:15%;height:fit-content;width:70%;padding:18px;display:block'>
             <div style="display:flex;justify-content:space-between">
                 <div><b>kindly login to continue</b></div>
-                <div onclick="close_div('invalid_sign_in')"><i class="fa fa-times"></i></div>
+                <div onclick="show_div('invalid_sign_in')"><i class="fa fa-times"></i></div>
             </div>
             <div>    
                 <div style="text-align:center;font-size:27px;margin-top:30px;margin-bottom:-16px;font-family:Dancing Script">Welcome to</div>
