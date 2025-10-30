@@ -448,7 +448,7 @@ HTML;
                         </div>< .below_only_questions end >
                     </div>< .posts_and_questions_div ends >--><!-- adding this back soon -->
 
-                    <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation -->
+                    <!-- demarcation --><br /><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation -->
                 </div><!-- .main_body ends -->
 HTML;
 
