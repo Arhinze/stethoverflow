@@ -251,7 +251,7 @@ HTML;
                     }
                 }
 
-                $post_nl2br = nl2br($post_d->body);
+                $post_nl2br = nl2br(substr($post_d->body, 0, 75))."<b onclick="."post_nl2br_view_more('$post_d->post_id')".">...view more</b>";
                 $user_data_stmt = self::$pdo->prepare("SELECT * FROM stethoverflow_users WHERE user_id = ?");
                 $user_data_stmt->execute([$post_d->user_id]);
 
@@ -299,7 +299,7 @@ HTML;
                         <!-- .answer starts -->
                         <div class="answers" style="padding:6px">
                             <span id ="ref_to_post$post_d->post_id"></span><!-- ~ to refer users back to the post after commenting -->
-                            $post_nl2br
+                            <span id="post_nl2br_$post_d->post_id">$post_nl2br</span>
 HTML;
 
                         if(!empty($post_d->image1)){
@@ -476,12 +476,21 @@ HTML;
                 show_div(vari2);
             }
 
-            /*function close_invalid_signin() {
-                const invalid_sign_in_classes = document.getElementsByClassName("invalid_sign_in_div");
-                for (i=0; i<invalid_sign_in_classes.length; i++){
-                    invalid_sign_in_classes[i].style.display = "none";
-                }  
-            }*/
+            function post_nl2br_view_more(vari){
+                post_id = "post_nl2br_"+vari;
+
+                obj = new XMLHttpRequest;
+                obj.onreadystatechange = function(){
+                    if(obj.readyState == 4){
+                        if (document.getElementById(post_id)){
+                            document.getElementById(post_id).innerHTML = obj.responseText;
+                        }
+                    }
+                }         
+
+                obj.open("GET","/ajax/ajax_nl2br_full_post.php?post_id="+vari);
+                obj.send(null);
+            }
 
             function like_post(vari, dt){
                 if (dt) {
