@@ -94,7 +94,7 @@ if($data){//if user is logged in:
 
         //check for file upload errors:
         if ($_FILES['add_image1']['error'] !== UPLOAD_ERR_OK) {
-            echo "<div class='invalid'>Upload failed with error code " . $_FILES['add_image1']['error']."</div>";
+            echo "<div class='invalid'>No image uploaded. Error code " . $_FILES['add_image1']['error']."</div>";
         }
     }
 } else {
