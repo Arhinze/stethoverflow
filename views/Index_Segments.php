@@ -301,7 +301,7 @@ HTML;
                         <!-- .answer starts -->
                         <div class="answers" style="padding:6px">
                             <span id ="ref_to_post$post_d->post_id"></span><!-- ~ to refer users back to the post after commenting -->
-                            <span id="post_nl2br_$post_d->post_id">$post_nl2br</span>
+                            <div id="post_nl2br_$post_d->post_id" style="margin-top:3px;margin-bottom:15px">$post_nl2br</div>
 HTML;
 
                         if(!empty($post_d->image1)){
