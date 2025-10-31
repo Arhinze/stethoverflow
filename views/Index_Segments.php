@@ -300,10 +300,14 @@ HTML;
                         <div class="answers" style="padding:6px">
                             <span id ="ref_to_post$post_d->post_id"></span><!-- ~ to refer users back to the post after commenting -->
                             $post_nl2br
-                            <div><img src="/static/images/$post_d->image1" style="width:100%;height:auto"/></div>
+HTML;
+
+                        if(!empty($post_d->image1)){
+                            echo '<div><img src="/static/images/$post_d->image1" style="width:100%;height:auto"/></div>';
+                        }
+                           
+                echo <<<HTML
                         </div><!-- .answer ends -->
-
-
                         <!-- .like,comment and share icons start -->
                         <div class="like_comment_and_share_icons">
                             <div class="" style="display:flex">
