@@ -251,7 +251,9 @@ HTML;
                     }
                 }
 
-                $post_nl2br = nl2br($post_d->body);
+                //$post_nl2br = nl2br($post_d->body);
+                $post_nl2br = nl2br(substr($post_d->body, 0, 75))."<b onclick="."post_nl2br_view_more('$post_d->post_id')".">...view more</b>";
+                
                 $user_data_stmt = self::$pdo->prepare("SELECT * FROM stethoverflow_users WHERE user_id = ?");
                 $user_data_stmt->execute([$post_d->user_id]);
 
