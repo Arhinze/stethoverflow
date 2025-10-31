@@ -221,7 +221,7 @@ HTML;
                     <!-- demarcation --><div class="demarcation" style="width:100%;height:7px;background-color:#d6e3fd"></div><!-- demarcation --> 
 HTML;
             $posts_stmt = self::$pdo->prepare("SELECT * FROM posts ORDER by post_id DESC LIMIT ?, ?");
-            $posts_stmt->execute([0,10]);
+            $posts_stmt->execute([0,50]);
             $posts_data = $posts_stmt->fetchAll(PDO::FETCH_OBJ);
 
             $user_real_name = "Guest user - <a href='/login'>Login</a> to continue";
