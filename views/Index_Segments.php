@@ -303,7 +303,7 @@ HTML;
 HTML;
 
                         if(!empty($post_d->image1)){
-                            echo '<div><img src="/static/images/$post_d->image1" style="width:100%;height:auto"/></div>';
+                            echo '<div><img src="/static/images/'.$post_d->image1.'" style="width:100%;height:auto"/></div>';
                         }
                            
                 echo <<<HTML
