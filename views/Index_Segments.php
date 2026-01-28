@@ -111,6 +111,31 @@ class Index_Segments{
         self::$pdo = $obj;
     }
 
+    public static function reels_header(){
+        echo <<<HTML
+        <!DOCTYPE HTML>
+        <html>
+            <head>
+            <link rel="stylesheet" href="/static/style.css?$css_version"/>
+            <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+            <link rel="stylesheet" href="/static/font-awesome-4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito|Hammersmith+One|Trirong|Arimo|Prompt|Dancing+Script"/>
+            
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                
+            <title>$title</title>
+            <meta name="google-site-verification" content="myB30Ys5EUELpwugPrQITsFCTnKdfNCf9Owd0t6pjmM" /><!-- google site ownership verification -->  
+        </head>
+        <body>
+HTML;
+    }
+
     public static function main_header($site_name = SITE_NAME_SHORT, $profile_or_sign_in = PROFILE_OR_SIGN_IN, $profile_picture = PROFILE_PICTURE) {
         echo <<<HTML
             <!-- start of .headers --> 
@@ -168,7 +193,6 @@ HTML;
         <!doctype html>
         <html lang="en">
         <head>
-          
             <link rel="stylesheet" href="/static/style.css?$css_version"/>
             <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
             <link rel="stylesheet" href="/static/font-awesome-4.7.0/css/font-awesome.min.css">
