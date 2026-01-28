@@ -134,6 +134,7 @@ class Index_Segments{
             <div class="headers" style="top:50px;background-color:#fff;color:#888;font-size:21px;padding:6px 18px">
                 <div class="" style="margin-top:6px"><a href="/" style="color:#acc5f8"><i class="fa fa-home"></i></a></div>
                 <div class="" style="margin-top:6px"><a href="/questions"><i class="fa fa-pencil-square-o"></i></a></div>
+                <div class="" style="margin-top:6px"><a href="/reels"><i class="fa-solid fa-clapperboard"></i></a></div>
                 <div class="" style="margin-top:6px"><a href="/spaces"><i class="fa fa-users"></i></a></div>
                 <div class="" style="margin-top:6px"><a href="/notifications"><i class="fa fa-bell-o"></i></a></div>
                 <div class="profile_image_div">
@@ -171,6 +172,7 @@ HTML;
             <link rel="stylesheet" href="/static/style.css?$css_version"/>
             <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
             <link rel="stylesheet" href="/static/font-awesome-4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
