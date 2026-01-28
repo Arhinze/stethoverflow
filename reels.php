@@ -2,9 +2,9 @@
 include_once($_SERVER["DOCUMENT_ROOT"]."/views/Index_Segments.php");
 Index_Segments::header();
 
-$reels_query = $pdo->prepare("SELECT * FROM videos ORDER BY video_id DESC LIMIT ?, ?");
-$reels_query->execute([0,100]);
-$reels_data = $reels_query->fetchAll(PDO::FETCH_OBJ);
+$reels_stmt = $pdo->prepare("SELECT * FROM videos ORDER BY video_id DESC LIMIT ?, ?");
+$reels_stmt->execute([0,100]);
+$reels_data = $reels_stmt->fetchAll(PDO::FETCH_OBJ);
 
 ?>
 
@@ -13,7 +13,7 @@ $reels_data = $reels_query->fetchAll(PDO::FETCH_OBJ);
     <?php foreach($reels_data as $rd) { ?>
         <div class="reel-video-wrapper">
             <video class="medical-video" loop muted playsinline>
-                <source src="/static/videos/<?php $rd->video_url ?>" type="video/mp4">
+                <source src="/static/videos/<?=$rd->video_url?>" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             
