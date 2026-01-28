@@ -768,7 +768,7 @@ HTML;
                     <!-- .whatsapp_box ends -->
     
                     <!-- fixed whatsapp sticker(bottom-right) starts -->
-                    <div style="color:#fff;font-size:33px;padding:9px 12px;border-radius:100%;background-color:green;position:fixed;bottom:54px;right:18px"><i class="fa fa-whatsapp" onclick="show_div('whatsapp_box')"></i></div>
+                    <div style="color:#fff;font-size:33px;padding:9px 12px;border-radius:100%;background-color:green;position:fixed;bottom:54px;right:18px"><i class="fab fa-whatsapp" onclick="show_div('whatsapp_box')"></i></div>
                     <!-- fixed whatsapp sticker(bottom-right) ends -->
 HTML;
             }
@@ -781,10 +781,10 @@ HTML;
                 <div>Steth Overflow is designed to demystify medical facts and to bring you closer to your doctor for better healthcare.</div>
 
                 <div class="footer_fa_links">
-                    <a href="https://www.facebook.com/share/19MmpBuEn6/?mibextid=wwXIfr" style="color:#000"><i class="fa fa-facebook"></i></a> &nbsp;
+                    <a href="https://www.facebook.com/share/19MmpBuEn6/?mibextid=wwXIfr" style="color:#000"><i class="fab fa-facebook"></i></a> &nbsp;
                     <a href="https://www.tiktok.com/@bilo.ng?_t=ZM-8xVIXWH0E21&_r=1"><img src="/static/images/tiktok_logo.png" style="height:24px;width:auto;margin-bottom:-4px"/></a> &nbsp;
-                    <a href="" style="color:#000"><i class="fa fa-instagram"></i></a> &nbsp;
-                    <a href="https://www.youtube.com/@biloonline" style="color:#000"><i class="fa fa-youtube-play"></i></a> &nbsp;
+                    <a href="" style="color:#000"><i class="fab fa-instagram"></i></a> &nbsp;
+                    <a href="https://www.youtube.com/@biloonline" style="color:#000"><i class="fab fa-youtube-play"></i></a> &nbsp;
                 </div>
 
                 <div class="footer_heading">Blog</div>
