@@ -112,6 +112,7 @@ class Index_Segments{
     }
 
     public static function reels_header(){
+        $css_version = filemtime($_SERVER["DOCUMENT_ROOT"]."/static/style.css");
         echo <<<HTML
         <!DOCTYPE HTML>
         <html>
