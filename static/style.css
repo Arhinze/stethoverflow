@@ -553,6 +553,12 @@ h1, h2, h3, h4, h5, h6{
 /* -- questions page starts -- */
 
 /* -- reels page starts */
+.reels_body{
+    margin:0;
+    padding:0;
+    overflow: hidden;
+}
+
 .reels-container {
     height: 100vh;
     overflow-y: scroll;

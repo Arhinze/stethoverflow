@@ -8,7 +8,7 @@ $reels_data = $reels_stmt->fetchAll(PDO::FETCH_OBJ);
 
 ?>
 
-<div class="main_body">
+<div class="reels_body">
     <div class="reels-container">
     <?php foreach($reels_data as $rd) { ?>
         <div class="reel-video-wrapper">
