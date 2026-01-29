@@ -156,6 +156,19 @@ $reels_data = $reels_stmt->fetchAll(PDO::FETCH_OBJ);
                 closeAllModals();
             }
         }
+
+        function calculateHeight() {
+            // Calculate 1% of the window height
+            let vh = window.innerHeight * 0.01;
+            // Set the value in the --vh custom property to the root of the document
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+        }
+        
+        // Initial calculation
+        calculateHeight();
+        
+        // Recalculate on resize (when the URL bar hides/shows)
+        window.addEventListener('resize', calculateHeight);
     </script>
 </div>
 
