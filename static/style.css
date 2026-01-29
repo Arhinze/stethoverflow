@@ -648,7 +648,46 @@ video {
     background: #007bff; 
     width: 0%; 
 }
+
+/* Dark overlay to dim the background */
+.modal-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: none; /* Hidden by default */
+    z-index: 100;
+}
+
+/* The actual slide-up box */
+.modal-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #1a1a1a; /* Dark for comments */
+    border-radius: 20px 20px 0 0;
+    padding: 20px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-out;
+}
+
+.white-bg { background: white; color: black; }
+
+/* Animation class */
+.modal-overlay.active { display: block; }
+.modal-overlay.active .modal-content { transform: translateY(0); }
+
+/* Option items styling */
+.option-item {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+.option-item:last-child { border: none; color: red; font-weight: bold; }
 /* --reels page ends*/
+
+
 
 /* -- spaces page starts -- */
 .discover_spaces_div{
