@@ -27,7 +27,7 @@ $reels_data = $reels_stmt->fetchAll(PDO::FETCH_OBJ);
                 <div class="action-btn" onclick="openComments(<?=$rd->video_id?>)"><i class="fas fa-comment"></i><span>45</span></div>
                 <div class="action-btn"><i class="fas fa-retweet"></i></div>
                 <div class="action-btn"><i class="fas fa-share"></i></div>
-                <div class="action-btn more-options"><i class="fas fa-ellipsis-vertical"></i></div>
+                <div class="action-btn more-options" onclick="openOptions(<?=$rd->video_id?>)"><i class="fas fa-ellipsis-vertical"></i></div>
             </div>
 
             <div class="video-overlay">
