@@ -640,7 +640,7 @@ video {
 /* Play/Pause Center Animation */
 .status-icon {
     position: absolute;
-    font-size: 80px;
+    font-size: 60px;
     color: rgba(255,255,255,0.7);
     opacity: 0;
     pointer-events: none;
