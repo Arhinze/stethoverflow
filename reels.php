@@ -13,7 +13,7 @@ $reels_data = $reels_stmt->fetchAll(PDO::FETCH_OBJ);
     <?php foreach($reels_data as $rd) { ?>
         <div class="reel-video-wrapper">
             <a href="javascript:history.back()" class="back-button">
-                <i class="fas fa-arrow-left"></i> StethOverflow
+                <i class="fas fa-arrow-left"></i> &nbsp; StethOverflow
             </a>
 
             <video class="medical-video" loop muted playsinline>
