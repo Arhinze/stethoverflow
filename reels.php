@@ -42,28 +42,28 @@ $reels_data = $reels_stmt->fetchAll(PDO::FETCH_OBJ);
                 <div class="progress-bar"></div>
             </div>
         </div>
-
-        <div class="modal-overlay comment-overlay">
-            <div class="modal-content">
-                <div class="modal-header">Comments <span class="close-modal">&times;</span></div>
-                <div class="comment-list">
-                    <p><strong>Dr. Smith:</strong> Great clinical insight!</p>
-                </div>
-                <div class="comment-input">
-                    <input type="text" placeholder="Add a medical comment...">
-                    <button>Post</button>
-                </div>
-            </div>
-        </div>
-        
-        <div class="modal-overlay options-overlay">
-            <div class="modal-content white-bg">
-                <div class="option-item"><i class="fas fa-bookmark"></i> Save Video</div>
-                <div class="option-item"><i class="fas fa-flag"></i> Report Video</div>
-                <div class="option-item close-options">Cancel</div>
-            </div>
-        </div>
     <?php } ?>
+    </div>
+
+    <div class="modal-overlay comment-overlay">
+        <div class="modal-content">
+            <div class="modal-header">Comments <span class="close-modal">&times;</span></div>
+            <div class="comment-list">
+                <p><strong>Dr. Smith:</strong> Great clinical insight!</p>
+            </div>
+            <div class="comment-input">
+                <input type="text" placeholder="Add a medical comment...">
+                <button>Post</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal-overlay options-overlay">
+        <div class="modal-content white-bg">
+            <div class="option-item"><i class="fas fa-bookmark"></i> Save Video</div>
+            <div class="option-item"><i class="fas fa-flag"></i> Report Video</div>
+            <div class="option-item close-options">Cancel</div>
+        </div>
     </div>
 </div>
 
