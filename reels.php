@@ -44,27 +44,6 @@ $reels_data = $reels_stmt->fetchAll(PDO::FETCH_OBJ);
         </div>
     <?php } ?>
     </div>
-
-    <div class="modal-overlay comment-overlay">
-        <div class="modal-content">
-            <div class="modal-header">Comments <span class="close-modal">&times;</span></div>
-            <div class="comment-list">
-                <p><strong>Dr. Smith:</strong> Great clinical insight!</p>
-            </div>
-            <div class="comment-input">
-                <input type="text" placeholder="Add a medical comment...">
-                <button>Post</button>
-            </div>
-        </div>
-    </div>
-    
-    <div class="modal-overlay options-overlay">
-        <div class="modal-content white-bg">
-            <div class="option-item"><i class="fas fa-bookmark"></i> Save Video</div>
-            <div class="option-item"><i class="fas fa-flag"></i> Report Video</div>
-            <div class="option-item close-options">Cancel</div>
-        </div>
-    </div>
 </div>
 
 <div><!-- script for reels section -->
@@ -157,6 +136,27 @@ $reels_data = $reels_stmt->fetchAll(PDO::FETCH_OBJ);
     </script>
 </div>
 
+
 </body>
+<div id="global-comment-modal" class="modal-overlay">
+    <div class="modal-content">
+        <div class="modal-header">Comments <span class="close-modal" onclick="closeAllModals()">&times;</span></div>
+        <div id="comment-body" class="comment-list">
+            </div>
+        <div class="comment-input">
+            <input type="text" id="new-comment" placeholder="Add a medical comment...">
+            <button onclick="submitComment()">Post</button>
+        </div>
+    </div>
+</div>
+
+<div id="global-options-modal" class="modal-overlay">
+    <div class="modal-content white-bg">
+        <div class="option-item"><i class="fas fa-bookmark"></i> Save Video</div>
+        <div class="option-item"><i class="fas fa-flag"></i> Report Video</div>
+        <div class="option-item close-options" onclick="closeAllModals()">Cancel</div>
+    </div>
+</div>
+
 </html>
 <?php //Index_Segments::footer(); ?>
