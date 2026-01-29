@@ -292,7 +292,7 @@ HTML;
                 $likes_array = explode(";", $post_d->likes);
                 $number_of_likes = count($likes_array) - 1;
 
-                $like_icon = "<i class='fa fa-heart-o'></i>";
+                $like_icon = "<i class='fa fa-heartbeat'></i>";
                 $like_icon_color = "grey";
 
                 if($data) {
@@ -540,7 +540,7 @@ HTML;
                         document.getElementById(vari).innerHTML = "<i class='fa fa-heartbeat'></i>";             
                     } else if (document.getElementById(vari).style.color == "red") {
                         document.getElementById(vari).style.color = "grey";
-                        document.getElementById(vari).innerHTML = "<i class='fa fa-heart-o'></i>";             
+                        document.getElementById(vari).innerHTML = "<i class='fa fa-heartbeat'></i>";             
                     }
                 } else {
                     obj = new XMLHttpRequest;
