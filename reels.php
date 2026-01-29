@@ -23,7 +23,7 @@ $reels_data = $reels_stmt->fetchAll(PDO::FETCH_OBJ);
             <div class="status-icon"><i class="fas fa-play"></i></div>
 
             <div class="side-actions">
-                <div class="action-btn"><i class="fas fa-heart"></i><span>1.2k</span></div>
+                <div class="action-btn"><i class="fas fa-heartbeat"></i><span>1.2k</span></div>
                 <div class="action-btn" onclick="openComments(<?=$rd->video_id?>)"><i class="fas fa-comment"></i><span>45</span></div>
                 <div class="action-btn"><i class="fas fa-retweet"></i></div>
                 <div class="action-btn"><i class="fas fa-share"></i></div>
