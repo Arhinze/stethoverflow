@@ -17,7 +17,7 @@ $reels_data = $reels_stmt->fetchAll(PDO::FETCH_OBJ);
             </a>
 
             <video class="medical-video" loop muted playsinline>
-                <source src="uploads/videos/<?= $rd->video_url ?>" type="video/mp4">
+                <source src="/static/videos/<?= $rd->video_url ?>" type="video/mp4">
             </video>
 
             <div class="status-icon"><i class="fas fa-play"></i></div>
