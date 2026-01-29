@@ -24,7 +24,7 @@ $reels_data = $reels_stmt->fetchAll(PDO::FETCH_OBJ);
 
             <div class="side-actions">
                 <div class="action-btn"><i class="fas fa-heart"></i><span>1.2k</span></div>
-                <div class="action-btn"><i class="fas fa-comment"></i><span>45</span></div>
+                <div class="action-btn" onclick="openComments(<?=$rd->video_id?>)"><i class="fas fa-comment"></i><span>45</span></div>
                 <div class="action-btn"><i class="fas fa-retweet"></i></div>
                 <div class="action-btn"><i class="fas fa-share"></i></div>
                 <div class="action-btn more-options"><i class="fas fa-ellipsis-vertical"></i></div>
@@ -133,6 +133,29 @@ $reels_data = $reels_stmt->fetchAll(PDO::FETCH_OBJ);
         }, { threshold: 0.7 });
         
         document.querySelectorAll('.medical-video').forEach(vid => observer.observe(vid));
+
+        // Function to Open Modals
+        function openComments(videoId) {
+            const modal = document.getElementById('global-comment-modal');
+            modal.classList.add('active');
+            // You can use videoId later to fetch specific comments via AJAX
+        }
+        
+        function openOptions(videoId) {
+            const modal = document.getElementById('global-options-modal');
+            modal.classList.add('active');
+        }
+        
+        function closeAllModals() {
+            document.querySelectorAll('.modal-overlay').forEach(m => m.classList.remove('active'));
+        }
+        
+        // Close when clicking the dark area
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal-overlay')) {
+                closeAllModals();
+            }
+        }
     </script>
 </div>
 
