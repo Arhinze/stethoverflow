@@ -12,14 +12,33 @@ $reels_data = $reels_stmt->fetchAll(PDO::FETCH_OBJ);
     <div class="reels-container">
     <?php foreach($reels_data as $rd) { ?>
         <div class="reel-video-wrapper">
+            <a href="javascript:history.back()" class="back-button">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+
             <video class="medical-video" loop muted playsinline>
-                <source src="/static/videos/<?=$rd->video_url?>" type="video/mp4">
-                Your browser does not support the video tag.
+                <source src="uploads/videos/<?= $rd->video_url ?>" type="video/mp4">
             </video>
-            
+
+            <div class="status-icon"><i class="fas fa-play"></i></div>
+
+            <div class="side-actions">
+                <div class="action-btn"><i class="fas fa-heart"></i><span>1.2k</span></div>
+                <div class="action-btn"><i class="fas fa-comment"></i><span>45</span></div>
+                <div class="action-btn"><i class="fas fa-retweet"></i></div>
+                <div class="action-btn"><i class="fas fa-share"></i></div>
+            </div>
+
             <div class="video-overlay">
-                <h3>@StethOverflow</h3>
-                <p><?php htmlspecialchars($rd->description) ?></p>
+                <div class="bottom-info">
+                    <h3>@StethOverflow</h3>
+                    <p><?= $rd->description ?></p>
+                </div>
+                <div class="mute-toggle"><i class="fas fa-volume-mute"></i></div>
+            </div>
+
+            <div class="progress-container">
+                <div class="progress-bar"></div>
             </div>
         </div>
     <?php } ?>
