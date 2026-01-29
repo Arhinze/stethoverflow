@@ -167,8 +167,8 @@ $reels_data = $reels_stmt->fetchAll(PDO::FETCH_OBJ);
         <div id="comment-body" class="comment-list">
             </div>
         <div class="comment-input">
-            <input type="text" id="new-comment" placeholder="Add a medical comment...">
-            <button onclick="submitComment()">Post</button>
+            <input type="text" id="new-comment" class="input" placeholder="Add a medical comment...">
+            <button onclick="submitComment()" class="button">Post</button>
         </div>
     </div>
 </div>
