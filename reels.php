@@ -16,7 +16,7 @@ $reels_data = $reels_stmt->fetchAll(PDO::FETCH_OBJ);
                 <i class="fas fa-arrow-left"></i> &nbsp; StethOverflow
             </a>
 
-            <video class="medical-video" loop muted playsinline>
+            <video class="medical-video" loop unmuted playsinline>
                 <source src="/static/videos/<?= $rd->video_url ?>" type="video/mp4">
             </video>
 
