@@ -35,7 +35,7 @@ $reels_data = $reels_stmt->fetchAll(PDO::FETCH_OBJ);
                     <h3>@StethOverflow</h3>
                     <p><?= $rd->description ?></p>
                 </div>
-                <div class="mute-toggle"><i class="fas fa-volume-mute"></i></div>
+                <div class="mute-toggle"><i class="fas fa-volume-up"></i></div>
             </div>
 
             <div class="progress-container">
