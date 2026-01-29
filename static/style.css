@@ -635,6 +635,17 @@ video {
     transform: scale(1.5);
 }
 
+.reels-input {
+    width:70%;
+    padding:6px;
+    background-color:#fff;
+    font-size:15px;
+    color:#888;
+    /*color:var(--site_color_alt);*/
+    border:1px solid var(--site_color_alt);
+    border-radius:15px;
+}
+
 /* Progress Bar */
 .progress-container {
     position: absolute;
