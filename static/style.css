@@ -603,6 +603,7 @@ video {
     gap: 20px;
     align-items: center;
     color: white;
+    z-index:5;
 }
 
 .action-btn { text-align: center; cursor: pointer; }
@@ -668,6 +669,7 @@ video {
     padding: 20px;
     transform: translateY(100%);
     transition: transform 0.3s ease-out;
+    z-index: 101;
 }
 
 .white-bg { background: white; color: black; }

@@ -13,7 +13,7 @@ $reels_data = $reels_stmt->fetchAll(PDO::FETCH_OBJ);
     <?php foreach($reels_data as $rd) { ?>
         <div class="reel-video-wrapper">
             <a href="javascript:history.back()" class="back-button">
-                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-left"></i> StethOverflow
             </a>
 
             <video class="medical-video" loop muted playsinline>
@@ -69,105 +69,91 @@ $reels_data = $reels_stmt->fetchAll(PDO::FETCH_OBJ);
 
 <div><!-- script for reels section -->
     <script>
-        const options = {
-            root: null, // Use the viewport
-            threshold: 0.7 // Trigger when 70% of the video is visible
-        };
-    
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                const video = entry.target;
-                if (entry.isIntersecting) {
-                    video.play();
-                    video.muted = false; // Optional: Unmute on view
-                } else {
-                    video.pause();
-                    video.currentTime = 0; // Reset video when scrolled away
-                }
-            });
-        }, options);
-    
-        // Attach observer to all medical videos
-        document.querySelectorAll('.medical-video').forEach(vid => {
-            observer.observe(vid);
-        });
-    
-        // Simple click-to-pause toggle
-        document.querySelectorAll('.medical-video').forEach(vid => {
-            vid.addEventListener('click', () => {
-                if (vid.paused) vid.play();
-                else vid.pause();
-            });
-        });
-
         document.querySelectorAll('.reel-video-wrapper').forEach(wrapper => {
             const video = wrapper.querySelector('video');
-            const pBar = wrapper.querySelector('.progress-bar');
             const statusIcon = wrapper.querySelector('.status-icon');
+            const commentBtn = wrapper.querySelector('.fa-comment').closest('.action-btn');
+            const optionsBtn = wrapper.querySelector('.more-options');
+            const commentModal = wrapper.querySelector('.comment-overlay');
+            const optionsModal = wrapper.querySelector('.options-overlay');
             const muteBtn = wrapper.querySelector('.mute-toggle i');
         
-            // 1. Progress Bar Logic
-            video.addEventListener('timeupdate', () => {
-                const percentage = (video.currentTime / video.duration) * 100;
-                pBar.style.width = percentage + '%';
-            });
+            // --- 1. PLAY/PAUSE LOGIC ---
+            video.addEventListener('click', (e) => {
+                // Only trigger if we aren't clicking a UI button
+                if (e.target.tagName !== 'VIDEO') return;
         
-            // 2. Play/Pause with Icon Animation
-            video.addEventListener('click', () => {
                 if (video.paused) {
                     video.play();
                     statusIcon.innerHTML = '<i class="fas fa-play"></i>';
                 } else {
                     video.pause();
                     statusIcon.innerHTML = '<i class="fas fa-pause"></i>';
+                    // Flag to tell Observer NOT to auto-resume while user has it paused
+                    video.dataset.manualPause = "true"; 
                 }
                 
-                // Show icon briefly
                 statusIcon.classList.add('show');
                 setTimeout(() => statusIcon.classList.remove('show'), 500);
             });
         
-            // 3. Mute/Unmute Logic
+            // --- 2. MODAL LOGIC ---
+            const toggleModal = (modal, show) => {
+                if (show) {
+                    modal.classList.add('active');
+                    video.pause();
+                } else {
+                    modal.classList.remove('active');
+                    // Only resume if it wasn't manually paused before opening modal
+                    if (video.dataset.manualPause !== "true") video.play();
+                }
+            };
+        
+            commentBtn.addEventListener('click', (e) => {
+                e.stopPropagation(); // Prevents clicking the video underneath
+                toggleModal(commentModal, true);
+            });
+        
+            optionsBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                toggleModal(optionsModal, true);
+            });
+        
+            // Close Modals when clicking the X or the dark overlay
+            wrapper.querySelectorAll('.close-modal, .close-options, .modal-overlay').forEach(el => {
+                el.addEventListener('click', (e) => {
+                    if (e.target === el || el.classList.contains('close-modal') || el.classList.contains('close-options')) {
+                        toggleModal(commentModal, false);
+                        toggleModal(optionsModal, false);
+                    }
+                });
+            });
+        
+            // --- 3. MUTE LOGIC ---
             wrapper.querySelector('.mute-toggle').addEventListener('click', (e) => {
-                e.stopPropagation(); // Don't trigger the video play/pause
+                e.stopPropagation();
                 video.muted = !video.muted;
                 muteBtn.className = video.muted ? 'fas fa-volume-mute' : 'fas fa-volume-up';
             });
         });
-
-        document.querySelectorAll('.reel-video-wrapper').forEach(wrapper => {
-            const video = wrapper.querySelector('video');
-            const commentBtn = wrapper.querySelector('.fa-comment').parentElement;
-            const optionsBtn = wrapper.querySelector('.more-options');
-            const commentModal = wrapper.querySelector('.comment-overlay');
-            const optionsModal = wrapper.querySelector('.options-overlay');
         
-            // Function to open modal
-            function openModal(modal) {
-                modal.classList.add('active');
-                video.pause(); // Pause video while interacting
-            }
-        
-            // Function to close modal
-            function closeModal(modal) {
-                modal.classList.remove('active');
-                video.play();
-            }
-        
-            // Event Listeners
-            commentBtn.addEventListener('click', () => openModal(commentModal));
-            optionsBtn.addEventListener('click', () => openModal(optionsModal));
-        
-            // Close on clicking X, Cancel, or the overlay itself
-            wrapper.querySelectorAll('.close-modal, .close-options, .modal-overlay').forEach(el => {
-                el.addEventListener('click', (e) => {
-                    if(e.target === el) { // Only close if clicking the actual target
-                        closeModal(commentModal);
-                        closeModal(optionsModal);
+        // --- 4. UPDATED OBSERVER ---
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                const video = entry.target;
+                if (entry.isIntersecting) {
+                    // Only auto-play if the user didn't manually pause it
+                    if (video.dataset.manualPause !== "true") {
+                        video.play();
                     }
-                });
+                } else {
+                    video.pause();
+                    video.dataset.manualPause = "false"; // Reset when scrolled away
+                }
             });
-        });
+        }, { threshold: 0.7 });
+        
+        document.querySelectorAll('.medical-video').forEach(vid => observer.observe(vid));
     </script>
 </div>
 
