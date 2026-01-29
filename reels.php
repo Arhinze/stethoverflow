@@ -122,9 +122,9 @@ $reels_data = $reels_stmt->fetchAll(PDO::FETCH_OBJ);
                 const video = entry.target;
                 if (entry.isIntersecting) {
                     // Only auto-play if the user didn't manually pause it
-                    if (video.dataset.manualPause !== "true") {
+                    //if (video.dataset.manualPause !== "true") {
                         video.play();
-                    }
+                    //}
                 } else {
                     video.pause();
                     video.dataset.manualPause = "false"; // Reset when scrolled away
