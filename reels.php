@@ -163,7 +163,7 @@ $reels_data = $reels_stmt->fetchAll(PDO::FETCH_OBJ);
 </body>
 <div id="global-comment-modal" class="modal-overlay">
     <div class="modal-content">
-        <div class="modal-header">Comments <span class="close-modal" onclick="closeAllModals()">&times;</span></div>
+        <div class="modal-header"><b>Comments</b> &nbsp; <span class="close-modal" onclick="closeAllModals()"><i class="fa fa-times"></i></span></div>
         <div id="comment-body" class="comment-list">
             </div>
         <div class="comment-input">
