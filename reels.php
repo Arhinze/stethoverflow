@@ -16,7 +16,7 @@ $reels_data = $reels_stmt->fetchAll(PDO::FETCH_OBJ);
                 <i class="fas fa-arrow-left"></i> &nbsp; StethOverflow
             </a>
 
-            <video class="medical-video" loop autoplay playsinline>
+            <video class="medical-video" autoplay loop playsinline>
                 <source src="/static/videos/<?= $rd->video_url ?>" type="video/mp4">
             </video>
 
@@ -35,7 +35,7 @@ $reels_data = $reels_stmt->fetchAll(PDO::FETCH_OBJ);
                     <h3>@StethOverflow</h3>
                     <p><?= $rd->description ?></p>
                 </div>
-                <div class="mute-toggle"><i class="fas fa-volume-mute"></i></div>
+                <div class="mute-toggle"><i class="fas fa-volume-up"></i></div>
             </div>
 
             <div class="progress-container">
@@ -122,9 +122,9 @@ $reels_data = $reels_stmt->fetchAll(PDO::FETCH_OBJ);
                 const video = entry.target;
                 if (entry.isIntersecting) {
                     // Only auto-play if the user didn't manually pause it
-                    //if (video.dataset.manualPause !== "true") {
+                    if (video.dataset.manualPause !== "true") {
                         video.play();
-                    //}
+                    }
                 } else {
                     video.pause();
                     video.dataset.manualPause = "false"; // Reset when scrolled away
