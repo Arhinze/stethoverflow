@@ -818,6 +818,7 @@ HTML;
                     <a href="https://www.youtube.com/@biloonline" style="color:#000"><i class="fab fa-youtube-play"></i></a> &nbsp;
                 </div>
 
+                <div class="footer_heading"><b><a href="/about">About us</a></b></div>
                 <div class="footer_heading">Blog</div>
                 Terms & Conditions
                 Sitemap
@@ -827,6 +828,7 @@ HTML;
                 Documentation
                 <b><a href="/contact">Help Center</a></b>
                 General FAQs
+
                 
                 <div class="footer_heading">Newsletter</div>
                 Stay medically up to date by joining our newsletter.
