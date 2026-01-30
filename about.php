@@ -4,7 +4,7 @@ Index_Segments::header();
 ?>
 
 <div class="main_body">
-    <h1 style="text-align:center;color:#acc5f8">About StethOverflow</h1>
+    <h1 style="text-align:center;color:#2b8eeb">About StethOverflow</h1>
     <div style="text-align:center;padding:3%;font-size:15px;margin-top:50px">
         <p>Steth Overflow is a medical platform where professionals across several medical fields interact and share updates on the latest trends in their respective fields. Anyone seeking medical opinion can ask questions too and receive professional medical advice.</p>
 
