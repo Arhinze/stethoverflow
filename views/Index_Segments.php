@@ -803,7 +803,13 @@ HTML;
             <div class="footer"><!-- .footer starts --> 
                 <div class="footer_site_name">$site_name</div>
 
-                <div>Steth Overflow is designed to demystify medical facts and to bring you closer to your doctor for better healthcare.</div>
+                <div>
+                    <p>Steth Overflow is a medical platform where professionals across several medical fields interact and share updates on the latest trends in their respective fields. Anyone seeking medical opinion can ask questions too and receive professional medical advice.</p>
+
+                    <p>We encourage different story-telling formats: write-ups/videos, so you can utilize our feed or <a href="/reels">reels</a> section - depending on your preferred method of learning.</p>
+                    
+                    <p>StethOverflow is indeed designed to demystify medical facts and to bring you closer to your doctor for better healthcare.</p>
+                </div>
 
                 <div class="footer_fa_links">
                     <a href="https://www.facebook.com/share/19MmpBuEn6/?mibextid=wwXIfr" style="color:#000"><i class="fab fa-facebook"></i></a> &nbsp;
